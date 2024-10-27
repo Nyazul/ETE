@@ -1,0 +1,567 @@
+[
+	{
+		"id": "PS1",
+		"type": "Pure Spices",
+		"name": "Cumin",
+		"description": " Cumin is a versatile spice derived from the seeds of the Cuminum cyminum plant, widely used in various global cuisines, particularly in Indian, Middle Eastern, and Mexican dishes. Known for its distinctive earthy, warm flavor, cumin adds depth to curries, stews, and spice blends like garam masala and taco seasoning. Cumin is rich in antioxidants and have potential health benefits, including aiding digestion and boosting immunity. Whether used whole or ground, cumin remains an essential ingredient for enhancing the taste and complexity of various dishes. ",
+		"varieties": [
+			{
+				"name": "Seed",
+				"description": " In whole form, cumin seeds are small, elongated, and brownish, with a nutty aroma that intensifies when toasted. ",
+				"imageUrl": "/images/Product_Images/Cumin_Seeds.png"
+			},
+			{
+				"name": "Powder",
+				"description": " Ground cumin is a fine, tan powder that offers a more concentrated flavor, making it convenient for quick incorporation into recipes. ",
+				"imageUrl": "/images/Product_Images/cumin_powder.png"
+			}
+		],
+		"intendedUse": "Cumin is a highly versatile spice that can be used in a variety of culinary applications including Seasoning for Dishes, Spice Blends, Marinades, Baking, Pickling, Cuisines, Infusions and for health benefits.",
+		"imageUrl": "/images/Product_Images/Cumin_Seeds.png"
+	},
+	{
+		"id": "PS2",
+		"type": "Pure Spices",
+		"name": "Fennel",
+		"description": " Fennel seeds are popularly known as Saunf in Hindi. It is an ancient Indian spice with culinary uses. Spices are usually hot in nature, but Fennel is an exception. It is a cooling spice with a sweet-bitter taste. Fennel seeds are packed with essential nutrients such as vitamin C. ",
+		"varieties": [
+			{
+				"name": "Seed",
+				"description": "Whole fennel seeds for flavoring and digestion.",
+				"imageUrl": "/images/Product_Images/Fennel_Seeds.png"
+			},
+			{
+				"name": "Powder",
+				"description": "Ground fennel powder for quick seasoning.",
+				"imageUrl": "/images/Product_Images/Fennel_Powder.jpg"
+			}
+		],
+		"intendedUse": "In Middle Eastern cuisine, fennel seeds are commonly used in spice blends, marinades, and rubs for meats and vegetables. They are also used to flavor soups, stews, and rice dishes. ",
+		"imageUrl": "/images/Product_Images/Fennel_Seeds.png"
+	},
+	{
+		"id": "PS3",
+		"type": "Pure Spices",
+		"name": "Coriander",
+		"description": " Coriander provide several health advantages. It’s well known that coriander seeds can improve heart health, lower blood sugar, and help with digestion. In the meantime, the coriander plant’s stems are rich in antioxidants, vitamins, and minerals that support general health.  ",
+		"varieties": [
+			{
+				"name": "Seed",
+				"description": " Coriander seeds are one of those spices that really bring a lot of flavor to the table.",
+				"imageUrl": "/images/Product_Images/Coriander_Seeds.png"
+			},
+			{
+				"name": "Powder",
+				"description": "Ground coriander powder for quick seasoning.",
+				"imageUrl": "/images/Product_Images/Coriander_Powder.png"
+			}
+		],
+		"intendedUse": "Coriander seeds are used in a spice blend for roasting vegetables ",
+		"imageUrl": "/images/Product_Images/Coriander_Seeds.png"
+	},
+	{
+		"id": "PS4",
+		"type": "Pure Spices",
+		"name": "Turmeric",
+		"description": " Turmeric, a vibra Turmeric, a vibrant yellow t yellow spicpice de derived from ived from thehe root of throot of the Curcuma longa plant, i Curcuma longa plant, is a staple in many  a staple in many cuuisines, sines, pararticularly in Scularly in South Asiauth Asian cooking. Known for its warm, eartcooking. Known for its warm, earthy flavor, turmy flavor, turmeric has bic has been used for centuries not only as a culinary ingredient but also for its medicinal properties. Its active compound, curcumin, is celebrated for its anti-inflammatory and antioxidant effects, making turmeric popular in traditional medicine practices such as Ayurveda en used for centuries not only as a culinary ingredient but also for its medicinal properties. Its active compound, curcumin, is celebrated for its anti-inflammatory and antioxidant effects, making turmeric popular in traditional medicine practices such as Ayurveda ",
+		"varieties": [
+			{
+				"name": "Sticks",
+				"description": " Turmeric sticks, also known as turmeric root or rhizome, are the whole, unprocessed form of turmeric. These sticks have a deep orange-yellow color and a slightly earthy aroma. They are often used in both culinary and medicinal applications. ",
+				"imageUrl": "/images/Product_Images/Turmeric_Sticks.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " Turmeric powder, made from dried and ground turmeric root, is a versatile ingredient widely used in cooking, medicine, and beauty routines. Its vibrant yellow color and earthy flavor make it a popular choice in various cuisines, especially in Indian dishes. ",
+				"imageUrl": "/images/Product_Images/Turmeric_Powder.jfif"
+			}
+		],
+		"intendedUse": " Flavoring Agent, Coloring Agent, Beverages, Anti-Inflammatory, Antioxidant, Digestive Health, Skincare, Healing ",
+		"imageUrl": "/images/Product_Images/Turmeric_Sticks.jfif"
+	},
+	{
+		"id": "PS5",
+		"type": "Pure Spices",
+		"name": "Cinnamon",
+		"description": " Cinnamon is a fragrant spice derived from the inner bark of trees belonging to the Cinnamomum genus. Known for its sweet and warm flavor, it is a staple in both sweet and savory dishes worldwide. Cinnamon comes in two main varieties: Ceylon (true cinnamon) and Cassia, with Ceylon being prized for its delicate taste and aroma. ",
+		"varieties": [
+			{
+				"name": "Sticks",
+				"description": " Cinnamon sticks are rolled-up pieces of the inner bark from cinnamon trees, known for their aromatic qualities and rich flavor. Often used in cooking and baking, these sticks provide a more intense and complex cinnamon taste compared to ground cinnamon ",
+				"imageUrl": "/images/Product_Images/Cinnamon_Sticks.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " Cinnamon powder is a finely ground spice made from the dried bark of cinnamon trees. Known for its sweet, warm flavor and aromatic scent, it’s a versatile ingredient used in a variety of culinary, medicinal, and beauty applications. ",
+				"imageUrl": "/images/Product_Images/Cinnamon_Powder.jfif"
+			}
+		],
+		"intendedUse": " Cinnamon is commonly used in baking, flavoring desserts like cakes, cookies, and pastries, as well as in beverages like chai tea and mulled wine. It also enhances savory dishes, such as stews and curries, adding depth and warmth. Also known for its potential health benefits, including anti-inflammatory and antioxidant properties. It may help regulate blood sugar levels, improve heart health, aid digestion and in candles and essential oils ",
+		"imageUrl": "/images/Product_Images/Cinnamon_Sticks.jfif"
+	},
+	{
+		"id": "PS6",
+		"type": "Pure Spices",
+		"name": "Cloves",
+		"description": " Cloves are aromatic flower buds from the clove tree (Syzygium aromaticum), native to the Maluku Islands in Indonesia. Known for their intense, sweet, and slightly peppery flavor, cloves are used in various culinary and medicinal applications. Their warm aroma makes them a popular spice in both sweet and savory dishes. ",
+		"varieties": [],
+		"intendedUse": " Cloves are commonly used in spice blends, curries, and marinades, as well as in baked goods like gingerbread and pumpkin pie, Cloves are known to aid digestion and can help relieve bloating and gas, they possess antibacterial and antifungal qualities.",
+		"imageUrl": "/images/Product_Images/Cloves.jfif"
+	},
+	{
+		"id": "PS7",
+		"type": "Pure Spices",
+		"name": "Sesame Seeds",
+		"description": " Sesame seeds, tiny but mighty, are small oil-rich seeds that come from the sesame plant (Sesamum indicum). With a nutty flavor and a delicate crunch, they have been cultivated for thousands of years, making them one of the oldest oilseed crops in the world. Often used in cooking and baking, these seeds are popular in various cuisines, from Asian stir-fries to Middle Eastern tahini ",
+		"varieties": [],
+		"intendedUse": " In cooking, sesame seeds can be sprinkled on salads, stir-fries, and baked goods, adding a delightful crunch and taste. They are also the primary ingredient in tahini, a creamy paste commonly used in hummus and dressings. Beyond their culinary uses, sesame seeds are rich in essential nutrients like calcium, magnesium, and healthy fats, making them a nutritious addition to a balanced diet. ",
+		"imageUrl": "/images/Product_Images/Sesame_Seeds.jfif"
+	},
+	{
+		"id": "PS8",
+		"type": "Pure Spices",
+		"name": "Black Pepper",
+		"description": " Black pepper, often referred to as the 'king of spices', is a widely used spice derived from the dried berries of the Piper nigrum plant. Known for its pungent flavor and aromatic qualities, black pepper has been a staple in kitchens around the world for centuries. ",
+		"varieties": [],
+		"intendedUse": " It adds depth and warmth to a variety of dishes, from savory stews and roasted meats to salads and sauces. Beyond its culinary uses, black pepper is also valued for its potential health benefits, including antioxidant properties and digestive support. ",
+		"imageUrl": "/images/Product_Images/Black_Pepper.jfif"
+	},
+	{
+		"id": "PS9",
+		"type": "Pure Spices",
+		"name": "Star Anise",
+		"description": " Star anise is a star-shaped spice that comes from the fruit of the Illicium verum tree, native to Northeast Asia. Renowned for its distinct licorice-like flavor and sweet, aromatic profile, star anise is a key ingredient in various cuisines, particularly in Chinese, Indian, and Vietnamese dishes ",
+		"varieties": [],
+		"intendedUse": " It is commonly used in spice blends like five-spice powder and is essential in making pho and other broths. Beyond its culinary applications, star anise also boasts potential health benefits, including antimicrobial properties and digestive support ",
+		"imageUrl": "/images/Product_Images/Star_Anise.jfif"
+	},
+	{
+		"id": "PS10",
+		"type": "Pure Spices",
+		"name": "Mustard Seeds",
+		"description": " Mustard seeds are small, round seeds derived from the mustard plant, with varieties including yellow, brown, and black. These seeds are known for their sharp, pungent flavor, which can vary from mild to spicy depending on the type. ",
+		"varieties": [],
+		"intendedUse": "Widely used in cuisines around the world, mustard seeds are often toasted to enhance their nutty aroma and are a key ingredient in pickling, salad dressings, and sauces. They play a crucial role in Indian cooking, where they are typically used in tempering dishes and curries. Beyond their culinary uses, mustard seeds are rich in nutrients, including selenium, magnesium, and omega-3 fatty acids, making them a nutritious addition to a balanced diet",
+		"imageUrl": "/images/Product_Images/Mustard_Seeds.jfif"
+	},
+	{
+		"id": "PS11",
+		"type": "Pure Spices",
+		"name": "Nutmeg",
+		"description": " Nutmeg is a warm, aromatic spice derived from the seed of the nutmeg tree (Myristica fragrans), native to the Spice Islands of Indonesia. Renowned for its rich, sweet flavor, nutmeg has been a cherished ingredient in culinary traditions worldwide. ",
+		"varieties": [
+			{
+				"name": "Whole",
+				"description": " The whole nutmeg seed is a hard, oval-shaped seed that retains its flavor and aroma longer than the powdered form, making it ideal for grating fresh into recipes. This method releases its essential oils, providing a vibrant, robust flavor to dishes ",
+				"imageUrl": "/images/Product_Images/Nutmeg.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " nutmeg powder offers convenience and ease of use, perfect for quickly adding a touch of warmth to baked goods, sauces, and beverages. ",
+				"imageUrl": "/images/Product_Images/Nutmeg_Powder.jfif"
+			}
+		],
+		"intendedUse": " It is commonly used in baking, adding depth to desserts like pies and cakes, and is also a key component in savory dishes, enhancing soups, sauces, and meats. Beyond its culinary appeal, nutmeg has a long history of medicinal use, believed to have anti-inflammatory and digestive benefits. ",
+		"imageUrl": "/images/Product_Images/Nutmeg.jfif"
+	},
+	{
+		"id": "PS12",
+		"type": "Pure Spices",
+		"name": "Asaphoetida",
+		"description": " Asafoetida, often referred to as 'hing', is a pungent spice derived from the resin of the Ferula plant, native to Iran and nearby regions. It is available in both whole resin form and as a powdered spice. ",
+		"varieties": [
+			{
+				"name": "Whole",
+				"description": " The whole resin has a strong, sulfurous aroma that can be quite intense, but when cooked, it mellows into a unique, savory flavor reminiscent of garlic and onions. ",
+				"imageUrl": "/images/Product_Images/Asaphoetida.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " Asafoetida powder is more commonly used in cooking for its convenience and is a staple in Indian cuisine, particularly in lentil dishes and curries, where it enhances flavors and aids digestion. ",
+				"imageUrl": "/images/Product_Images/Asaphoetida_Powder.jfif"
+			}
+		],
+		"intendedUse": " When cooked, it transforms into a savory, onion-garlic flavor, making it a popular ingredient in lentil dishes, curries, and vegetable preparations. Asafoetida is particularly valued in vegetarian cooking for its ability to impart depth to meals. Beyond its culinary uses, it is also believed to offer various health benefits, including digestive support. ",
+		"imageUrl": "/images/Product_Images/Asaphoetida.jfif"
+	},
+	{
+		"id": "PS13",
+		"type": "Pure Spices",
+		"name": "Fenugreek",
+		"description": " Fenugreek is an aromatic herb and spice derived from the seeds of the Trigonella foenum-graecum plant. Native to the Mediterranean and parts of Asia, fenugreek has a distinctive flavor that is both slightly bitter and nutty. ",
+		"varieties": [
+			{
+				"name": "Seeds",
+				"description": " The whole seeds are small, golden-brown, and have a slightly bitter, nutty flavor, often used in Indian cooking for pickling and seasoning curries. When toasted, they release a warm, aromatic fragrance that enhances various dishes.  ",
+				"imageUrl": "/images/Product_Images/Fenugreek_Seeds.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " Fenugreek powder, made from ground seeds, is commonly used in spice blends, such as curry powders, and in dishes like lentils and stews, adding a distinctive sweetness and depth. ",
+				"imageUrl": "/images/Product_Images/Fenugreek_Powder.jfif"
+			}
+		],
+		"intendedUse": " It is widely used in various cuisines, especially in Indian cooking, where it adds depth to curries, pickles, and spice blends. Fenugreek leaves, known as 'methi', are also popular in cooking, used fresh or dried to enhance dishes. Beyond its culinary applications, fenugreek is celebrated for its potential health benefits, including aiding digestion and regulating blood sugar levels. ",
+		"imageUrl": "/images/Product_Images/Fenugreek_Seeds.jfif"
+	},
+	{
+		"id": "PS14",
+		"type": "Pure Spices",
+		"name": "Cardamom",
+		"description": " Cardamom is a highly aromatic spice derived from the seeds of plants in the Zingiberaceae family, primarily Elettaria cardamomum. Often referred to as the 'queen of spices', cardamom is known for its warm, sweet flavor with hints of citrus and floral notes. It is a staple in many cuisines, particularly in Indian and Middle Eastern cooking",
+		"varieties": [
+			{
+				"name": "Whole",
+				"description": " Whole cardamom pods contain small, fragrant seeds that release their aromatic oils when crushed or opened. These pods are ideal for infusing flavor into dishes like curries, rice, and teas, providing a burst of warm, sweet, and slightly citrusy notes ",
+				"imageUrl": "/images/Product_Images/Cardamom.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " cardamom powder is convenient for quick incorporation into recipes, perfect for baking, desserts, and spice blends. ",
+				"imageUrl": "/images/Product_Images/Cardamom_Powder.jfif"
+			}
+		],
+		"intendedUse": " Cardamom is often used in Indian cuisine to enhance curries, rice dishes, and lentil preparations, It’s commonly added to chai tea and coffee for a fragrant twist, beyond its culinary uses, cardamom is believed to have health benefits, including aiding digestion and possessing anti-inflammatory properties. ",
+		"imageUrl": "/images/Product_Images/Cardamom.jfif"
+	},
+	{
+		"id": "PS15",
+		"type": "Pure Spices",
+		"name": "Pomegranate",
+		"description": " Introducing dehydrated pomegranate, a delightful superfood packed with flavor and nutrients! These vibrant, ruby-red seeds retain their rich antioxidants and natural sweetness, making them a versatile addition to your snacks, salads, and baked goods. Perfect for on-the-go energy or as a unique topping, dehydrated pomegranate offers a burst of taste and health benefits in every bite. Enjoy the goodness of pomegranates all year round! ",
+		"varieties": [
+			{
+				"name": "Seeds",
+				"description": " Dehydrated seeds add a delightful crunch to salads, yogurts, and snacks, while the powder is a versatile ingredient perfect for smoothies, baked goods, and sauces. Elevate your culinary creations with the rich taste and health benefits of pomegranate, making every bite a delicious boost for your well-being! ",
+				"imageUrl": "/images/Product_Images/Pomegranate_Seeds.jpg"
+			},
+			{
+				"name": "Powder",
+				"description": " With its natural sweetness and striking color, pomegranate powder not only enhances the taste of your dishes but also provides a nutritious boost. Easy to use and packed with health benefits, it's a fantastic way to enjoy the essence of pomegranates year-round!",
+				"imageUrl": "/images/Product_Images/Pomegranate_Powder.jfif"
+			}
+		],
+		"intendedUse": " Add a tablespoon to your favorite smoothie for a boost of flavor and antioxidants. Mix it into muffin or pancake batter for a unique twist and added nutritional benefits, sprinkle it over yogurt or oatmeal for a tasty and colorful breakfast, whisk it into vinaigrettes for a fruity flavor profile, use it to enhance sauces, marinades, or glazes for meats and vegetables, Blend it into desserts like smoothies bowls, puddings, or ice cream for a sweet touch. ",
+		"imageUrl": "/images/Product_Images/Pomegranate_Seeds.jpg"
+	},
+	{
+		"id": "PS16",
+		"type": "Pure Spices",
+		"name": "Dried Bell Pepper",
+		"description": " Introducing dried bell pepper, a flavorful and convenient ingredient that adds vibrant color and a sweet, smoky taste to any dish! Rich in vitamins and minerals, these dried slices are perfect for enhancing soups, stews, pasta, and salads. With their long shelf life, dried bell peppers are a fantastic pantry staple, allowing you to enjoy the fresh taste of bell peppers anytime you need a burst of flavor. Elevate your cooking with this versatile and nutritious addition! ",
+		"varieties": [
+			{
+				"name": "Whole",
+				"description": " Dehydrated whole bell peppers are a flavorful and convenient ingredient, retaining their vibrant colors and natural sweetness. Easy to rehydrate, these versatile peppers allow you to enjoy the essence of fresh bell peppers anytime, enhancing your culinary creations with their robust taste and rich nutrients. ",
+				"imageUrl": "/images/Product_Images/Dried_Bell_Pepper.jfif"
+			},
+			{
+				"name": "Flakes",
+				"description": " Dehydrated bell pepper flakes are a vibrant and versatile seasoning that adds a burst of flavor and color to your dishes. These crunchy flakes retain the natural sweetness and nutritional benefits of fresh bell peppers. Easy to use and with a long shelf life, they’re an excellent way to enhance your meals with the delightful taste of bell peppers anytime you need! ",
+				"imageUrl": "/images/Product_Images/Dried_Bell_Pepper_Flakes.jfif"
+			}
+		],
+		"intendedUse": " Rehydrate and add them to soups and stews for a boost of flavor and nutrition, Incorporate them into casseroles for added texture and sweetness, Use as a crunchy topping in salads or rehydrate for a fresh taste, Mix into pasta sauces or baked pasta for extra color and flavor, Sprinkle on popcorn or mix into trail mixes for a savory snack, Use as a flavorful topping for pizzas or flatbreads.",
+		"imageUrl": "/images/Product_Images/Dried_Bell_Pepper.jfif"
+	},
+	{
+		"id": "PS17",
+		"type": "Pure Spices",
+		"name": "Dried Chilli",
+		"description": " Dried chili peppers are a flavorful and essential ingredient that brings heat and complexity to your cooking. With their rich colors and concentrated flavors, they can be used whole, crushed, or ground to enhance everything from sauces and soups to marinades and spice blends. Convenient and versatile, dried chilies offer a long shelf life, making them a staple for adding a kick to your favorite dishes! ",
+		"varieties": [
+			{
+				"name": "Whole",
+				"description": " Dried whole chili peppers are a potent and flavorful ingredient that adds heat and depth to a variety of dishes. Retaining their natural spice and vibrant color, these chilies can be used in cooking or as a garnish. Perfect for infusing oils, making sauces, or enhancing stews, dried whole chilies offer a convenient way to bring authentic heat and flavor to your culinary creations.",
+				"imageUrl": "/images/Product_Images/Dried_Chilli_Whole.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " Dried chili powder is a vibrant spice made from ground dried chili peppers, offering a rich, smoky flavor and varying levels of heat. Perfect for seasoning a wide range of dishes—from soups and stews to marinades and rubs—this versatile powder adds depth and warmth to your cooking ",
+				"imageUrl": "/images/Product_Images/Dried_Chilli_Powder.jfif"
+			}
+		],
+		"intendedUse": " Infuse oils or blend into sauces for added heat and flavor, such as in salsas or chili sauces, add whole or crushed dried chilies to soups and stews for a depth of flavor and spice, incorporate into marinades for meats, tofu, or vegetables to enhance flavor, Add to pickling brines for a spicy kick in pickled vegetables, crush and sprinkle over pizzas, pasta, or salads for an added flavor boost, Rehydrate and chop to include in stuffing mixtures for added spice.",
+		"imageUrl": "/images/Product_Images/Dried_Chilli_Whole.jfif"
+	},
+	{
+		"id": "PS18",
+		"type": "Dried Curry Leaves",
+		"name": "Turmeric",
+		"description": " Dried curry leaves are a fragrant and flavorful herb commonly used in Indian and South Asian cuisine. Known for their unique aroma and slightly bitter taste, these leaves add depth to a variety of dishes, from curries and rice to soups and stews. Conveniently dried for long shelf life, they retain their essential oils and flavors, making them a must-have ingredient for enhancing your culinary creations with authentic flavor! ",
+		"varieties": [
+			{
+				"name": "Whole",
+				"description": " Dried whole curry leaves are a fragrant herb that brings a distinctive aroma and flavor to a variety of dishes. ",
+				"imageUrl": "/images/Product_Images/Dried_Curry_Leaves.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " This versatile powder captures the unique aroma and slightly bitter taste of the leaves, making it perfect for enhancing a variety of dishes. ",
+				"imageUrl": "/images/Product_Images/Dried_Curry_Leaves_Powder.jfif"
+			}
+		],
+		"intendedUse": " Add whole dried curry leaves to curries for a fragrant, aromatic flavor, fry in oil as a tempering agent for dals and vegetable dishes to release their flavor, blend into chutneys or sauces for an extra layer of flavor, toss them in stir-fried vegetables for a delicious herbal touch, add to marinades for meats and tofu to enhance flavor. ",
+		"imageUrl": "/images/Product_Images/Dried_Curry_Leaves.jfif"
+	},
+	{
+		"id": "PS19",
+		"type": "Dried Ginger",
+		"name": "Turmeric",
+		"description": " Dried ginger is made from the root of the ginger plant, processed by drying and grinding or slicing it into pieces. This spice has a warm, spicy flavor and a strong aroma, making it a popular ingredient in both sweet and savory dishes. Rich in antioxidants, dried ginger is also known for its potential health benefits, including aiding digestion and reducing inflammation. ",
+		"varieties": [
+			{
+				"name": "Whole",
+				"description": " Dried whole ginger is the intact, dehydrated root of the ginger plant, featuring a fibrous texture and a strong, aromatic flavor. Often used in various cuisines, these whole pieces can be rehydrated or simmered in soups, stews, and teas to impart their warm, spicy essence. ",
+				"imageUrl": "/images/Product_Images/Dried_Ginger.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " Dried ginger powder is finely ground ginger root, known for its warm, spicy flavor and strong aroma. This versatile spice is widely used in both sweet and savory dishes, adding depth to baked goods, curries, marinades, and beverages like teas and smoothies. Rich in antioxidants, ginger powder is celebrated for its potential health benefits, including aiding digestion and reducing inflammation. ",
+				"imageUrl": "/images/Product_Images/Dried_Ginger_Powder.png"
+			}
+		],
+		"intendedUse": " dd to cookies, cakes, and bread for a warm, spicy flavor, Use in curries, soups, and stews to enhance flavor and provide warmth, Incorporate into spice mixes for marinades, rubs, and seasoning blends, Combine with honey and hot water for a soothing tonic that may help digestion. Use in pickling recipes for a unique flavor in pickled vegetables. Create ginger syrup for cocktails, desserts, or drizzling over pancakes and waffles, Infuse in oils for a ginger-flavored cooking or finishing oil. ",
+		"imageUrl": "/images/Product_Images/Dried_Ginger.jfif"
+	},
+	{
+		"id": "DV1",
+		"type": "Dehydrated Vegetables",
+		"name": "Dehydrated White Onion",
+		"description": " Dehydrated white onion is a versatile ingredient made from fresh white onions that have been carefully dried to preserve their flavor and nutrients. Ideal for seasoning soups, stews, and sauces, it adds a robust onion taste without the hassle of chopping. Perfect for long-term storage, dehydrated white onion is a pantry staple for any home cook looking to enhance their dishes with ease.",
+		"varieties": [
+			{
+				"name": "Flakes",
+				"description": " Dehydrated white onion flakes typically range in size from about 1/8 inch to 1/4 inch. This size allows for even rehydration and easy incorporation into various dishes, ensuring a balanced onion flavor throughout your meals..",
+				"imageUrl": "/images/Product_Images/Dehydrated_White_Onion_Flakes.webp"
+			},
+			{
+				"name": "Chopped",
+				"description": " Dehydrated white onion, when chopped, usually has pieces that are around 1/4 inch to 1/2 inch in size. This chop size helps maintain flavor while allowing for even rehydration and easy mixing into recipes. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_White_Onion_Chopped.png"
+			},
+			{
+				"name": "Minced",
+				"description": " Dehydrated white onion minced size typically ranges from about 1/16 inch to 1/8 inch. This small size allows for quick rehydration and easy integration into various dishes, providing a concentrated onion flavor without the bulk. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_White_Onion_Minced.webp"
+			},
+			{
+				"name": "Granules",
+				"description": " Dehydrated white onion granules are generally smaller than minced pieces, typically ranging from about 1/16 inch to 1/32 inch. This fine texture allows for quick dissolution in liquids and is ideal for seasoning blends, sauces, and soups, providing a more subtle onion flavor. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_White_Onion_Granules.png"
+			},
+			{
+				"name": "Powder",
+				"description": " Dehydrated white onion powder is a finely ground form of dehydrated onions, with particles that are typically less than 1/16 inch in size. This powder easily incorporates into recipes, offering a concentrated onion flavor that's perfect for dry rubs, soups, sauces, and marinades. Its fine texture allows for even distribution in various dishes. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_White_Onion_Powder.jpg"
+			}
+		],
+		"intendedUse": "Used in various dishes for flavoring.",
+		"imageUrl": "/images/Product_Images/Dehydrated_White_Onion_Flakes.webp"
+	},
+	{
+		"id": "DV2",
+		"type": "Dehydrated Vegetables",
+		"name": "Dehydrated Red Onion",
+		"description": " Dehydrated red onion is a flavorful and convenient ingredient made from fresh red onions that have been carefully dried to retain their vibrant color and distinctive taste. Known for their mild sweetness and striking appearance, dehydrated red onions are perfect for adding depth to a variety of dishes, including salads, salsas, and dressings. They offer the same robust flavor as fresh onions without the need for chopping, making them a great pantry staple for home cooks and food enthusiasts alike. Whether rehydrated or used as a seasoning, dehydrated red onion enhances meals with ease and versatility. ",
+		"varieties": [
+			{
+				"name": "Flakes",
+				"description": " Dehydrated red onion flakes typically range in size from about 1/8 to 1/4 inch. This size makes them versatile for cooking, allowing them to rehydrate quickly while still providing a robust flavor and appealing texture in various dishes.",
+				"imageUrl": "/images/Product_Images/Dehydrated_Red_Onion_Flakes.png"
+			},
+			{
+				"name": "Chopped",
+				"description": " Dehydrated red onion chopped pieces typically range from about 6 to 12 mm in size. This size strikes a balance between ease of use and maintaining a satisfying texture in dishes. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Red_Onion_Chopped.webp"
+			},
+			{
+				"name": "Minced",
+				"description": " Dehydrated red onion minced pieces are usually around 1 to 3 mm in size. This fine cut allows for quick rehydration and is great for incorporating into sauces, dressings, and dishes where a more subtle onion flavor is desired. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Red_Onion_Minced.webp"
+			},
+			{
+				"name": "Granules",
+				"description": " Dehydrated red onion granules typically range from about 0.5 to 1.5 mm in size. This finely ground texture makes them perfect for seasoning blends and recipes where a smooth incorporation of onion flavor is needed. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Red_Onion_Granule.jpeg"
+			},
+			{
+				"name": "Powder",
+				"description": " Dehydrated red onion powder is very fine, generally less than 0.5 mm in size. This ultra-fine texture allows for easy blending into sauces, dressings, and marinades, providing a concentrated onion flavor without any noticeable pieces. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Red_Onion_Powder.webp"
+			}
+		],
+		"intendedUse": " Ideal for salads, soups, casseroles, and as a topping for various dishes. Great for stews, stir-fries, and any dish where a heartier onion presence is desired. Perfect for dressings, sauces, and recipes needing a subtle onion flavor. Used in seasoning blends for even flavor distribution in dishes. Concentrated flavor enhancer for marinades, dips, and soups, easily incorporated without texture. ",
+		"imageUrl": "/images/Product_Images/Dehydrated_Red_Onion_Flakes.png"
+	},
+	{
+		"id": "DV3",
+		"type": "Dehydrated Vegetables",
+		"name": "Dehydrated Pink Onion",
+		"description": " Dehydrated pink onions offer a vibrant and mild alternative to traditional onions, delivering a sweet and tangy flavor in a convenient form. Perfect for enhancing salads, salsas, and a variety of dishes, they retain the nutritional benefits of fresh onions while boasting a longer shelf life. Their unique color and taste make them an attractive and versatile addition to any kitchen. ",
+		"varieties": [
+			{
+				"name": "Flakes",
+				"description": "Dehydrated pink onion kibbled form usually consists of pieces that are around 6 to 12 mm in size. This chunky texture provides a robust onion flavor and is ideal for use in soups, stews, and as a topping for baked dishes, adding both taste and visual appeal. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Pink_Onion_Flakes.jfif"
+			},
+			{
+				"name": "Chopped",
+				"description": " Dehydrated pink onion chopped pieces typically range from about 5 to 10 mm in size. This allows for a hearty texture, making them suitable for soups, stir-fries, and other dishes where a more substantial onion presence is desired. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Pink_Onion_Chopped.jpeg"
+			},
+			{
+				"name": "Minced",
+				"description": " Dehydrated pink onion minced pieces are usually around 1 to 3 mm in size. This fine cut is ideal for incorporating into sauces, dressings, and marinades, providing a delicate onion flavor that blends seamlessly into dishes. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Pink_Onion_Minced.jpg"
+			},
+			{
+				"name": "Granules",
+				"description": " Dehydrated pink onion granules typically range from about 0.5 to 1.5 mm in size. This finely textured form is perfect for seasoning blends and allows for even flavor distribution in various recipes, making it a versatile option in the kitchen. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Pink_Onion_Granule.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " Dehydrated pink onion powder is very fine, generally less than 0.5 mm in size. This ultra-fine texture makes it ideal for adding concentrated onion flavor to marinades, sauces, and soups, ensuring easy incorporation without any noticeable texture. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Pink_Onion_Powder.jfif"
+			}
+		],
+		"intendedUse": "Used in various dishes for flavoring.",
+		"imageUrl": "/images/Product_Images/Dehydrated_Pink_Onion_Flakes.jfif"
+	},
+	{
+		"id": "DV4",
+		"type": "Dehydrated Vegetables",
+		"name": "Dehydrated Garlic",
+		"description": " Dehydrated garlic is a versatile ingredient that retains the bold, aromatic flavor of fresh garlic while offering convenience and a long shelf life. Available in various forms—such as flakes, granules, and powder—dehydrated garlic is perfect for seasoning, marinades, and culinary creations where a robust garlic taste is desired. Its ease of use makes it a staple in kitchens, allowing home cooks and chefs alike to enhance dishes without the hassle of peeling and chopping fresh garlic. ",
+		"varieties": [
+			{
+				"name": "Flakes",
+				"description": "Dehydrated garlic flakes are typically sized between 1/8 and 1/4 inch (about 3 to 6 mm). This form provides a robust garlic flavor and is perfect for adding to soups, stews, sauces, and casseroles, as they rehydrate quickly and add texture and taste to a variety of dishes. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Garlic_Flakes.webp"
+			},
+			{
+				"name": "Chips",
+				"description": " Dehydrated garlic chips are usually larger pieces, typically ranging from about 5 to 10 mm. This form maintains a crunchy texture and intense flavor, making them great for snacking, as a topping for salads, or added to roasted vegetables and baked dishes. They offer a delightful crunch while enhancing the overall garlic taste. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Garlic_Chips.jpeg"
+			},
+			{
+				"name": "Minced",
+				"description": " Dehydrated garlic minced pieces are typically around 1 to 3 mm in size. This finely chopped form is ideal for incorporating into sauces, dressings, and marinades, providing a concentrated garlic flavor that blends smoothly into dishes without noticeable texture. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Garlic_Minced.jpeg"
+			},
+			{
+				"name": "Granules",
+				"description": " Dehydrated garlic granules usually range from about 0.5 to 1.5 mm in size. This form allows for easy measurement and even distribution of flavor in recipes, making it perfect for seasoning blends, rubs, and soups where a strong garlic taste is desired. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Garlic_Granule.jpeg"
+			},
+			{
+				"name": "Powder",
+				"description": " Dehydrated garlic powder is very fine, generally less than 0.5 mm in size. This ultra-fine texture makes it ideal for adding concentrated garlic flavor to marinades, sauces, and dressings, ensuring seamless incorporation without any gritty texture. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Garlic_Powder.jfif"
+			}
+		],
+		"intendedUse": " Flakes are perfect for soups, stews, sauces, and casseroles; adds flavor and texture. Chips are great as a crunchy snack, topping for salads, or in roasted dishes for extra garlic flavor. Minced are ideal for sauces, dressings, and marinades, providing concentrated flavor without bulk. Garnule is useful in seasoning blends, dry rubs, and soups for even flavor distribution. Powder is excellent for marinades, dips, and baked goods, allowing for easy incorporation of garlic flavor without texture. ",
+		"imageUrl": "/images/Product_Images/Dehydrated_Garlic_Flakes.webp"
+	},
+	{
+		"id": "DV5",
+		"type": "Dehydrated Vegetables",
+		"name": "Dehydrated Carrot",
+		"description": " Dehydrated carrots are a nutritious and versatile ingredient that retains the natural sweetness and vibrant color of fresh carrots. Ideal for snacks, soups, stews, and casseroles, they offer convenience and a long shelf life while preserving essential vitamins and minerals. Dehydrated carrots can be rehydrated easily, making them a practical addition to both home cooking and commercial kitchens, adding flavor, texture, and a pop of color to a variety of dishes.",
+		"varieties": [
+			{
+				"name": "Flakes",
+				"description": " Dehydrated carrot flakes are typically sized between 6 to 12 mm. This form is perfect for adding to soups, stews, and casseroles, as they rehydrate quickly while providing a mild sweetness and vibrant color. Carrot flakes also make a great addition to trail mixes or as a topping for salads, enhancing both flavor and visual appeal. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Carrot_Flakes.jpeg"
+			},
+			{
+				"name": "Chopped",
+				"description": " Dehydrated carrot chopped pieces usually range from about 3 to 6 mm in size. This chunky form is ideal for use in soups, stews, and stir-fries, where they add a hearty texture and natural sweetness. Chopped carrots rehydrate well and can enhance the nutritional value and color of various dishes. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Carrot_Chopped.jpeg"
+			},
+			{
+				"name": "Minced",
+				"description": " Dehydrated carrot minced pieces are typically around 1 to 3 mm in size. This fine cut is perfect for incorporating into sauces, dips, and marinades, providing a subtle sweetness and flavor without noticeable texture. Minced carrots also work well in baked goods and blended dishes, adding nutrition and color seamlessly. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Carrot_Minced.jpeg"
+			},
+			{
+				"name": "Granules",
+				"description": " Dehydrated carrot granules usually range from about 0.5 to 1.5 mm in size. This form is ideal for seasoning blends, soups, and sauces, allowing for even distribution of flavor and nutrients. Carrot granules are easy to use and rehydrate quickly, making them a convenient option for enhancing various dishes. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Carrot_Granule.jfif"
+			},
+			{
+				"name": "Powder",
+				"description": " Dehydrated carrot powder is very fine, typically less than 0.5 mm in size. This ultra-fine texture makes it perfect for adding concentrated carrot flavor and nutrition to smoothies, baked goods, soups, and sauces. Carrot powder easily blends into recipes, providing color and sweetness without any noticeable texture. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Carrot_Powder.jpeg"
+			}
+		],
+		"intendedUse": "Flakes are ideal for soups, stews, casseroles, and as a salad topping, adding flavor, color, and nutrition. Chopped is great in stir-fries, pasta dishes, and grain bowls for a hearty texture and natural sweetness. Minced is perfect for sauces, dips, and marinades, providing a subtle flavor and easily blending into dishes. Granules are useful in seasoning blends, soups, and smoothies for even flavor distribution and nutritional boost. Powder is excellent for adding to baked goods, smoothies, and sauces, enhancing color and sweetness without altering texture. ",
+		"imageUrl": "/images/Product_Images/Dehydrated_Carrot_Flakes.jpeg"
+	},
+	{
+		"id": "DV6",
+		"type": "Dehydrated Vegetables",
+		"name": "Dehydrated Cabbage",
+		"description": " Dehydrated cabbage is a versatile and nutrient-rich ingredient that retains the crispness and flavor of fresh cabbage. Ideal for soups, stews, stir-fries, and salads, it offers convenience and a long shelf life while preserving essential vitamins and minerals. Dehydrated cabbage can be easily rehydrated, making it a practical addition to meals, enhancing both taste and texture while adding a delightful crunch to various dishes. ",
+		"varieties": [
+			{
+				"name": "Flakes",
+				"description": " Dehydrated cabbage flakes typically range in size from about 3 to 6 mm. This form is perfect for quickly adding to soups, stews, and casseroles, as they rehydrate easily and provide a mild flavor and crunchy texture. Cabbage flakes also work well in salads and as a topping for various dishes, enhancing both nutrition and visual appeal. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Cabbage_Flakes.jpeg"
+			},
+			{
+				"name": "Powder",
+				"description": " Dehydrated cabbage powder is very fine, generally less than 0.5 mm in size. This ultra-fine texture makes it ideal for incorporating into soups, sauces, smoothies, and baked goods, adding a concentrated cabbage flavor and nutrition without altering the texture of the dish. Cabbage powder is also great for seasoning blends and can be easily mixed into various recipes. ",
+				"imageUrl": "/images/Product_Images/Dehydrated_Cabbage_Powder.jpeg"
+			}
+		],
+		"intendedUse": "Used in various dishes for flavoring.",
+		"imageUrl": "/images/Product_Images/Dehydrated_Cabbage_Flakes.jpeg"
+	},
+	{
+		"id": "DRV1",
+		"type": "Dried Vegetables",
+		"name": "Dried Tomato",
+		"description": " Dried tomatoes are sun-dried or dehydrated versions of ripe tomatoes, packed with intense flavor and a chewy texture. They’re commonly used in Mediterranean cuisine, adding a rich, tangy taste to salads, pastas, and sauces. Not only are they versatile, but they also boast a concentrated nutrient profile, making them a delicious and healthy addition to a variety of dishes. ",
+		"varieties": [
+			{
+				"name": "Flakes",
+				"description": " Dried tomato flakes are made from sun-dried or dehydrated tomatoes that have been finely chopped or crushed into small pieces. These flakes pack a punch of concentrated flavor, making them a convenient way to add a rich, tangy tomato taste to dishes like soups, sauces, and salads. They rehydrate quickly in liquids, making them easy to incorporate into a variety of recipes. With their vibrant color and robust flavor, dried tomato flakes are a fantastic pantry staple for enhancing meals. ",
+				"imageUrl": "/images/Product_Images/Dried_Tomato_Flakes.jpeg"
+			},
+			{
+				"name": "Halves",
+				"description": " Dried tomato halves are plump tomato halves that have been sun-dried or dehydrated, preserving their rich flavor and chewy texture. They are often used in Mediterranean dishes, adding a burst of sweetness and acidity to salads, pastas, pizzas, and antipasto platters. Easy to rehydrate, they can also be incorporated into sauces and spreads. Their vibrant color and concentrated taste make them a delightful addition to various recipes, providing both nutrition and a gourmet touch. ",
+				"imageUrl": "/images/Product_Images/Dried_Tomato_Halves.jpeg"
+			},
+			{
+				"name": "Powder",
+				"description": " Dried tomato powder is made from finely ground dried tomatoes, capturing their rich flavor in a concentrated form. This versatile ingredient can be easily incorporated into a variety of dishes, adding a vibrant color and intense tomato taste to sauces, soups, marinades, and seasoning blends. It's perfect for enhancing the flavor of dishes without the need for fresh tomatoes and can be used as a thickening agent or natural color enhancer in recipes. With its long shelf life, dried tomato powder is a handy pantry staple for home cooks and chefs alike. ",
+				"imageUrl": "/images/Product_Images/Dried_Tomato_Powder.jpeg"
+			}
+		],
+		"intendedUse": " Toss them into salads for a burst of flavor, rehydrate and add to pasta sauces or toss with cooked pasta, use as a topping for added sweetness and texture, serve alongside olives, cheeses, and cured meats, incorporate into stuffed chicken, fish, or vegetables, add directly to soups for flavor enhancement, incorporate into dough for savory baked goods, whisk into vinaigrettes for added depth, Blend into smoothies or spreads for a savory twist. ",
+		"imageUrl": "/images/Product_Images/Dried_Tomato_Halves.jpeg"
+	},
+	{
+		"id": "DRV2",
+		"type": "Dried Vegetables",
+		"name": "Dried Potato",
+		"description": " Dried potatoes are a convenient and versatile ingredient made from fresh potatoes that have been dehydrated to remove moisture. This process preserves their flavor and nutrients, making them lightweight and shelf-stable. Dried potatoes come in various forms, such as flakes, slices, or granules, and can be easily rehydrated for use in soups, stews, casseroles, and snacks. Their quick preparation and long shelf life make them a popular choice for camping, emergency food supplies, and everyday cooking. ",
+		"varieties": [
+			{
+				"name": "Chips",
+				"description": " Dried potato chips are a crunchy snack made from thinly sliced potatoes that are dehydrated until crisp. Unlike traditional fried chips, these are often baked or air-dried, resulting in a lighter, healthier option. They retain the natural flavor of potatoes while offering a satisfying crunch. Dried potato chips can be enjoyed on their own, used as a topping for salads, or crumbled into soups and casseroles for added texture. With their long shelf life, they make for a convenient snack that can be easily stored and enjoyed anytime. ",
+				"imageUrl": "/images/Product_Images/Dried_Potato_Chips.jpg"
+			},
+			{
+				"name": "Powder",
+				"description": " Dried potato powder is made from dehydrated, finely ground potatoes, retaining their flavor and nutrients. This versatile ingredient can be used to create instant mashed potatoes, thicken soups and sauces, or add texture to baked goods. It’s also popular in gluten-free recipes as a substitute for flour. With its long shelf life and ease of use, dried potato powder is a convenient pantry staple for home cooks looking to incorporate the hearty taste of potatoes into various dishes. ",
+				"imageUrl": "/images/Product_Images/Dried_Potato_Powder.jpeg"
+			}
+		],
+		"intendedUse": "Chips are enjoyed on their own as a crunchy, savory snack and crushed and used as a topping for salads or casseroles for added texture. Dried potato powder is rehydrated with water or milk for a quick side dish, added to soups, stews, or sauces for natural thickness, used in gluten-free recipes or to enhance the moisture of baked goods, incorporated into dough for gnocchi or other pasta dishes.  ",
+		"imageUrl": "/images/Product_Images/Dried_Potato_Chips.jpg"
+	}
+]

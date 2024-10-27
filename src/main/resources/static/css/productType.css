@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+h3 {
+    font-size: 32px;
+    margin: 20px;
+    color: #2E8B57; /* Vibrant green for headings */
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+/* Common styles for the product list */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px; /* Add padding to the container */
+    margin: 0 auto; /* Center the list */
+    gap: 20px; /* Spacing between items */
+}
+
+/* Individual product card styles */
+.product-item {
+    background-color: #f9f9f9; /* Light background for cards */
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 15px;
+    padding-top: 200px;
+    width: 350px; /* Fixed width for cards */
+    max-width: 100%; /* Ensure it doesn’t overflow its container */
+    height: 400px; /* Fixed width for cards */
+    max-height: 100%; /* Ensure it doesn’t overflow its container */
+    text-align: center; /* Center text */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.product-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+
+
+.product-item h3 {
+    font-size: 2em; /* Increase font size for product name */
+    margin: 10px 0 0; /* Margin adjustments */
+    color: rgb(0, 0, 0); /* Dark text color for contrast */
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    
+}
+
+.product-item:focus {
+    outline: 2px dashed #4CAF50; /* Green outline for focus state */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .product-list {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center;
+    }
+}
