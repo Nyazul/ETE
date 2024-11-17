@@ -9,11 +9,11 @@
 		<version>3.3.4</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.bcfoods</groupId>
-	<artifactId>BCFoods</artifactId>
+	<groupId>com.epictasteexchange</groupId>
+	<artifactId>EpicTasteExchange</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BCFoods</name>
-	<description>Secure Notes Project</description>
+	<name>EpicTasteExchange</name>
+	<description>EpicTasteExchange Fooc Company</description>
 	<url />
 	<licenses>
 		<license />
@@ -31,6 +31,12 @@
 		<java.version>21</java.version>
 	</properties>
 	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>

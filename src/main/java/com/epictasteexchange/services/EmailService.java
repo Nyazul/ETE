@@ -29,6 +29,7 @@ public class EmailService {
 		System.out.println("Mail sent successfully...");
 	}
 
+	@SuppressWarnings("null")
 	public void sendEmailWithAttachment(String toMail, String subject, String emailBody, MultipartFile resume)
 			throws MessagingException, IOException {
 

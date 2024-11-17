@@ -31,6 +31,7 @@ public class HomeController {
 	}
 
 
+
 	@GetMapping("/")
 	public String landingPage() {
 		System.out.println("Default Page");
