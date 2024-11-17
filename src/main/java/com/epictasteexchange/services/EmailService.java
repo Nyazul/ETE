@@ -20,7 +20,7 @@ public class EmailService {
 
 	public void sendSimpleEmail(String toEmail, String subject, String body) {
 		SimpleMailMessage message = new SimpleMailMessage();
-		message.setFrom("ansarinyazul2003@gmail.com"); // You can specify the "from" address
+		message.setFrom("ansarinazmin97@gmail.com");
 		message.setTo(toEmail);
 		message.setSubject(subject);
 		message.setText(body);
@@ -36,10 +36,10 @@ public class EmailService {
 
 		MimeMessageHelper helper = new MimeMessageHelper(message, true); // 'true' for multipart
 
-		helper.setFrom("ansarinyazul2003@gmail.com"); // Sender's email
-		helper.setTo(toMail); // Recipient's email
-		helper.setSubject(subject); // Email subject
-		helper.setText(emailBody); // Email body
+		helper.setFrom("ansarinazmin97@gmail.com");
+		helper.setTo(toMail);
+		helper.setSubject(subject);
+		helper.setText(emailBody);
 
 		helper.addAttachment(resume.getOriginalFilename(), resume);
 

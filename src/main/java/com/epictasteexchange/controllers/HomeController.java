@@ -144,7 +144,7 @@ public class HomeController {
 	                    "Attached Resume: %s",
 	            firstName, lastName, email, phone, address, position, filename);
 
-	    String toMail = "ansarinyazul2003@gmail.com";
+	    String toMail = "info.epictasteexchange@gmail.com";
 
 	    try {
 	        // Attach the resume and send the email
