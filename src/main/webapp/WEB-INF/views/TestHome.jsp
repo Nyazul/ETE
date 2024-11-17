@@ -208,91 +208,91 @@
 		<!-- /About Section -->
 
 		<!-- Clients Section -->
-		<section id="clients" class="clients section">
+<!-- 		<section id="clients" class="clients section"> -->
 
-			<div class="container">
+<!-- 			<div class="container"> -->
 
-				<div class="swiper init-swiper">
-					<script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 40
-                },
-                "480": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 60
-                },
-                "640": {
-                  "slidesPerView": 4,
-                  "spaceBetween": 80
-                },
-                "992": {
-                  "slidesPerView": 6,
-                  "spaceBetween": 120
-                }
-              }
-            }
-          </script>
-					<div class="swiper-wrapper align-items-center">
-						<div class="swiper-slide">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/clients/client-1.png"
-								class="img-fluid" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/clients/client-2.png"
-								class="img-fluid" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/clients/client-3.png"
-								class="img-fluid" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/clients/client-4.png"
-								class="img-fluid" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/clients/client-5.png"
-								class="img-fluid" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/clients/client-6.png"
-								class="img-fluid" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/clients/client-7.png"
-								class="img-fluid" alt="">
-						</div>
-						<div class="swiper-slide">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/clients/client-8.png"
-								class="img-fluid" alt="">
-						</div>
-					</div>
-				</div>
+<!-- 				<div class="swiper init-swiper"> -->
+<!-- 					<script type="application/json" class="swiper-config"> -->
+<!--             { -->
+<!--               "loop": true, -->
+<!--               "speed": 600, -->
+<!--               "autoplay": { -->
+<!--                 "delay": 5000 -->
+<!--               }, -->
+<!--               "slidesPerView": "auto", -->
+<!--               "pagination": { -->
+<!--                 "el": ".swiper-pagination", -->
+<!--                 "type": "bullets", -->
+<!--                 "clickable": true -->
+<!--               }, -->
+<!--               "breakpoints": { -->
+<!--                 "320": { -->
+<!--                   "slidesPerView": 2, -->
+<!--                   "spaceBetween": 40 -->
+<!--                 }, -->
+<!--                 "480": { -->
+<!--                   "slidesPerView": 3, -->
+<!--                   "spaceBetween": 60 -->
+<!--                 }, -->
+<!--                 "640": { -->
+<!--                   "slidesPerView": 4, -->
+<!--                   "spaceBetween": 80 -->
+<!--                 }, -->
+<!--                 "992": { -->
+<!--                   "slidesPerView": 6, -->
+<!--                   "spaceBetween": 120 -->
+<!--                 } -->
+<!--               } -->
+<!--             } -->
+<!--           </script> -->
+<!-- 					<div class="swiper-wrapper align-items-center"> -->
+<!-- 						<div class="swiper-slide"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/clients/client-1.png" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 						</div> -->
+<!-- 						<div class="swiper-slide"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/clients/client-2.png" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 						</div> -->
+<!-- 						<div class="swiper-slide"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/clients/client-3.png" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 						</div> -->
+<!-- 						<div class="swiper-slide"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/clients/client-4.png" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 						</div> -->
+<!-- 						<div class="swiper-slide"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/clients/client-5.png" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 						</div> -->
+<!-- 						<div class="swiper-slide"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/clients/client-6.png" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 						</div> -->
+<!-- 						<div class="swiper-slide"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/clients/client-7.png" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 						</div> -->
+<!-- 						<div class="swiper-slide"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/clients/client-8.png" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
 
-			</div>
+<!-- 			</div> -->
 
-		</section>
+<!-- 		</section> -->
 		<!-- /Clients Section -->
 
 		<!-- Featured Services Section -->
@@ -374,357 +374,357 @@
 		<!-- /Featured Services Section -->
 
 		<!-- Call To Action Section -->
-		<section id="call-to-action"
-			class="call-to-action section dark-background">
+<!-- 		<section id="call-to-action" -->
+<!-- 			class="call-to-action section dark-background"> -->
 
-			<div class="container">
+<!-- 			<div class="container"> -->
 
-				<div class="row" data-aos="zoom-in" data-aos-delay="100">
-					<div class="col-xl-9 text-center text-xl-start">
-						<h3>Call To Action</h3>
-						<p>Duis aute irure dolor in reprehenderit in voluptate velit
-							esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-							occaecat cupidatat non proident, sunt in culpa qui officia
-							deserunt mollit anim id est laborum.</p>
-					</div>
-					<div class="col-xl-3 cta-btn-container text-center">
-						<a class="cta-btn align-middle" href="#">Call To Action</a>
-					</div>
-				</div>
+<!-- 				<div class="row" data-aos="zoom-in" data-aos-delay="100"> -->
+<!-- 					<div class="col-xl-9 text-center text-xl-start"> -->
+<!-- 						<h3>Call To Action</h3> -->
+<!-- 						<p>Duis aute irure dolor in reprehenderit in voluptate velit -->
+<!-- 							esse cillum dolore eu fugiat nulla pariatur. Excepteur sint -->
+<!-- 							occaecat cupidatat non proident, sunt in culpa qui officia -->
+<!-- 							deserunt mollit anim id est laborum.</p> -->
+<!-- 					</div> -->
+<!-- 					<div class="col-xl-3 cta-btn-container text-center"> -->
+<!-- 						<a class="cta-btn align-middle" href="#">Call To Action</a> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
 
-			</div>
+<!-- 			</div> -->
 
-		</section>
+<!-- 		</section> -->
 		<!-- /Call To Action Section -->
 
 		<!-- Services Section -->
-		<section id="services" class="services section">
+<!-- 		<section id="services" class="services section"> -->
 
 			<!-- Section Title -->
-			<div class="container section-title" data-aos="fade-up">
-				<h2>Services</h2>
-				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem
-					sint consectetur velit</p>
-			</div>
+<!-- 			<div class="container section-title" data-aos="fade-up"> -->
+<!-- 				<h2>Services</h2> -->
+<!-- 				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem -->
+<!-- 					sint consectetur velit</p> -->
+<!-- 			</div> -->
 			<!-- End Section Title -->
 
-			<div class="container">
+<!-- 			<div class="container"> -->
 
-				<div class="row gy-4">
+<!-- 				<div class="row gy-4"> -->
 
-					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100">
-						<div class="service-item d-flex">
-							<div class="icon flex-shrink-0">
-								<i class="bi bi-briefcase"></i>
-							</div>
-							<div>
-								<h4 class="title">
-									<a href="service-details.html" class="stretched-link">Lorem
-										Ipsum</a>
-								</h4>
-								<p class="description">Voluptatum deleniti atque corrupti
-									quos dolores et quas molestias excepturi sint occaecati
-									cupiditate non provident</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Service Item -->
+<!-- 					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="100"> -->
+<!-- 						<div class="service-item d-flex"> -->
+<!-- 							<div class="icon flex-shrink-0"> -->
+<!-- 								<i class="bi bi-briefcase"></i> -->
+<!-- 							</div> -->
+<!-- 							<div> -->
+<!-- 								<h4 class="title"> -->
+<!-- 									<a href="service-details.html" class="stretched-link">Lorem -->
+<!-- 										Ipsum</a> -->
+<!-- 								</h4> -->
+<!-- 								<p class="description">Voluptatum deleniti atque corrupti -->
+<!-- 									quos dolores et quas molestias excepturi sint occaecati -->
+<!-- 									cupiditate non provident</p> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 					End Service Item -->
 
-					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200">
-						<div class="service-item d-flex">
-							<div class="icon flex-shrink-0">
-								<i class="bi bi-card-checklist"></i>
-							</div>
-							<div>
-								<h4 class="title">
-									<a href="service-details.html" class="stretched-link">Dolor
-										Sitema</a>
-								</h4>
-								<p class="description">Minim veniam, quis nostrud
-									exercitation ullamco laboris nisi ut aliquip ex ea commodo
-									consequat tarad limino ata</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Service Item -->
+<!-- 					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="200"> -->
+<!-- 						<div class="service-item d-flex"> -->
+<!-- 							<div class="icon flex-shrink-0"> -->
+<!-- 								<i class="bi bi-card-checklist"></i> -->
+<!-- 							</div> -->
+<!-- 							<div> -->
+<!-- 								<h4 class="title"> -->
+<!-- 									<a href="service-details.html" class="stretched-link">Dolor -->
+<!-- 										Sitema</a> -->
+<!-- 								</h4> -->
+<!-- 								<p class="description">Minim veniam, quis nostrud -->
+<!-- 									exercitation ullamco laboris nisi ut aliquip ex ea commodo -->
+<!-- 									consequat tarad limino ata</p> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 					End Service Item -->
 
-					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300">
-						<div class="service-item d-flex">
-							<div class="icon flex-shrink-0">
-								<i class="bi bi-bar-chart"></i>
-							</div>
-							<div>
-								<h4 class="title">
-									<a href="service-details.html" class="stretched-link">Sed
-										ut perspiciatis</a>
-								</h4>
-								<p class="description">Duis aute irure dolor in
-									reprehenderit in voluptate velit esse cillum dolore eu fugiat
-									nulla pariatur</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Service Item -->
+<!-- 					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="300"> -->
+<!-- 						<div class="service-item d-flex"> -->
+<!-- 							<div class="icon flex-shrink-0"> -->
+<!-- 								<i class="bi bi-bar-chart"></i> -->
+<!-- 							</div> -->
+<!-- 							<div> -->
+<!-- 								<h4 class="title"> -->
+<!-- 									<a href="service-details.html" class="stretched-link">Sed -->
+<!-- 										ut perspiciatis</a> -->
+<!-- 								</h4> -->
+<!-- 								<p class="description">Duis aute irure dolor in -->
+<!-- 									reprehenderit in voluptate velit esse cillum dolore eu fugiat -->
+<!-- 									nulla pariatur</p> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 					End Service Item -->
 
-					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400">
-						<div class="service-item d-flex">
-							<div class="icon flex-shrink-0">
-								<i class="bi bi-binoculars"></i>
-							</div>
-							<div>
-								<h4 class="title">
-									<a href="service-details.html" class="stretched-link">Magni
-										Dolores</a>
-								</h4>
-								<p class="description">Excepteur sint occaecat cupidatat non
-									proident, sunt in culpa qui officia deserunt mollit anim id est
-									laborum</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Service Item -->
+<!-- 					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="400"> -->
+<!-- 						<div class="service-item d-flex"> -->
+<!-- 							<div class="icon flex-shrink-0"> -->
+<!-- 								<i class="bi bi-binoculars"></i> -->
+<!-- 							</div> -->
+<!-- 							<div> -->
+<!-- 								<h4 class="title"> -->
+<!-- 									<a href="service-details.html" class="stretched-link">Magni -->
+<!-- 										Dolores</a> -->
+<!-- 								</h4> -->
+<!-- 								<p class="description">Excepteur sint occaecat cupidatat non -->
+<!-- 									proident, sunt in culpa qui officia deserunt mollit anim id est -->
+<!-- 									laborum</p> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 					End Service Item -->
 
-					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500">
-						<div class="service-item d-flex">
-							<div class="icon flex-shrink-0">
-								<i class="bi bi-brightness-high"></i>
-							</div>
-							<div>
-								<h4 class="title">
-									<a href="service-details.html" class="stretched-link">Nemo
-										Enim</a>
-								</h4>
-								<p class="description">At vero eos et accusamus et iusto
-									odio dignissimos ducimus qui blanditiis praesentium voluptatum
-									deleniti atque</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Service Item -->
+<!-- 					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="500"> -->
+<!-- 						<div class="service-item d-flex"> -->
+<!-- 							<div class="icon flex-shrink-0"> -->
+<!-- 								<i class="bi bi-brightness-high"></i> -->
+<!-- 							</div> -->
+<!-- 							<div> -->
+<!-- 								<h4 class="title"> -->
+<!-- 									<a href="service-details.html" class="stretched-link">Nemo -->
+<!-- 										Enim</a> -->
+<!-- 								</h4> -->
+<!-- 								<p class="description">At vero eos et accusamus et iusto -->
+<!-- 									odio dignissimos ducimus qui blanditiis praesentium voluptatum -->
+<!-- 									deleniti atque</p> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 					End Service Item -->
 
-					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600">
-						<div class="service-item d-flex">
-							<div class="icon flex-shrink-0">
-								<i class="bi bi-calendar4-week"></i>
-							</div>
-							<div>
-								<h4 class="title">
-									<a href="service-details.html" class="stretched-link">Eiusmod
-										Tempor</a>
-								</h4>
-								<p class="description">Et harum quidem rerum facilis est et
-									expedita distinctio. Nam libero tempore, cum soluta nobis est
-									eligendi</p>
-							</div>
-						</div>
-					</div>
-					<!-- End Service Item -->
+<!-- 					<div class="col-lg-6 " data-aos="fade-up" data-aos-delay="600"> -->
+<!-- 						<div class="service-item d-flex"> -->
+<!-- 							<div class="icon flex-shrink-0"> -->
+<!-- 								<i class="bi bi-calendar4-week"></i> -->
+<!-- 							</div> -->
+<!-- 							<div> -->
+<!-- 								<h4 class="title"> -->
+<!-- 									<a href="service-details.html" class="stretched-link">Eiusmod -->
+<!-- 										Tempor</a> -->
+<!-- 								</h4> -->
+<!-- 								<p class="description">Et harum quidem rerum facilis est et -->
+<!-- 									expedita distinctio. Nam libero tempore, cum soluta nobis est -->
+<!-- 									eligendi</p> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 					End Service Item -->
 
-				</div>
+<!-- 				</div> -->
 
-			</div>
+<!-- 			</div> -->
 
-		</section>
+<!-- 		</section> -->
 		<!-- /Services Section -->
 
 		<!-- Portfolio Section -->
-		<section id="portfolio" class="portfolio section">
+<!-- 		<section id="portfolio" class="portfolio section"> -->
 
 			<!-- Section Title -->
-			<div class="container section-title" data-aos="fade-up">
-				<h2>Portfolio</h2>
-				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem
-					sint consectetur velit</p>
-			</div>
+<!-- 			<div class="container section-title" data-aos="fade-up"> -->
+<!-- 				<h2>Portfolio</h2> -->
+<!-- 				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem -->
+<!-- 					sint consectetur velit</p> -->
+<!-- 			</div> -->
 			<!-- End Section Title -->
 
-			<div class="container">
+<!-- 			<div class="container"> -->
 
-				<div class="isotope-layout" data-default-filter="*"
-					data-layout="masonry" data-sort="original-order">
+<!-- 				<div class="isotope-layout" data-default-filter="*" -->
+<!-- 					data-layout="masonry" data-sort="original-order"> -->
 
-					<ul class="portfolio-filters isotope-filters" data-aos="fade-up"
-						data-aos-delay="100">
-						<li data-filter="*" class="filter-active">All</li>
-						<li data-filter=".filter-app">App</li>
-						<li data-filter=".filter-product">Card</li>
-						<li data-filter=".filter-branding">Web</li>
-					</ul>
-					<!-- End Portfolio Filters -->
+<!-- 					<ul class="portfolio-filters isotope-filters" data-aos="fade-up" -->
+<!-- 						data-aos-delay="100"> -->
+<!-- 						<li data-filter="*" class="filter-active">All</li> -->
+<!-- 						<li data-filter=".filter-app">App</li> -->
+<!-- 						<li data-filter=".filter-product">Card</li> -->
+<!-- 						<li data-filter=".filter-branding">Web</li> -->
+<!-- 					</ul> -->
+<!-- 					End Portfolio Filters -->
 
-					<div class="row gy-4 isotope-container" data-aos="fade-up"
-						data-aos-delay="200">
+<!-- 					<div class="row gy-4 isotope-container" data-aos="fade-up" -->
+<!-- 						data-aos-delay="200"> -->
 
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
-								class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>App 1</h4>
-								<p>Lorem ipsum, dolor sit</p>
-								<a
-									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-1.jpg"
-									title="App 1" data-gallery="portfolio-gallery-app"
-									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-								<a href="portfolio-details.html" title="More Details"
-									class="details-link"><i class="bi bi-link-45deg"></i></a>
-							</div>
-						</div>
-						<!-- End Portfolio Item -->
+<!-- 						<div -->
+<!-- 							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 							<div class="portfolio-info"> -->
+<!-- 								<h4>App 1</h4> -->
+<!-- 								<p>Lorem ipsum, dolor sit</p> -->
+<!-- 								<a -->
+<!-- 									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-1.jpg" -->
+<!-- 									title="App 1" data-gallery="portfolio-gallery-app" -->
+<!-- 									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+<!-- 								<a href="portfolio-details.html" title="More Details" -->
+<!-- 									class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 						End Portfolio Item -->
 
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
-								class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Product 1</h4>
-								<p>Lorem ipsum, dolor sit</p>
-								<a
-									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-2.jpg"
-									title="Product 1" data-gallery="portfolio-gallery-product"
-									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-								<a href="portfolio-details.html" title="More Details"
-									class="details-link"><i class="bi bi-link-45deg"></i></a>
-							</div>
-						</div>
-						<!-- End Portfolio Item -->
+<!-- 						<div -->
+<!-- 							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 							<div class="portfolio-info"> -->
+<!-- 								<h4>Product 1</h4> -->
+<!-- 								<p>Lorem ipsum, dolor sit</p> -->
+<!-- 								<a -->
+<!-- 									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-2.jpg" -->
+<!-- 									title="Product 1" data-gallery="portfolio-gallery-product" -->
+<!-- 									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+<!-- 								<a href="portfolio-details.html" title="More Details" -->
+<!-- 									class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 						End Portfolio Item -->
 
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
-								class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Branding 1</h4>
-								<p>Lorem ipsum, dolor sit</p>
-								<a
-									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-3.jpg"
-									title="Branding 1" data-gallery="portfolio-gallery-branding"
-									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-								<a href="portfolio-details.html" title="More Details"
-									class="details-link"><i class="bi bi-link-45deg"></i></a>
-							</div>
-						</div>
-						<!-- End Portfolio Item -->
+<!-- 						<div -->
+<!-- 							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 							<div class="portfolio-info"> -->
+<!-- 								<h4>Branding 1</h4> -->
+<!-- 								<p>Lorem ipsum, dolor sit</p> -->
+<!-- 								<a -->
+<!-- 									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-3.jpg" -->
+<!-- 									title="Branding 1" data-gallery="portfolio-gallery-branding" -->
+<!-- 									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+<!-- 								<a href="portfolio-details.html" title="More Details" -->
+<!-- 									class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 						End Portfolio Item -->
 
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
-								class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>App 2</h4>
-								<p>Lorem ipsum, dolor sit</p>
-								<a
-									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-4.jpg"
-									title="App 2" data-gallery="portfolio-gallery-app"
-									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-								<a href="portfolio-details.html" title="More Details"
-									class="details-link"><i class="bi bi-link-45deg"></i></a>
-							</div>
-						</div>
-						<!-- End Portfolio Item -->
+<!-- 						<div -->
+<!-- 							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 							<div class="portfolio-info"> -->
+<!-- 								<h4>App 2</h4> -->
+<!-- 								<p>Lorem ipsum, dolor sit</p> -->
+<!-- 								<a -->
+<!-- 									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-4.jpg" -->
+<!-- 									title="App 2" data-gallery="portfolio-gallery-app" -->
+<!-- 									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+<!-- 								<a href="portfolio-details.html" title="More Details" -->
+<!-- 									class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 						End Portfolio Item -->
 
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
-								class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Product 2</h4>
-								<p>Lorem ipsum, dolor sit</p>
-								<a
-									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-5.jpg"
-									title="Product 2" data-gallery="portfolio-gallery-product"
-									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-								<a href="portfolio-details.html" title="More Details"
-									class="details-link"><i class="bi bi-link-45deg"></i></a>
-							</div>
-						</div>
-						<!-- End Portfolio Item -->
+<!-- 						<div -->
+<!-- 							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 							<div class="portfolio-info"> -->
+<!-- 								<h4>Product 2</h4> -->
+<!-- 								<p>Lorem ipsum, dolor sit</p> -->
+<!-- 								<a -->
+<!-- 									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-5.jpg" -->
+<!-- 									title="Product 2" data-gallery="portfolio-gallery-product" -->
+<!-- 									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+<!-- 								<a href="portfolio-details.html" title="More Details" -->
+<!-- 									class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 						End Portfolio Item -->
 
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
-								class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Branding 2</h4>
-								<p>Lorem ipsum, dolor sit</p>
-								<a
-									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-6.jpg"
-									title="Branding 2" data-gallery="portfolio-gallery-branding"
-									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-								<a href="portfolio-details.html" title="More Details"
-									class="details-link"><i class="bi bi-link-45deg"></i></a>
-							</div>
-						</div>
-						<!-- End Portfolio Item -->
+<!-- 						<div -->
+<!-- 							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 							<div class="portfolio-info"> -->
+<!-- 								<h4>Branding 2</h4> -->
+<!-- 								<p>Lorem ipsum, dolor sit</p> -->
+<!-- 								<a -->
+<!-- 									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-6.jpg" -->
+<!-- 									title="Branding 2" data-gallery="portfolio-gallery-branding" -->
+<!-- 									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+<!-- 								<a href="portfolio-details.html" title="More Details" -->
+<!-- 									class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 						End Portfolio Item -->
 
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
-								class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>App 3</h4>
-								<p>Lorem ipsum, dolor sit</p>
-								<a
-									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-7.jpg"
-									title="App 3" data-gallery="portfolio-gallery-app"
-									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-								<a href="portfolio-details.html" title="More Details"
-									class="details-link"><i class="bi bi-link-45deg"></i></a>
-							</div>
-						</div>
-						<!-- End Portfolio Item -->
+<!-- 						<div -->
+<!-- 							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 							<div class="portfolio-info"> -->
+<!-- 								<h4>App 3</h4> -->
+<!-- 								<p>Lorem ipsum, dolor sit</p> -->
+<!-- 								<a -->
+<!-- 									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-7.jpg" -->
+<!-- 									title="App 3" data-gallery="portfolio-gallery-app" -->
+<!-- 									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+<!-- 								<a href="portfolio-details.html" title="More Details" -->
+<!-- 									class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 						End Portfolio Item -->
 
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
-								class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Product 3</h4>
-								<p>Lorem ipsum, dolor sit</p>
-								<a
-									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-8.jpg"
-									title="Product 3" data-gallery="portfolio-gallery-product"
-									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-								<a href="portfolio-details.html" title="More Details"
-									class="details-link"><i class="bi bi-link-45deg"></i></a>
-							</div>
-						</div>
-						<!-- End Portfolio Item -->
+<!-- 						<div -->
+<!-- 							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 							<div class="portfolio-info"> -->
+<!-- 								<h4>Product 3</h4> -->
+<!-- 								<p>Lorem ipsum, dolor sit</p> -->
+<!-- 								<a -->
+<!-- 									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-8.jpg" -->
+<!-- 									title="Product 3" data-gallery="portfolio-gallery-product" -->
+<!-- 									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+<!-- 								<a href="portfolio-details.html" title="More Details" -->
+<!-- 									class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 						End Portfolio Item -->
 
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-							<img
-								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
-								class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4>Branding 3</h4>
-								<p>Lorem ipsum, dolor sit</p>
-								<a
-									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-9.jpg"
-									title="Branding 2" data-gallery="portfolio-gallery-branding"
-									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-								<a href="portfolio-details.html" title="More Details"
-									class="details-link"><i class="bi bi-link-45deg"></i></a>
-							</div>
-						</div>
-						<!-- End Portfolio Item -->
+<!-- 						<div -->
+<!-- 							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"> -->
+<!-- 							<img -->
+<!-- 								src="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" -->
+<!-- 								class="img-fluid" alt=""> -->
+<!-- 							<div class="portfolio-info"> -->
+<!-- 								<h4>Branding 3</h4> -->
+<!-- 								<p>Lorem ipsum, dolor sit</p> -->
+<!-- 								<a -->
+<!-- 									href="${pageContext.request.contextPath}/assets/img/masonry-portfolio/masonry-portfolio-9.jpg" -->
+<!-- 									title="Branding 2" data-gallery="portfolio-gallery-branding" -->
+<!-- 									class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a> -->
+<!-- 								<a href="portfolio-details.html" title="More Details" -->
+<!-- 									class="details-link"><i class="bi bi-link-45deg"></i></a> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
+<!-- 						End Portfolio Item -->
 
-					</div>
-					<!-- End Portfolio Container -->
+<!-- 					</div> -->
+<!-- 					End Portfolio Container -->
 
-				</div>
+<!-- 				</div> -->
 
-			</div>
+<!-- 			</div> -->
 
-		</section>
+<!-- 		</section> -->
 		<!-- /Portfolio Section -->
 
 		<!-- Testimonials Section -->
@@ -877,358 +877,358 @@
 		<!-- /Testimonials Section -->
 
 		<!-- Pricing Section -->
-		<section id="pricing" class="pricing section">
+<!-- 		<section id="pricing" class="pricing section"> -->
 
-			<!-- Section Title -->
-			<div class="container section-title" data-aos="fade-up">
-				<h2>Pricing</h2>
-				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem
-					sint consectetur velit</p>
-			</div>
-			<!-- End Section Title -->
+<!-- 			<!-- Section Title --> -->
+<!-- 			<div class="container section-title" data-aos="fade-up"> -->
+<!-- 				<h2>Pricing</h2> -->
+<!-- 				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem -->
+<!-- 					sint consectetur velit</p> -->
+<!-- 			</div> -->
+<!-- 			<!-- End Section Title --> -->
 
-			<div class="container">
+<!-- 			<div class="container"> -->
 
-				<div class="row gy-4">
+<!-- 				<div class="row gy-4"> -->
 
-					<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-						<div class="pricing-item">
-							<h3>Free Plan</h3>
-							<h4>
-								<sup>$</sup>0<span> / month</span>
-							</h4>
-							<ul>
-								<li><i class="bi bi-check"></i> <span>Quam
-										adipiscing vitae proin</span></li>
-								<li><i class="bi bi-check"></i> <span>Nec feugiat
-										nisl pretium</span></li>
-								<li><i class="bi bi-check"></i> <span>Nulla at
-										volutpat diam uteera</span></li>
-								<li class="na"><i class="bi bi-x"></i> <span>Pharetra
-										massa massa ultricies</span></li>
-								<li class="na"><i class="bi bi-x"></i> <span>Massa
-										ultricies mi quis hendrerit</span></li>
-							</ul>
-							<a href="#" class="buy-btn">Buy Now</a>
-						</div>
-					</div>
-					<!-- End Pricing Item -->
+<!-- 					<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100"> -->
+<!-- 						<div class="pricing-item"> -->
+<!-- 							<h3>Free Plan</h3> -->
+<!-- 							<h4> -->
+<!-- 								<sup>$</sup>0<span> / month</span> -->
+<!-- 							</h4> -->
+<!-- 							<ul> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Quam -->
+<!-- 										adipiscing vitae proin</span></li> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Nec feugiat -->
+<!-- 										nisl pretium</span></li> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Nulla at -->
+<!-- 										volutpat diam uteera</span></li> -->
+<!-- 								<li class="na"><i class="bi bi-x"></i> <span>Pharetra -->
+<!-- 										massa massa ultricies</span></li> -->
+<!-- 								<li class="na"><i class="bi bi-x"></i> <span>Massa -->
+<!-- 										ultricies mi quis hendrerit</span></li> -->
+<!-- 							</ul> -->
+<!-- 							<a href="#" class="buy-btn">Buy Now</a> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 					End Pricing Item -->
 
-					<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-						<div class="pricing-item featured">
-							<h3>Business Plan</h3>
-							<h4>
-								<sup>$</sup>29<span> / month</span>
-							</h4>
-							<ul>
-								<li><i class="bi bi-check"></i> <span>Quam
-										adipiscing vitae proin</span></li>
-								<li><i class="bi bi-check"></i> <span>Nec feugiat
-										nisl pretium</span></li>
-								<li><i class="bi bi-check"></i> <span>Nulla at
-										volutpat diam uteera</span></li>
-								<li><i class="bi bi-check"></i> <span>Pharetra massa
-										massa ultricies</span></li>
-								<li><i class="bi bi-check"></i> <span>Massa
-										ultricies mi quis hendrerit</span></li>
-							</ul>
-							<a href="#" class="buy-btn">Buy Now</a>
-						</div>
-					</div>
-					<!-- End Pricing Item -->
+<!-- 					<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200"> -->
+<!-- 						<div class="pricing-item featured"> -->
+<!-- 							<h3>Business Plan</h3> -->
+<!-- 							<h4> -->
+<!-- 								<sup>$</sup>29<span> / month</span> -->
+<!-- 							</h4> -->
+<!-- 							<ul> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Quam -->
+<!-- 										adipiscing vitae proin</span></li> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Nec feugiat -->
+<!-- 										nisl pretium</span></li> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Nulla at -->
+<!-- 										volutpat diam uteera</span></li> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Pharetra massa -->
+<!-- 										massa ultricies</span></li> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Massa -->
+<!-- 										ultricies mi quis hendrerit</span></li> -->
+<!-- 							</ul> -->
+<!-- 							<a href="#" class="buy-btn">Buy Now</a> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 					End Pricing Item -->
 
-					<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-						<div class="pricing-item">
-							<h3>Developer Plan</h3>
-							<h4>
-								<sup>$</sup>49<span> / month</span>
-							</h4>
-							<ul>
-								<li><i class="bi bi-check"></i> <span>Quam
-										adipiscing vitae proin</span></li>
-								<li><i class="bi bi-check"></i> <span>Nec feugiat
-										nisl pretium</span></li>
-								<li><i class="bi bi-check"></i> <span>Nulla at
-										volutpat diam uteera</span></li>
-								<li><i class="bi bi-check"></i> <span>Pharetra massa
-										massa ultricies</span></li>
-								<li><i class="bi bi-check"></i> <span>Massa
-										ultricies mi quis hendrerit</span></li>
-							</ul>
-							<a href="#" class="buy-btn">Buy Now</a>
-						</div>
-					</div>
-					<!-- End Pricing Item -->
+<!-- 					<div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300"> -->
+<!-- 						<div class="pricing-item"> -->
+<!-- 							<h3>Developer Plan</h3> -->
+<!-- 							<h4> -->
+<!-- 								<sup>$</sup>49<span> / month</span> -->
+<!-- 							</h4> -->
+<!-- 							<ul> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Quam -->
+<!-- 										adipiscing vitae proin</span></li> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Nec feugiat -->
+<!-- 										nisl pretium</span></li> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Nulla at -->
+<!-- 										volutpat diam uteera</span></li> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Pharetra massa -->
+<!-- 										massa ultricies</span></li> -->
+<!-- 								<li><i class="bi bi-check"></i> <span>Massa -->
+<!-- 										ultricies mi quis hendrerit</span></li> -->
+<!-- 							</ul> -->
+<!-- 							<a href="#" class="buy-btn">Buy Now</a> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 					End Pricing Item -->
 
-				</div>
+<!-- 				</div> -->
 
-			</div>
+<!-- 			</div> -->
 
-		</section>
+<!-- 		</section> -->
 		<!-- /Pricing Section -->
 
 		<!-- Faq Section -->
-		<section id="faq" class="faq section">
+<!-- 		<section id="faq" class="faq section"> -->
 
 			<!-- Section Title -->
-			<div class="container section-title" data-aos="fade-up">
-				<h2>Frequently Asked Questions</h2>
-				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem
-					sint consectetur velit</p>
-			</div>
+<!-- 			<div class="container section-title" data-aos="fade-up"> -->
+<!-- 				<h2>Frequently Asked Questions</h2> -->
+<!-- 				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem -->
+<!-- 					sint consectetur velit</p> -->
+<!-- 			</div> -->
 			<!-- End Section Title -->
 
-			<div class="container">
+<!-- 			<div class="container"> -->
 
-				<div class="row">
+<!-- 				<div class="row"> -->
 
-					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+<!-- 					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="100"> -->
 
-						<div class="faq-container">
+<!-- 						<div class="faq-container"> -->
 
-							<div class="faq-item faq-active">
-								<h3>Non consectetur a erat nam at lectus urna duis?</h3>
-								<div class="faq-content">
-									<p>Feugiat pretium nibh ipsum consequat. Tempus iaculis
-										urna id volutpat lacus laoreet non curabitur gravida.
-										Venenatis lectus magna fringilla urna porttitor rhoncus dolor
-										purus non.</p>
-								</div>
-								<i class="faq-toggle bi bi-chevron-right"></i>
-							</div>
-							<!-- End Faq item-->
+<!-- 							<div class="faq-item faq-active"> -->
+<!-- 								<h3>Non consectetur a erat nam at lectus urna duis?</h3> -->
+<!-- 								<div class="faq-content"> -->
+<!-- 									<p>Feugiat pretium nibh ipsum consequat. Tempus iaculis -->
+<!-- 										urna id volutpat lacus laoreet non curabitur gravida. -->
+<!-- 										Venenatis lectus magna fringilla urna porttitor rhoncus dolor -->
+<!-- 										purus non.</p> -->
+<!-- 								</div> -->
+<!-- 								<i class="faq-toggle bi bi-chevron-right"></i> -->
+<!-- 							</div> -->
+<!-- 							End Faq item -->
 
-							<div class="faq-item">
-								<h3>Feugiat scelerisque varius morbi enim nunc faucibus a
-									pellentesque?</h3>
-								<div class="faq-content">
-									<p>Dolor sit amet consectetur adipiscing elit pellentesque
-										habitant morbi. Id interdum velit laoreet id donec ultrices.
-										Fringilla phasellus faucibus scelerisque eleifend donec
-										pretium. Est pellentesque elit ullamcorper dignissim. Mauris
-										ultrices eros in cursus turpis massa tincidunt dui.</p>
-								</div>
-								<i class="faq-toggle bi bi-chevron-right"></i>
-							</div>
-							<!-- End Faq item-->
+<!-- 							<div class="faq-item"> -->
+<!-- 								<h3>Feugiat scelerisque varius morbi enim nunc faucibus a -->
+<!-- 									pellentesque?</h3> -->
+<!-- 								<div class="faq-content"> -->
+<!-- 									<p>Dolor sit amet consectetur adipiscing elit pellentesque -->
+<!-- 										habitant morbi. Id interdum velit laoreet id donec ultrices. -->
+<!-- 										Fringilla phasellus faucibus scelerisque eleifend donec -->
+<!-- 										pretium. Est pellentesque elit ullamcorper dignissim. Mauris -->
+<!-- 										ultrices eros in cursus turpis massa tincidunt dui.</p> -->
+<!-- 								</div> -->
+<!-- 								<i class="faq-toggle bi bi-chevron-right"></i> -->
+<!-- 							</div> -->
+<!-- 							End Faq item -->
 
-							<div class="faq-item">
-								<h3>Dolor sit amet consectetur adipiscing elit
-									pellentesque?</h3>
-								<div class="faq-content">
-									<p>Eleifend mi in nulla posuere sollicitudin aliquam
-										ultrices sagittis orci. Faucibus pulvinar elementum integer
-										enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum
-										tellus pellentesque eu tincidunt. Lectus urna duis convallis
-										convallis tellus. Urna molestie at elementum eu facilisis sed
-										odio morbi quis</p>
-								</div>
-								<i class="faq-toggle bi bi-chevron-right"></i>
-							</div>
-							<!-- End Faq item-->
+<!-- 							<div class="faq-item"> -->
+<!-- 								<h3>Dolor sit amet consectetur adipiscing elit -->
+<!-- 									pellentesque?</h3> -->
+<!-- 								<div class="faq-content"> -->
+<!-- 									<p>Eleifend mi in nulla posuere sollicitudin aliquam -->
+<!-- 										ultrices sagittis orci. Faucibus pulvinar elementum integer -->
+<!-- 										enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum -->
+<!-- 										tellus pellentesque eu tincidunt. Lectus urna duis convallis -->
+<!-- 										convallis tellus. Urna molestie at elementum eu facilisis sed -->
+<!-- 										odio morbi quis</p> -->
+<!-- 								</div> -->
+<!-- 								<i class="faq-toggle bi bi-chevron-right"></i> -->
+<!-- 							</div> -->
+<!-- 							End Faq item -->
 
-						</div>
+<!-- 						</div> -->
 
-					</div>
-					<!-- End Faq Column-->
+<!-- 					</div> -->
+<!-- 					End Faq Column -->
 
-					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+<!-- 					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="200"> -->
 
-						<div class="faq-container">
+<!-- 						<div class="faq-container"> -->
 
-							<div class="faq-item">
-								<h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in
-									nulla?</h3>
-								<div class="faq-content">
-									<p>Dolor sit amet consectetur adipiscing elit pellentesque
-										habitant morbi. Id interdum velit laoreet id donec ultrices.
-										Fringilla phasellus faucibus scelerisque eleifend donec
-										pretium. Est pellentesque elit ullamcorper dignissim. Mauris
-										ultrices eros in cursus turpis massa tincidunt dui.</p>
-								</div>
-								<i class="faq-toggle bi bi-chevron-right"></i>
-							</div>
-							<!-- End Faq item-->
+<!-- 							<div class="faq-item"> -->
+<!-- 								<h3>Ac odio tempor orci dapibus. Aliquam eleifend mi in -->
+<!-- 									nulla?</h3> -->
+<!-- 								<div class="faq-content"> -->
+<!-- 									<p>Dolor sit amet consectetur adipiscing elit pellentesque -->
+<!-- 										habitant morbi. Id interdum velit laoreet id donec ultrices. -->
+<!-- 										Fringilla phasellus faucibus scelerisque eleifend donec -->
+<!-- 										pretium. Est pellentesque elit ullamcorper dignissim. Mauris -->
+<!-- 										ultrices eros in cursus turpis massa tincidunt dui.</p> -->
+<!-- 								</div> -->
+<!-- 								<i class="faq-toggle bi bi-chevron-right"></i> -->
+<!-- 							</div> -->
+<!-- 							End Faq item -->
 
-							<div class="faq-item">
-								<h3>Tempus quam pellentesque nec nam aliquam sem et tortor
-									consequat?</h3>
-								<div class="faq-content">
-									<p>Molestie a iaculis at erat pellentesque adipiscing
-										commodo. Dignissim suspendisse in est ante in. Nunc vel risus
-										commodo viverra maecenas accumsan. Sit amet nisl suscipit
-										adipiscing bibendum est. Purus gravida quis blandit turpis
-										cursus in</p>
-								</div>
-								<i class="faq-toggle bi bi-chevron-right"></i>
-							</div>
-							<!-- End Faq item-->
+<!-- 							<div class="faq-item"> -->
+<!-- 								<h3>Tempus quam pellentesque nec nam aliquam sem et tortor -->
+<!-- 									consequat?</h3> -->
+<!-- 								<div class="faq-content"> -->
+<!-- 									<p>Molestie a iaculis at erat pellentesque adipiscing -->
+<!-- 										commodo. Dignissim suspendisse in est ante in. Nunc vel risus -->
+<!-- 										commodo viverra maecenas accumsan. Sit amet nisl suscipit -->
+<!-- 										adipiscing bibendum est. Purus gravida quis blandit turpis -->
+<!-- 										cursus in</p> -->
+<!-- 								</div> -->
+<!-- 								<i class="faq-toggle bi bi-chevron-right"></i> -->
+<!-- 							</div> -->
+<!-- 							End Faq item -->
 
-							<div class="faq-item">
-								<h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3>
-								<div class="faq-content">
-									<p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis
-										et consequatur non sed in suscipit sequi. Distinctio ipsam
-										dolore et.</p>
-								</div>
-								<i class="faq-toggle bi bi-chevron-right"></i>
-							</div>
-							<!-- End Faq item-->
+<!-- 							<div class="faq-item"> -->
+<!-- 								<h3>Perspiciatis quod quo quos nulla quo illum ullam?</h3> -->
+<!-- 								<div class="faq-content"> -->
+<!-- 									<p>Enim ea facilis quaerat voluptas quidem et dolorem. Quis -->
+<!-- 										et consequatur non sed in suscipit sequi. Distinctio ipsam -->
+<!-- 										dolore et.</p> -->
+<!-- 								</div> -->
+<!-- 								<i class="faq-toggle bi bi-chevron-right"></i> -->
+<!-- 							</div> -->
+<!-- 							End Faq item -->
 
-						</div>
+<!-- 						</div> -->
 
-					</div>
-					<!-- End Faq Column-->
+<!-- 					</div> -->
+<!-- 					End Faq Column -->
 
-				</div>
+<!-- 				</div> -->
 
-			</div>
+<!-- 			</div> -->
 
-		</section>
+<!-- 		</section> -->
 		<!-- /Faq Section -->
 
 		<!-- Team Section -->
-		<section id="team" class="team section">
-			<!-- Section Title -->
-			<div class="container section-title" data-aos="fade-up">
-				<h2>Team</h2>
-				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem
-					sint consectetur velit</p>
-			</div>
+<!-- 		<section id="team" class="team section"> -->
+ 			<!-- Section Title -->
+<!-- 			<div class="container section-title" data-aos="fade-up"> -->
+<!-- 				<h2>Team</h2> -->
+<!-- 				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem -->
+<!-- 					sint consectetur velit</p> -->
+<!-- 			</div> -->
 			<!-- End Section Title -->
-			<div class="site-section slider-team-wrap">
-				<div class="container">
+<!-- 			<div class="site-section slider-team-wrap"> -->
+<!-- 				<div class="container"> -->
 
-					<div class="slider-nav d-flex justify-content-end mb-3">
-						<a href="#" class="js-prev js-custom-prev"><i
-							class="bi bi-arrow-left-short"></i></a> <a href="#"
-							class="js-next js-custom-next"><i
-							class="bi bi-arrow-right-short"></i></a>
-					</div>
+<!-- 					<div class="slider-nav d-flex justify-content-end mb-3"> -->
+<!-- 						<a href="#" class="js-prev js-custom-prev"><i -->
+<!-- 							class="bi bi-arrow-left-short"></i></a> <a href="#" -->
+<!-- 							class="js-next js-custom-next"><i -->
+<!-- 							class="bi bi-arrow-right-short"></i></a> -->
+<!-- 					</div> -->
 
-					<div class="swiper init-swiper" data-aos="fade-up"
-						data-aos-delay="100">
-						<script type="application/json" class="swiper-config">
-              {
-                "loop": true,
-                "speed": 600,
-                "autoplay": {
-                  "delay": 5000
-                },
-                "slidesPerView": "1",
-                "pagination": {
-                  "el": ".swiper-pagination",
-                  "type": "bullets",
-                  "clickable": true
-                },
-                "navigation": {
-                  "nextEl": ".js-custom-next",
-                  "prevEl": ".js-custom-prev"
-                },
-                "breakpoints": {
-                  "640": {
-                    "slidesPerView": 2,
-                    "spaceBetween": 30
-                  },
-                  "768": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 30
-                  },
-                  "1200": {
-                    "slidesPerView": 3,
-                    "spaceBetween": 30
-                  }
-                }
-              }
-            </script>
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
-								<div class="team">
-									<div class="pic">
-										<img
-											src="${pageContext.request.contextPath}/assets/img/team/team-1.jpg"
-											alt="Image" class="img-fluid">
-									</div>
-									<h3 clas="">
-										<a href="#"><span class="">Jeremy</span> Walker</a>
-									</h3>
-									<span class="d-block position">CEO, Founder, Atty.</span>
-									<p>Separated they live in. Separated they live in
-										Bookmarksgrove right at the coast of the Semantics, a large
-										language ocean.</p>
-									<p class="mb-0">
-										<a href="#" class="more dark">Learn More <span
-											class="bi bi-arrow-right-short"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="team">
-									<div class="pic">
-										<img
-											src="${pageContext.request.contextPath}/assets/img/team/team-2.jpg"
-											alt="Image" class="img-fluid">
-									</div>
-									<h3 clas="">
-										<a href="#"><span class="">Lawson</span> Arnold</a>
-									</h3>
-									<span class="d-block position">CEO, Founder, Atty.</span>
-									<p>Separated they live in. Separated they live in
-										Bookmarksgrove right at the coast of the Semantics, a large
-										language ocean.</p>
-									<p class="mb-0">
-										<a href="#" class="more dark">Learn More <span
-											class="bi bi-arrow-right-short"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="team">
-									<div class="pic">
-										<img
-											src="${pageContext.request.contextPath}/assets/img/team/team-3.jpg"
-											alt="Image" class="img-fluid">
-									</div>
-									<h3 clas="">
-										<a href="#"><span class="">Patrik</span> White</a>
-									</h3>
-									<span class="d-block position">CEO, Founder, Atty.</span>
-									<p>Separated they live in. Separated they live in
-										Bookmarksgrove right at the coast of the Semantics, a large
-										language ocean.</p>
-									<p class="mb-0">
-										<a href="#" class="more dark">Learn More <span
-											class="bi bi-arrow-right-short"></span></a>
-									</p>
-								</div>
-							</div>
-							<div class="swiper-slide">
-								<div class="team">
-									<div class="pic">
-										<img
-											src="${pageContext.request.contextPath}/assets/img/team/team-4.jpg"
-											alt="Image" class="img-fluid">
-									</div>
-									<h3 clas="">
-										<a href="#"><span class="">Kathryn</span> Ryan</a>
-									</h3>
-									<span class="d-block position">CEO, Founder, Atty.</span>
-									<p>Separated they live in. Separated they live in
-										Bookmarksgrove right at the coast of the Semantics, a large
-										language ocean.</p>
-									<p class="mb-0">
-										<a href="#" class="more dark">Learn More <span
-											class="bi bi-arrow-right-short"></span></a>
-									</p>
-								</div>
-							</div>
-							<!-- <div class="swiper-slide"></div> -->
-						</div>
-					</div>
-				</div>
-				<!-- /.container -->
-			</div>
-		</section>
+<!-- 					<div class="swiper init-swiper" data-aos="fade-up" -->
+<!-- 						data-aos-delay="100"> -->
+<!-- 						<script type="application/json" class="swiper-config"> -->
+<!--               { -->
+<!--                 "loop": true, -->
+<!--                 "speed": 600, -->
+<!--                 "autoplay": { -->
+<!--                   "delay": 5000 -->
+<!--                 }, -->
+<!--                 "slidesPerView": "1", -->
+<!--                 "pagination": { -->
+<!--                   "el": ".swiper-pagination", -->
+<!--                   "type": "bullets", -->
+<!--                   "clickable": true -->
+<!--                 }, -->
+<!--                 "navigation": { -->
+<!--                   "nextEl": ".js-custom-next", -->
+<!--                   "prevEl": ".js-custom-prev" -->
+<!--                 }, -->
+<!--                 "breakpoints": { -->
+<!--                   "640": { -->
+<!--                     "slidesPerView": 2, -->
+<!--                     "spaceBetween": 30 -->
+<!--                   }, -->
+<!--                   "768": { -->
+<!--                     "slidesPerView": 3, -->
+<!--                     "spaceBetween": 30 -->
+<!--                   }, -->
+<!--                   "1200": { -->
+<!--                     "slidesPerView": 3, -->
+<!--                     "spaceBetween": 30 -->
+<!--                   } -->
+<!--                 } -->
+<!--               } -->
+<!--             </script> -->
+<!-- 						<div class="swiper-wrapper"> -->
+<!-- 							<div class="swiper-slide"> -->
+<!-- 								<div class="team"> -->
+<!-- 									<div class="pic"> -->
+<!-- 										<img -->
+<!-- 											src="${pageContext.request.contextPath}/assets/img/team/team-1.jpg" -->
+<!-- 											alt="Image" class="img-fluid"> -->
+<!-- 									</div> -->
+<!-- 									<h3 clas=""> -->
+<!-- 										<a href="#"><span class="">Jeremy</span> Walker</a> -->
+<!-- 									</h3> -->
+<!-- 									<span class="d-block position">CEO, Founder, Atty.</span> -->
+<!-- 									<p>Separated they live in. Separated they live in -->
+<!-- 										Bookmarksgrove right at the coast of the Semantics, a large -->
+<!-- 										language ocean.</p> -->
+<!-- 									<p class="mb-0"> -->
+<!-- 										<a href="#" class="more dark">Learn More <span -->
+<!-- 											class="bi bi-arrow-right-short"></span></a> -->
+<!-- 									</p> -->
+<!-- 								</div> -->
+<!-- 							</div> -->
+<!-- 							<div class="swiper-slide"> -->
+<!-- 								<div class="team"> -->
+<!-- 									<div class="pic"> -->
+<!-- 										<img -->
+<!-- 											src="${pageContext.request.contextPath}/assets/img/team/team-2.jpg" -->
+<!-- 											alt="Image" class="img-fluid"> -->
+<!-- 									</div> -->
+<!-- 									<h3 clas=""> -->
+<!-- 										<a href="#"><span class="">Lawson</span> Arnold</a> -->
+<!-- 									</h3> -->
+<!-- 									<span class="d-block position">CEO, Founder, Atty.</span> -->
+<!-- 									<p>Separated they live in. Separated they live in -->
+<!-- 										Bookmarksgrove right at the coast of the Semantics, a large -->
+<!-- 										language ocean.</p> -->
+<!-- 									<p class="mb-0"> -->
+<!-- 										<a href="#" class="more dark">Learn More <span -->
+<!-- 											class="bi bi-arrow-right-short"></span></a> -->
+<!-- 									</p> -->
+<!-- 								</div> -->
+<!-- 							</div> -->
+<!-- 							<div class="swiper-slide"> -->
+<!-- 								<div class="team"> -->
+<!-- 									<div class="pic"> -->
+<!-- 										<img -->
+<!-- 											src="${pageContext.request.contextPath}/assets/img/team/team-3.jpg" -->
+<!-- 											alt="Image" class="img-fluid"> -->
+<!-- 									</div> -->
+<!-- 									<h3 clas=""> -->
+<!-- 										<a href="#"><span class="">Patrik</span> White</a> -->
+<!-- 									</h3> -->
+<!-- 									<span class="d-block position">CEO, Founder, Atty.</span> -->
+<!-- 									<p>Separated they live in. Separated they live in -->
+<!-- 										Bookmarksgrove right at the coast of the Semantics, a large -->
+<!-- 										language ocean.</p> -->
+<!-- 									<p class="mb-0"> -->
+<!-- 										<a href="#" class="more dark">Learn More <span -->
+<!-- 											class="bi bi-arrow-right-short"></span></a> -->
+<!-- 									</p> -->
+<!-- 								</div> -->
+<!-- 							</div> -->
+<!-- 							<div class="swiper-slide"> -->
+<!-- 								<div class="team"> -->
+<!-- 									<div class="pic"> -->
+<!-- 										<img -->
+<!-- 											src="${pageContext.request.contextPath}/assets/img/team/team-4.jpg" -->
+<!-- 											alt="Image" class="img-fluid"> -->
+<!-- 									</div> -->
+<!-- 									<h3 clas=""> -->
+<!-- 										<a href="#"><span class="">Kathryn</span> Ryan</a> -->
+<!-- 									</h3> -->
+<!-- 									<span class="d-block position">CEO, Founder, Atty.</span> -->
+<!-- 									<p>Separated they live in. Separated they live in -->
+<!-- 										Bookmarksgrove right at the coast of the Semantics, a large -->
+<!-- 										language ocean.</p> -->
+<!-- 									<p class="mb-0"> -->
+<!-- 										<a href="#" class="more dark">Learn More <span -->
+<!-- 											class="bi bi-arrow-right-short"></span></a> -->
+<!-- 									</p> -->
+<!-- 								</div> -->
+<!-- 							</div> -->
+<!-- 							<div class="swiper-slide"></div> -->
+<!-- 						</div> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 				/.container -->
+<!-- 			</div> -->
+<!-- 		</section> -->
 		<!-- /Team Section -->
 
 		<!-- Contact Section -->
@@ -1237,8 +1237,7 @@
 			<!-- Section Title -->
 			<div class="container section-title" data-aos="fade-up">
 				<h2>Contact</h2>
-				<p>Necessitatibus eius consequatur ex aliquid fuga eum quidem
-					sint consectetur velit</p>
+				<p>For inquiries or further assistance, please don't hesitate to contact us. We are here to support you</p>
 			</div>
 			<!-- End Section Title -->
 
@@ -1246,7 +1245,7 @@
 
 				<div class="mb-4" data-aos="fade-up" data-aos-delay="200">
 					<iframe style="border: 0; width: 100%; height: 270px;"
-						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d465.3191343094204!2d71.76870365029147!3d21.09050522056588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be23b320c0b8eaf%3A0x72818150f092b2de!2sHotel%20Sunlight!5e0!3m2!1sen!2sin!4v1731871236800!5m2!1sen!2sin"
 						frameborder="0" allowfullscreen="" loading="lazy"
 						referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
@@ -1270,7 +1269,7 @@
 							<i class="bi bi-telephone flex-shrink-0"></i>
 							<div>
 								<h3>Call Us</h3>
-								<p>+1 5589 55488 55</p>
+								<p>+91 8141493502 / +91 9923213747</p>
 							</div>
 						</div>
 						<!-- End Info Item -->
@@ -1280,50 +1279,50 @@
 							<i class="bi bi-envelope flex-shrink-0"></i>
 							<div>
 								<h3>Email Us</h3>
-								<p>info@example.com</p>
+								<p>info.epictasteexchange@gmail.com</p>
 							</div>
 						</div>
 						<!-- End Info Item -->
 
 					</div>
 
-					<div class="col-lg-8">
-						<form action="forms/contact.php" method="post"
-							class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-							<div class="row gy-4">
+<!-- 					<div class="col-lg-8"> -->
+<!-- 						<form action="forms/contact.php" method="post" -->
+<!-- 							class="php-email-form" data-aos="fade-up" data-aos-delay="200"> -->
+<!-- 							<div class="row gy-4"> -->
 
-								<div class="col-md-6">
-									<input type="text" name="name" class="form-control"
-										placeholder="Your Name" required="">
-								</div>
+<!-- 								<div class="col-md-6"> -->
+<!-- 									<input type="text" name="name" class="form-control" -->
+<!-- 										placeholder="Your Name" required=""> -->
+<!-- 								</div> -->
 
-								<div class="col-md-6 ">
-									<input type="email" class="form-control" name="email"
-										placeholder="Your Email" required="">
-								</div>
+<!-- 								<div class="col-md-6 "> -->
+<!-- 									<input type="email" class="form-control" name="email" -->
+<!-- 										placeholder="Your Email" required=""> -->
+<!-- 								</div> -->
 
-								<div class="col-md-12">
-									<input type="text" class="form-control" name="subject"
-										placeholder="Subject" required="">
-								</div>
+<!-- 								<div class="col-md-12"> -->
+<!-- 									<input type="text" class="form-control" name="subject" -->
+<!-- 										placeholder="Subject" required=""> -->
+<!-- 								</div> -->
 
-								<div class="col-md-12">
-									<textarea class="form-control" name="message" rows="6"
-										placeholder="Message" required=""></textarea>
-								</div>
+<!-- 								<div class="col-md-12"> -->
+<!-- 									<textarea class="form-control" name="message" rows="6" -->
+<!-- 										placeholder="Message" required=""></textarea> -->
+<!-- 								</div> -->
 
-								<div class="col-md-12 text-center">
-									<div class="loading">Loading</div>
-									<div class="error-message"></div>
-									<div class="sent-message">Your message has been sent.
-										Thank you!</div>
+<!-- 								<div class="col-md-12 text-center"> -->
+<!-- 									<div class="loading">Loading</div> -->
+<!-- 									<div class="error-message"></div> -->
+<!-- 									<div class="sent-message">Your message has been sent. -->
+<!-- 										Thank you!</div> -->
 
-									<button type="submit">Send Message</button>
-								</div>
+<!-- 									<button type="submit">Send Message</button> -->
+<!-- 								</div> -->
 
-							</div>
-						</form>
-					</div>
+<!-- 							</div> -->
+<!-- 						</form> -->
+<!-- 					</div> -->
 					<!-- End Contact Form -->
 
 				</div>
@@ -1337,28 +1336,28 @@
 
 	<footer id="footer" class="footer dark-background">
 
-		<div class="footer-newsletter">
-			<div class="container">
-				<div class="row justify-content-center text-center">
-					<div class="col-lg-6">
-						<h4>Join Our Newsletter</h4>
-						<p>Subscribe to our newsletter and receive the latest news
-							about our products and services!</p>
-						<form action="forms/newsletter.php" method="post"
-							class="php-email-form">
-							<div class="newsletter-form">
-								<input type="email" name="email"><input type="submit"
-									value="Subscribe">
-							</div>
-							<div class="loading">Loading</div>
-							<div class="error-message"></div>
-							<div class="sent-message">Your subscription request has
-								been sent. Thank you!</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+<!-- 		<div class="footer-newsletter"> -->
+<!-- 			<div class="container"> -->
+<!-- 				<div class="row justify-content-center text-center"> -->
+<!-- 					<div class="col-lg-6"> -->
+<!-- 						<h4>Join Our Newsletter</h4> -->
+<!-- 						<p>Subscribe to our newsletter and receive the latest news -->
+<!-- 							about our products and services!</p> -->
+<!-- 						<form action="forms/newsletter.php" method="post" -->
+<!-- 							class="php-email-form"> -->
+<!-- 							<div class="newsletter-form"> -->
+<!-- 								<input type="email" name="email"><input type="submit" -->
+<!-- 									value="Subscribe"> -->
+<!-- 							</div> -->
+<!-- 							<div class="loading">Loading</div> -->
+<!-- 							<div class="error-message"></div> -->
+<!-- 							<div class="sent-message">Your subscription request has -->
+<!-- 								been sent. Thank you!</div> -->
+<!-- 						</form> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</div> -->
+<!-- 		</div> -->
 
 		<div class="container footer-top">
 			<div class="row gy-4">
