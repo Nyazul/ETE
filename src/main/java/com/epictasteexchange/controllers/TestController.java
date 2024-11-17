@@ -16,6 +16,11 @@ public class TestController {
 	@Autowired
 	ProductService productService;
 
+	@GetMapping("")
+	public String mainpage() {
+		System.out.println("Default Test Home Page");
+		return "TestHome";
+	}
 
 	@GetMapping("/")
 	public String landingPage() {
