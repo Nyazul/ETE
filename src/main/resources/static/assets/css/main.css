@@ -169,6 +169,10 @@ h6 {
   color: var(--heading-color);
 }
 
+.header .sitename {
+	padding-left: 10px;
+}
+
 .header .header-social-links {
   padding-right: 15px;
 }

@@ -60,7 +60,7 @@
 		<div
 			class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-			<a href="index.html"
+			<a href="/test/home"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
 				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
 				<h1 class="sitename">Epic Taste Exchange</h1>
@@ -1259,7 +1259,7 @@
 							<i class="bi bi-geo-alt flex-shrink-0"></i>
 							<div>
 								<h3>Address</h3>
-								<p>A108 Adam Street, New York, NY 535022</p>
+								<p>Parshival Para, near Hotel Sunlight, Mahuva, Bhavnagar, Gujarat - 364290</p>
 							</div>
 						</div>
 						<!-- End Info Item -->

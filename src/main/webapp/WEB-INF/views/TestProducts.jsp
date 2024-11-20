@@ -65,10 +65,9 @@
 		<div
 			class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-			<a href="index.html"
+			<a href="/test/home"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
-				<%-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> --%>
-
+				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
 				<h1 class="sitename">Epic Taste Exchange</h1>
 			</a>
 
