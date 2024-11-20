@@ -2,109 +2,107 @@ package com.epictasteexchange.models;
 
 import java.util.List;
 
-import lombok.Data;
-
-@Data
 public class Product {
 
-	private String id;
-	private String type;
-	private Variety variety;
-	private List<Variety> varieties;
-	private String name;
-	private String description;
-	private String intendedUse;
-	private String imageUrl;
+    private String id;
+    private String type;
+    private Variety variety;
+    private List<Variety> varieties;
+    private String name;
+    private String description;
+    private String intendedUse;
+    private String imageUrl;
 
 
 
-	public Product(String id, String type, Variety variety, List<Variety> varieties, String name, String description,
-			String intendedUse, String preparationMode, int packSize, String imageUrl) {
-		super();
-		this.id = id;
-		this.type = type;
-		this.variety = variety;
-		this.varieties = varieties;
-		this.name = name;
-		this.description = description;
-		this.intendedUse = intendedUse;
-		this.imageUrl = imageUrl;
-	}
+    public String getId() {
+        return id;
+    }
 
-	@Override
-	public String toString() {
-		return "Product [id=" + id + ", type=" + type + ", variety=" + variety + ", varieties=" + varieties + ", name="
-				+ name + ", description=" + description + ", intendedUse=" + intendedUse + ", preparationMode="
-				+ ", imageUrl=" + imageUrl + "]";
-	}
+    public void setId(String id) {
+        this.id = id;
+    }
 
-	public Product() {
-		super();
-	}
+    public String getType() {
+        return type;
+    }
 
-	public String getId() {
-		return id;
-	}
+    public void setType(String type) {
+        this.type = type;
+    }
 
-	public void setId(String id) {
-		this.id = id;
-	}
+    public Variety getVariety() {
+        return variety;
+    }
 
-	public String getType() {
-		return type;
-	}
+    public void setVariety(Variety variety) {
+        this.variety = variety;
+    }
 
-	public void setType(String type) {
-		this.type = type;
-	}
+    public List<Variety> getVarieties() {
+        return varieties;
+    }
 
-	public Variety getVariety() {
-		return variety;
-	}
+    public void setVarieties(List<Variety> varieties) {
+        this.varieties = varieties;
+    }
 
-	public void setVariety(Variety variety) {
-		this.variety = variety;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public List<Variety> getVarieties() {
-		return varieties;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public void setVarieties(List<Variety> varieties) {
-		this.varieties = varieties;
-	}
+    public String getDescription() {
+        return description;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public String getIntendedUse() {
+        return intendedUse;
+    }
 
-	public String getDescription() {
-		return description;
-	}
+    public void setIntendedUse(String intendedUse) {
+        this.intendedUse = intendedUse;
+    }
 
-	public void setDescription(String description) {
-		this.description = description;
-	}
+    public String getImageUrl() {
+        return imageUrl;
+    }
 
-	public String getIntendedUse() {
-		return intendedUse;
-	}
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
 
-	public void setIntendedUse(String intendedUse) {
-		this.intendedUse = intendedUse;
-	}
+    // Constructor
+    public Product(String id, String type, Variety variety, List<Variety> varieties, 
+                   String name, String description, String intendedUse, String imageUrl) {
+        this.id = id;
+        this.type = type;
+        this.variety = variety;
+        this.varieties = varieties;
+        this.name = name;
+        this.description = description;
+        this.intendedUse = intendedUse;
+        this.imageUrl = imageUrl;
+    }
 
-	public String getImageUrl() {
-		return imageUrl;
-	}
+    public Product() {
+        super();
+    }
 
-	public void setImageUrl(String imageUrl) {
-		this.imageUrl = imageUrl;
-	}
+    // toString() method
+    @Override
+    public String toString() {
+        return "\nProduct [id=" + id + ", \ntype=" + type + ", \nvariety=" + variety + 
+               ", \nvarieties=" + varieties + ", \nname=" + name + ", \ndescription=" + 
+               description + ", \nintendedUse=" + intendedUse + ", \nimageUrl=" + imageUrl + "]";
+    }
 
-
+	
 }

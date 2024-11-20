@@ -64,6 +64,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  
 }
 
 a {
@@ -448,6 +449,7 @@ h6 {
 
 .search-bar input[type="text"] {
 	padding: 5px;
+  margin: 10px;
 	border-radius: 20px;
 	border: 1px solid #2E8B57;
 	outline: none;
@@ -460,6 +462,7 @@ h6 {
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+    max-width: fit-content;
 }
 
 .search-bar input[type="text"]:focus {
@@ -2242,6 +2245,33 @@ button:hover {
 
 .blog-comments .comment.comment-reply {
   padding-left: 40px;
+}
+
+
+/*--------------------------------------------------------------
+# Comment Form Section
+--------------------------------------------------------------*/
+.variety-button {
+  margin: 5px;
+	width: 150px; /* Width of the button */
+	height: 150px; /* Height of the button */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white; /* Text color */
+	text-align: center;
+	font-weight: bold;
+	border-radius: 8000px; /* Rounded corners */
+	background-size: cover; /* Cover the entire button */
+	background-position: center; /* Center the background image */
+	background-color: white;
+	cursor: pointer; /* Pointer cursor on hover */
+	transition: transform 0.2s; /* Smooth transform */
+  transition: border 0.3s ease;
+}
+
+.variety-button:hover {
+	transform: scale(1.05); /* Scale effect on hover */
 }
 
 /*--------------------------------------------------------------

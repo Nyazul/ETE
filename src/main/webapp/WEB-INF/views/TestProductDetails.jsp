@@ -1,5 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="java.util.List"%>
+<%@ page import="com.epictasteexchange.models.Product"%>
+<%@ page import="com.epictasteexchange.models.Variety"%>
+
+<% Product product = (Product)request.getAttribute("product"); %>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -46,6 +52,35 @@
 <link href="${pageContext.request.contextPath}/assets/css/main.css"
 	rel="stylesheet">
 
+<script>
+    function updateVarietyDetails(button) {
+        // Get data attributes from the clicked button
+        const name = button.getAttribute("data-name");
+        const description = button.getAttribute("data-description");
+        const image = button.getAttribute("data-image");
+		const varietyDetailsContainer = document.querySelector(".variety-details-container");
+
+        // Update the product image
+        const productImage = document.querySelector(".hero img");
+        productImage.setAttribute("src", image);
+
+        const varietyDetails = "<p style='font-size: 18px;'><b style='font-size: 25px; color: #7cc576;'>Form : </b>"+name+"</p><p style='font-size: 18px;'>"+description+"</p>";
+        varietyDetailsContainer.innerHTML = varietyDetails;
+
+        // Highlight the selected variety button
+        const allButtons = document.querySelectorAll(".variety-button");
+        allButtons.forEach(btn => btn.style.border = "none"); // Reset border for all buttons
+        button.style.border = "5px solid #7cc576"; // Add green border to the clicked button
+
+		// Scroll to the top of the page
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Optional for a smooth scrolling effect
+        });
+    }
+</script>
+
+
 <!-- =======================================================
   * Template Name: Knight
   * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
@@ -55,7 +90,7 @@
   ======================================================== -->
 </head>
 
-<body class="career-page">
+<body class="index-page">
 
 	<header id="header" class="header d-flex align-items-center fixed-top">
 		<div
@@ -63,18 +98,19 @@
 
 			<a href="index.html"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
-				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
+				<%-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> --%>
+
 				<h1 class="sitename">Epic Taste Exchange</h1>
 			</a>
 
 			<nav id="navmenu" class="navmenu">
 				<ul>
-					<li><a href="/test/home">Home</a></li>
+					<li><a href="/test/home#hero">Home</a></li>
 					<li><a href="/test/home#about">About Us</a></li>
-					<li><a href="/test/career" class="active">Career</a></li>
-					<li><a href="/test/products">Products</a></li>
+					<li><a href="/test/career">Career</a></li>
+					<li><a href="/test/products" class="active">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
-					<li><div class="search-bar">
+                    <li><div class="search-bar">
 				            <form id="searchForm" action="/products/search" method="get">
 					            <input type="text" name="query" placeholder="  Search products"
 						            required 
@@ -110,6 +146,8 @@
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
 
+			
+
 			<div class="header-social-links">
 				<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> <a
 					href="#" class="facebook"><i class="bi bi-facebook"></i></a> <a
@@ -121,59 +159,62 @@
 	</header>
 
 	<main class="main">
-		<!-- Career Section -->
-		<section class="career-section section">
 
-			<div class="container section-title" data-aos="fade-up"
-				data-aos-delay="200">
-				<h2>Interested in working for us?</h2>
-				<p>Submit your details and we will reach out to you if we need
-					you</p>
+		<section id="hero" class="hero section dark-background">
+
+			<div class="container">
+				<div class="row justify-content-center" data-aos="zoom-out">
+					<div class="col-lg-4">
+						<img
+							src="<%=product.getImageUrl()%>"
+							alt="" class="img-fluid mb-3"
+							style="width: 100%; max-width: 400px; border-radius: 1000vmax; margin-top: 30px;">
+					</div>
+                    <div class="col-lg-8">
+						<h2><%= product.getName() %></h2><br>                            
+                        <p style="font-size: 25px;"><b style="font-size: 25px; color: #7cc576;">Type : </b><%= product.getType() %></p>
+                        <p style="font-size: 18px;"><%= product.getDescription() %></p><br>
+                        <p style="font-size: 18px;"><b style="font-size: 25px; color: #7cc576;">Intended Use : </b><%= product.getIntendedUse() %></p><br><br>
+						<div class="variety-details-container"></div>
+                        <a href="#" class="btn-get-started">Request Sample</a>
+					</div>
+				</div><br><br>
+
+                <%
+		        if (product.getVarieties() != null) {
+		        %>
+
+                    <p style="text-align: center; margin: 10px">
+                        <b style="color: #7cc576; font-size: 25px;">Forms Available</b>
+                    </p>                
+                    <div class="row justify-content-center data-aos="zoom-out"">
+
+                    <%
+                    List<Variety> varieties = product.getVarieties();
+                    if (varieties != null) {
+                        for (Variety variety : varieties) {
+                    %>
+                    <div class="variety-button"
+                        id="variety-<%=variety.getName()%>"
+                        data-name="<%=variety.getName()%>"
+                        data-description="<%=variety.getDescription()%>"
+                        data-image="<%=variety.getImageUrl()%>"
+                        onclick="updateVarietyDetails(this)"
+                        style="background-image: url('<%=variety.getImageUrl()%>'); cursor: pointer;">
+                        <p style="font-size: 20px; font-weight: bolder;"><%=variety.getName()%></p>
+                    </div>
+
+                    <%
+                        }
+                    }
+                    %>
+                    
+            <%  } %>
+
 			</div>
 
-			<form id="careerForm" class="career-form" data-aos="fade-up"
-				data-aos-delay="200" method="POST" action="/submitJobApplication"
-				enctype="multipart/form-data">
-				<div class="form-row">
-					<input type="text" id="firstName" name="firstName"
-						placeholder="First Name *" required> <input type="text"
-						id="lastName" name="lastName" placeholder="Last Name *" required>
-				</div>
-
-				<div class="form-row">
-					<input type="email" id="email" name="email"
-						placeholder="Email Address *" required> <input type="tel"
-						id="phone" name="phone"
-						placeholder="Phone Number (+91 XXX-XXX-XXXX) *" required>
-				</div>
-
-				<input type="text" id="address" name="address" placeholder="Address">
-
-				<input type="text" id="position" name="position"
-					placeholder="Which Position(s) are you applying for? *" required>
-
-				<!-- 				<label for="resume">Attach your updated Resume/CV *</label> <input -->
-				<!-- 					type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" -->
-				<!-- 					required> -->
-
-				<div class="file-attachment">
-					<label for="resume" class="file-label">Attach your updated
-						Resume/CV *</label>
-					<!-- Custom button -->
-					<label for="resume" class="file-input-label">Choose File</label> <input
-						type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"
-						required class="file-input">
-					<!-- Display chosen file name -->
-					<span class="file-name">No file chosen</span>
-				</div>
-
-				<p style="color: red;">(File type: .pdf/.doc/.docx; Max file
-					size: 2MB)</p>
-
-				<button type="submit">Apply</button>
-			</form>
 		</section>
-		<!-- /Career Section -->
+		
 
 	</main>
 
@@ -301,62 +342,6 @@
 
 	<!-- Main JS File -->
 	<script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
-
-	<!-- Form JS code -->
-	<script type="text/javascript">
-
-document.addEventListener("DOMContentLoaded", function () {
-    const careerForm = document.getElementById("careerForm");
-
-    careerForm.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form from refreshing the page
-
-        const submitButton = careerForm.querySelector("button[type='submit']");
-        const prevText = submitButton.textContent;
-        const formData = new FormData(careerForm);
-
-        submitButton.textContent = "Submitting...";
-        submitButton.disabled = true;
-
-        fetch("/submitJobApplication", {
-            method: "POST",
-            body: formData
-        })
-        .then(response => {
-            console.log("Response status:", response.status); // Log response status
-            if (!response.ok) throw new Error("Failed to submit the application");
-            return response.json(); // Parse the response as JSON
-        })
-        .then(data => {
-            
-            alert(`Success: Application submitted successfully`);
-            careerForm.reset(); // Clear the form fields
-        })
-        .catch(error => {
-            console.error("Error:", error);
-            alert("Error submitting the application. Please try again.");
-        })
-        .finally(() => {
-            submitButton.textContent = prevText; // Restore button text
-            submitButton.disabled = false; // Re-enable the button
-        });
-    });
-});
-</script>
-
-<!-- JS to update selected attachment file name -->
-<script>
-    document.getElementById('resume').addEventListener('change', function() {
-        var fileName = this.files[0] ? this.files[0].name : 'No file chosen';
-        var fileNameDisplay = document.querySelector('.file-name');
-        
-        // Update the file name display
-        fileNameDisplay.textContent = fileName;
-
-        // Show the file name display (if hidden)
-        fileNameDisplay.classList.add('show');
-    });
-</script>
 
 </body>
 

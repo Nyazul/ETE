@@ -79,6 +79,14 @@
 					<li><a href="/test/career">Career</a></li>
 					<li><a href="/test/products" class="active">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
+					<li><div class="search-bar">
+				            <form id="searchForm" action="/products/search" method="get">
+					            <input type="text" name="query" placeholder="  Search products"
+						            required 
+						            onkeypress="if (event.key === 'Enter') this.form.submit()">
+				            </form>
+			            </div>
+                    </li>
 					<!-- 					<li><a href="#about">About</a></li> -->
 					<!-- 					<li><a href="#services">Services</a></li> -->
 					<!-- 					<li><a href="#portfolio">Portfolio</a></li> -->
@@ -106,14 +114,6 @@
 				</ul>
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
-
-			<div class="search-bar">
-				<form id="searchForm" action="/products/search" method="get">
-					<input type="text" name="query" placeholder="  Search products"
-						required
-						onkeypress="if (event.key === 'Enter') this.form.submit()">
-				</form>
-			</div>
 
 			<div class="header-social-links">
 				<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> <a
@@ -194,8 +194,7 @@
 						%>
 						<div
 							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-<%=filterType%>"
-							onclick="window.location.href='/products/dehydratedVagetables/details/<%=product.getId()%>'"
-							data-aos="fade-up" data-aos-delay="200">
+							onclick="window.location.href='/test/product/details/<%=product.getId()%>'">
 							<img src="<%=product.getImageUrl()%>" class="img-fluid" alt="">
 							<div class="portfolio-info">
 								<h4><%=product.getName()%></h4>
