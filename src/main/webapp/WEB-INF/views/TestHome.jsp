@@ -73,6 +73,14 @@
 					<li><a href="/test/career">Career</a></li>
 					<li><a href="/test/products">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
+					<li><div class="search-bar">
+				            <form id="searchForm" action="/products/search" method="get">
+					            <input type="text" name="query" placeholder="  Search products"
+						            required 
+						            onkeypress="if (event.key === 'Enter') this.form.submit()">
+				            </form>
+			            </div>
+                    </li>
 					<!-- 					<li><a href="#about">About</a></li> -->
 					<!-- 					<li><a href="#services">Services</a></li> -->
 					<!-- 					<li><a href="#portfolio">Portfolio</a></li> -->
@@ -100,14 +108,6 @@
 				</ul>
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
-
-			<div class="search-bar">
-				<form id="searchForm" action="/products/search" method="get" autocomplete="off">
-					<input type="text" name="query" placeholder="  Search products"
-						required
-						onkeypress="if (event.key === 'Enter') this.form.submit()" onfocus="this.value=''">
-				</form>
-			</div>
 
 			<div class="header-social-links">
 				<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> <a

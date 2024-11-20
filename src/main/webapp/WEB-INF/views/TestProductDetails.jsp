@@ -2,7 +2,9 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.List"%>
 <%@ page import="com.epictasteexchange.models.Product"%>
+<%@ page import="com.epictasteexchange.models.Variety"%>
 
+<% Product product = (Product)request.getAttribute("product"); %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,6 +52,35 @@
 <link href="${pageContext.request.contextPath}/assets/css/main.css"
 	rel="stylesheet">
 
+<script>
+    function updateVarietyDetails(button) {
+        // Get data attributes from the clicked button
+        const name = button.getAttribute("data-name");
+        const description = button.getAttribute("data-description");
+        const image = button.getAttribute("data-image");
+		const varietyDetailsContainer = document.querySelector(".variety-details-container");
+
+        // Update the product image
+        const productImage = document.querySelector(".hero img");
+        productImage.setAttribute("src", image);
+
+        const varietyDetails = "<p style='font-size: 18px;'><b style='font-size: 25px; color: #7cc576;'>Form : </b>"+name+"</p><p style='font-size: 18px;'>"+description+"</p>";
+        varietyDetailsContainer.innerHTML = varietyDetails;
+
+        // Highlight the selected variety button
+        const allButtons = document.querySelectorAll(".variety-button");
+        allButtons.forEach(btn => btn.style.border = "none"); // Reset border for all buttons
+        button.style.border = "5px solid #7cc576"; // Add green border to the clicked button
+
+		// Scroll to the top of the page
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Optional for a smooth scrolling effect
+        });
+    }
+</script>
+
+
 <!-- =======================================================
   * Template Name: Knight
   * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
@@ -65,9 +96,10 @@
 		<div
 			class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
-			<a href="/test/home"
+			<a href="index.html"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
-				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
+				<%-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> --%>
+
 				<h1 class="sitename">Epic Taste Exchange</h1>
 			</a>
 
@@ -78,7 +110,7 @@
 					<li><a href="/test/career">Career</a></li>
 					<li><a href="/test/products" class="active">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
-					<li><div class="search-bar">
+                    <li><div class="search-bar">
 				            <form id="searchForm" action="/products/search" method="get">
 					            <input type="text" name="query" placeholder="  Search products"
 						            required 
@@ -114,6 +146,8 @@
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
 
+			
+
 			<div class="header-social-links">
 				<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> <a
 					href="#" class="facebook"><i class="bi bi-facebook"></i></a> <a
@@ -126,124 +160,65 @@
 
 	<main class="main">
 
-		<!-- Hero Section -->
 		<section id="hero" class="hero section dark-background">
 
-			<div class="container text-center">
-				<div class="row justify-content-center" data-aos="zoom-out">
-					<div class="col-lg-8">
-						<h2>Our Products</h2>
-						<p style="font-size: 18px;">Discover the Ultimate Source for High-Quality Ingredients
-							at EpicTasteExchange! From our carefully preserved Dehydrated
-							Vegetables that lock in freshness and nutrition, to our expertly
-							crafted Dried Vegetables designed to enhance flavor while
-							providing convenience and long shelf life, we offer the best
-							nature has to give. Our range of Pure Spices adds bold,
-							uncompromised taste and aroma to elevate your culinary creations
-							to the next level. Whether you’re a home chef or a food industry
-							professional, our premium products are designed to inspire
-							creativity in every dish. At EpicTasteExchange, we bring you the
-							best of nature — packed, preserved, and delivered to your kitchen
-							with care</p>
-					</div>
-				</div>
-			</div>
-
-		</section>
-		<!-- /Hero Section -->
-
-		<!-- Products Section -->
-		<section id="portfolio" class="portfolio section">
-
 			<div class="container">
-
-				<div class="isotope-layout" data-default-filter="*"
-					data-layout="masonry" data-sort="original-order">
-
-					<ul class="portfolio-filters isotope-filters" data-aos="fade-up"
-						data-aos-delay="100">
-						<li data-filter="*" class="filter-active">All Products</li>
-						<li data-filter=".filter-dehydrated-vegetables">Dehydrated
-							Vegetables</li>
-						<li data-filter=".filter-dried-vegetables">Dried Vegetables</li>
-						<li data-filter=".filter-pure-spices">Pure Spices</li>
-					</ul>
-					<!-- End Products Filters -->
-
-					<div class="row gy-4 isotope-container" data-aos="fade-up"
-						data-aos-delay="150">
-
-						<%
-						List<Product> products = (List<Product>) request.getAttribute("products");
-
-						if (products != null) {
-							for (Product product : products) {
-								String filterType = "";
-								switch (product.getType()) {
-								case "Dehydrated Vegetables":
-									filterType = "dehydrated-vegetables";
-									break;
-								case "Dried Vegetables":
-									filterType = "dried-vegetables";
-									break;
-								case "Pure Spices":
-									filterType = "pure-spices";
-									break;
-								}
-						%>
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-<%=filterType%>"
-							onclick="window.location.href='/test/product/details/<%=product.getId()%>'">
-							<img src="<%=product.getImageUrl()%>" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4><%=product.getName()%></h4>
-							</div>
-						</div>
-						<%
-						}
-						} else {
-						%>
-						<p class="text-align-center">No products available.</p>
-						<%
-						}
-						%>
-
+				<div class="row justify-content-center" data-aos="zoom-out">
+					<div class="col-lg-4">
+						<img
+							src="<%=product.getImageUrl()%>"
+							alt="" class="img-fluid mb-3"
+							style="width: 100%; max-width: 400px; border-radius: 1000vmax; margin-top: 30px;">
 					</div>
-					<!-- End Portfolio Container -->
+                    <div class="col-lg-8">
+						<h2><%= product.getName() %></h2><br>                            
+                        <p style="font-size: 25px;"><b style="font-size: 25px; color: #7cc576;">Type : </b><%= product.getType() %></p>
+                        <p style="font-size: 18px;"><%= product.getDescription() %></p><br>
+                        <p style="font-size: 18px;"><b style="font-size: 25px; color: #7cc576;">Intended Use : </b><%= product.getIntendedUse() %></p><br><br>
+						<div class="variety-details-container"></div>
+                        <a href="#" class="btn-get-started">Request Sample</a>
+					</div>
+				</div><br><br>
 
-				</div>
+                <%
+		        if (product.getVarieties() != null) {
+		        %>
+
+                    <p style="text-align: center; margin: 10px">
+                        <b style="color: #7cc576; font-size: 25px;">Forms Available</b>
+                    </p>                
+                    <div class="row justify-content-center data-aos="zoom-out"">
+
+                    <%
+                    List<Variety> varieties = product.getVarieties();
+                    if (varieties != null) {
+                        for (Variety variety : varieties) {
+                    %>
+                    <div class="variety-button"
+                        id="variety-<%=variety.getName()%>"
+                        data-name="<%=variety.getName()%>"
+                        data-description="<%=variety.getDescription()%>"
+                        data-image="<%=variety.getImageUrl()%>"
+                        onclick="updateVarietyDetails(this)"
+                        style="background-image: url('<%=variety.getImageUrl()%>'); cursor: pointer;">
+                        <p style="font-size: 20px; font-weight: bolder;"><%=variety.getName()%></p>
+                    </div>
+
+                    <%
+                        }
+                    }
+                    %>
+                    
+            <%  } %>
 
 			</div>
 
 		</section>
-		<!-- /Portfolio Section -->
+		
 
 	</main>
 
 	<footer id="footer" class="footer dark-background">
-
-		<div class="footer-newsletter">
-			<div class="container">
-				<div class="row justify-content-center text-center">
-					<div class="col-lg-6">
-						<h4>Join Our Newsletter</h4>
-						<p>Subscribe to our newsletter and receive the latest news
-							about our products and services!</p>
-						<form action="forms/newsletter.php" method="post"
-							class="php-email-form">
-							<div class="newsletter-form">
-								<input type="email" name="email"><input type="submit"
-									value="Subscribe">
-							</div>
-							<div class="loading">Loading</div>
-							<div class="error-message"></div>
-							<div class="sent-message">Your subscription request has
-								been sent. Thank you!</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<div class="container footer-top">
 			<div class="row gy-4">
