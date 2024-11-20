@@ -74,7 +74,7 @@
 					<li><a href="/test/products">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
 					<li><div class="search-bar">
-				            <form id="searchForm" action="/products/search" method="get">
+				            <form id="searchForm" action="/products/search" method="get" autocomplete="off">
 					            <input type="text" name="query" placeholder="  Search products"
 						            required 
 						            onkeypress="if (event.key === 'Enter') this.form.submit()">
@@ -1253,9 +1253,9 @@
 
 				<div class="row gy-4">
 
-					<div class="col-lg-4">
-						<div class="info-item d-flex" data-aos="fade-up"
-							data-aos-delay="300">
+					<div class="row justify-contain-center">
+						<div class="info-item col-lg-4 d-flex" data-aos="fade-up"
+							data-aos-delay="300" style="margin-top: 40px">
 							<i class="bi bi-geo-alt flex-shrink-0"></i>
 							<div>
 								<h3>Address</h3>
@@ -1264,7 +1264,7 @@
 						</div>
 						<!-- End Info Item -->
 
-						<div class="info-item d-flex" data-aos="fade-up"
+						<div class="info-item col-lg-4 d-flex" data-aos="fade-up"
 							data-aos-delay="400">
 							<i class="bi bi-telephone flex-shrink-0"></i>
 							<div>
@@ -1274,7 +1274,7 @@
 						</div>
 						<!-- End Info Item -->
 
-						<div class="info-item d-flex" data-aos="fade-up"
+						<div class="info-item col-lg-4 d-flex" data-aos="fade-up"
 							data-aos-delay="500">
 							<i class="bi bi-envelope flex-shrink-0"></i>
 							<div>
