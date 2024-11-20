@@ -72,7 +72,7 @@
 					<li><a href="#about">About Us</a></li>
 					<li><a href="/test/career">Career</a></li>
 					<li><a href="/test/products">Products</a></li>
-					<li><a href="/enquire">Enquire Now</a></li>
+					<li><a href="/test/enquire">Enquire Now</a></li>
 					<li><div class="search-bar">
 				            <form id="searchForm" action="/products/search" method="get" autocomplete="off">
 					            <input type="text" name="query" placeholder="  Search products"
