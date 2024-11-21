@@ -26,7 +26,7 @@ public class EmailService {
 		message.setText(body);
 
 		mailSender.send(message);
-		System.out.println("Mail sent successfully...");
+		System.out.println("Mail sent successfully on mail ID : "+toEmail+"...");
 	}
 
 	@SuppressWarnings("null")

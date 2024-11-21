@@ -3,20 +3,386 @@
 <%@page import="com.epictasteexchange.models.Product"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EpicTasteExchange - Enquire Now</title>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Enquire - EpicTasteExchange</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
 
-<link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/common.css">
-<link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/enquire.css">
+<!-- Favicons -->
 
-<script type="text/javascript" >
+<link rel="apple-touch-icon" sizes="180x180"
+	href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="${pageContext.request.contextPath}/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16"
+	href="${pageContext.request.contextPath}/images/favicon-16x16.png">
+<link rel="manifest"
+	href="${pageContext.request.contextPath}/images/site.webmanifest">
+
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+	rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+<link
+	href="${pageContext.request.contextPath}/assets/vendor/bootstrap/css/bootstrap.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/assets/vendor/aos/aos.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.css"
+	rel="stylesheet">
+<link
+	href="${pageContext.request.contextPath}/assets/vendor/glightbox/css/glightbox.min.css"
+	rel="stylesheet">
+
+<!-- Main CSS File -->
+<link href="${pageContext.request.contextPath}/assets/css/main.css"
+	rel="stylesheet">
+
+<!-- =======================================================
+  * Template Name: Knight
+  * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+  * Updated: Oct 16 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="enquire-page" style="background-color: black;">
+
+	<header id="header" class="header d-flex align-items-center fixed-top">
+		<div
+			class="container-fluid position-relative d-flex align-items-center justify-content-between">
+
+			<a href="/home"
+				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
+				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
+				<h1 class="sitename">Epic Taste Exchange</h1>
+			</a>
+
+			<nav id="navmenu" class="navmenu">
+				<ul>
+					<li><a href="/home">Home</a></li>
+					<li><a href="/home#about">About Us</a></li>
+					<li><a href="/career">Career</a></li>
+					<li><a href="/products">Products</a></li>
+					<li><a href="/enquire" class="active">Enquire Now</a></li>
+					<li><div class="search-bar">
+							<form id="searchForm" action="/products/search" method="get"
+								autocomplete="off">
+								<input type="text" name="query" placeholder="  Search products"
+									required
+									onkeypress="if (event.key === 'Enter') this.form.submit()">
+							</form>
+						</div></li>
+				</ul>
+				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+			</nav>
+
+			<div class="header-social-links">
+				<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> <a
+					href="#" class="facebook"><i class="bi bi-facebook"></i></a> <a
+					href="#" class="instagram"><i class="bi bi-instagram"></i></a> <a
+					href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+			</div>
+
+		</div>
+	</header>
+
+	<main style="margin-top: 100px;" class="main parallax-window">
+		
+
+		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 1.jpg" data-natural-width="1400" data-natural-height="900" style="height: 500px;">
+		</div>
+
+		<!-- Enquire Section -->
+
+		<section id="request-sample-form" class="career-section section">
+
+			<div class="container section-title">
+				<h2>Request Sample</h2>
+			</div>
+
+			<form id="enquireForm" class="career-form" method="POST" action="/submitEnquiry"
+				enctype="multipart/form-data">
+
+				<input type="hidden" name="formType" value="Sample Request">
+
+				<div class="form-row">
+					<input type="text" id="companyName" name="companyName"
+						placeholder="Company Name *" required>
+				</div>
+
+				<div class="form-row">
+					<input type="text" id="firstName" name="firstName"
+						placeholder="First Name *" required> <input type="text"
+						id="lastName" name="lastName" placeholder="Last Name *" required>
+				</div>
+
+				<div class="form-row">
+					<input type="email" id="email" name="email"
+						placeholder="Email Address *" required> <input type="tel"
+						id="phone" name="phone"
+						placeholder="Phone Number (+91 XXX-XXX-XXXX) *" required>
+				</div>
+
+				<select name="productName" required>
+					<option value="" disabled selected>Select Product *</option>
+					<%
+					List<Product> products = (List<Product>) request.getAttribute("products");
+					for (Product product : products) {
+						if (!product.getVarieties().isEmpty()) {
+							for (Variety variety : product.getVarieties()) {
+					%>
+					<option value="<%=product.getName()%> <%=variety.getName()%>">
+						<%=product.getName()%> -
+						<%=variety.getName()%>
+					</option>
+					<%
+					}
+					} else {
+					%>
+					<option value="<%=product.getName()%>"><%=product.getName()%></option>
+					<%
+					}
+					}
+					%>
+				</select> 
+				
+				<input type="text" id="address" name="address"
+					placeholder="Address">
+
+				<button type="submit">Submit Request</button>
+
+			</form>
+		</section>
+		<!-- /Enquire Section -->
+		
+		
+		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 3.jpg" data-natural-width="1400" data-natural-height="900" style="height: 500px;">
+		</div>
+		
+		<!-- Consumer Section -->
+		<section class="career-section section">
+
+			<div class="container section-title">
+				<h2>Consumer's Query</h2>
+			</div>
+
+			<form id="consumerForm" class="career-form" method="POST" action="/submitEnquiry"
+				enctype="multipart/form-data">
+
+				<input type="hidden" name="formType" value="Consumer Query">
+
+				<div class="form-row">
+					<input type="text" id="companyName" name="companyName"
+						placeholder="Company Name *" required>
+				</div>
+
+				<div class="form-row">
+					<input type="text" id="firstName" name="firstName"
+						placeholder="First Name *" required> <input type="text"
+						id="lastName" name="lastName" placeholder="Last Name *" required>
+				</div>
+
+				<div class="form-row">
+					<input type="email" id="email" name="email"
+						placeholder="Email Address *" required> <input type="tel"
+						id="phone" name="phone"
+						placeholder="Phone Number (+91 XXX-XXX-XXXX) *" required>
+				</div> 
+				
+				<textarea name="query" placeholder="Query... *" required></textarea>
+
+				<button type="submit">Submit Inquiry</button>
+
+			</form>
+		</section>
+		<!-- /Consumer Section -->
+		
+		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 2.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 500px;">
+		</div>
+		
+		<!-- Supplier Section -->
+		<section class="career-section section">
+
+			<div class="container section-title">
+				<h2>Supplier's Query</h2>
+			</div>
+
+			<form id="supplierForm" class="career-form" method="POST" action="/submitEnquiry"
+				enctype="multipart/form-data">
+
+				<input type="hidden" name="formType" value="Supplier Query">
+
+				<div class="form-row">
+					<input type="text" id="companyName" name="companyName"
+						placeholder="Company Name *" required>
+				</div>
+
+				<div class="form-row">
+					<input type="text" id="firstName" name="firstName"
+						placeholder="First Name *" required> <input type="text"
+						id="lastName" name="lastName" placeholder="Last Name *" required>
+				</div>
+
+				<div class="form-row">
+					<input type="email" id="email" name="email"
+						placeholder="Email Address *" required> <input type="tel"
+						id="phone" name="phone"
+						placeholder="Phone Number (+91 XXX-XXX-XXXX) *" required>
+				</div> 
+				
+				<textarea name="query" placeholder="Query... *" required></textarea>
+
+				<button type="submit">Submit Inquiry</button>
+
+			</form>
+		</section>
+		<!-- /Supplier Section -->
+		
+		
+		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 4.jpg" data-natural-width="750" data-natural-height="763" style="height: 500px;">
+		</div>
+
+	</main>
+
+	<footer id="footer" class="footer dark-background">
+
+		<div class="container footer-top">
+			<div class="row gy-4">
+				<div class="col-lg-3 col-md-6 footer-about">
+					<a href="index.html" class="d-flex align-items-center"> <span
+						class="sitename">Epic Taste Exchange</span>
+					</a>
+					<div class="footer-contact pt-3">
+						<p>EpicTasteExchange is committed to providing the finest
+							natural ingredients for food and beverage industries globally</p>
+						<!-- 						<p>New York, NY 535022</p> -->
+						<p class="mt-3">
+							<strong>Phone:</strong> <span>+91 8141493502 / +91
+								9923213747 </span>
+						</p>
+						<p>
+							<strong>Email:</strong> <span>info.epictasteexchange@gmail.com</span>
+						</p>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-3 footer-links">
+					<h4>About EpicTasteExchange</h4>
+					<ul>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">About
+								Us</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Our
+								History</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Core
+								Values</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Expertise</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Corporate
+								Information</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-md-3 footer-links">
+					<h4>Useful Links</h4>
+					<ul>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Private
+								Labeling</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Culinary</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Careers</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Sitemap</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="#">Terms
+								of service</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-2 col-md-3 footer-links">
+					<h4>Products</h4>
+					<ul>
+						<li><i class="bi bi-chevron-right"></i> <a href="/products">All Products</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=dehydrated-vegetables">Dehydrated Vegetables</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=dried-vegetables">Dried Vagetables</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=pure-spices">Pure Spices</a></li>
+					</ul>
+				</div>
+
+				<div class="col-lg-3 col-md-12">
+					<h4>Follow Us</h4>
+					<p>Cras fermentum odio eu feugiat lide par naso tierra videa
+						magna derita valies</p>
+					<div class="social-links d-flex">
+						<a href=""><i class="bi bi-twitter-x"></i></a> <a href=""><i
+							class="bi bi-facebook"></i></a> <a href=""><i
+							class="bi bi-instagram"></i></a> <a href=""><i
+							class="bi bi-linkedin"></i></a> <a href=""><i
+							class="bi bi-youtube"></i></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container copyright text-center mt-4">
+			<p>
+				© <span>Copyright</span> <strong class="px-1 sitename">2024
+					EpicTasteExchange</strong> <span>All Rights Reserved</span> <span><a
+					href="#">Privacy Policy</a></span>
+			</p>
+			<div class="credits">
+				<!-- All the links in the footer should remain intact. -->
+				<!-- You can delete the links only if you've purchased the pro version. -->
+				<!-- Licensing information: https://bootstrapmade.com/license/ -->
+				<!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+				Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- Scroll Top -->
+	<a href="#" id="scroll-top"
+		class="scroll-top d-flex align-items-center justify-content-center"><i
+		class="bi bi-arrow-up-short"></i></a>
+
+	<!-- Preloader -->
+	<div id="preloader"></div>
+
+	<!-- Vendor JS Files -->
+	<script
+		src="${pageContext.request.contextPath}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/assets/vendor/php-email-form/validate.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/assets/vendor/aos/aos.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+	<script
+		src="${pageContext.request.contextPath}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+	<!-- Main JS File -->
+	<script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
+
+	<!-- Form JS code -->
+	<script type="text/javascript">
 	
 	console.log("Script loaded");
 	
@@ -67,223 +433,16 @@
                     submitButton.textContent = prevTextContent;
                     submitButton.disabled = false;
                 });
-        });
-    }
-});
-
-
-
-</script>
-</head>
-
-<body>
-	<header>
-		<nav>
-			<div class="logo">
-				<h1>EpicTasteExchange</h1>
-			</div>
-			<ul class="nav-links">
-				<li><a href="/home">Home</a></li>
-				<li><a href="/about">About Us</a></li>
-				<li><a href="/career">Career</a></li>
-				<li><a href="/products">Products</a></li>
-				<li><a href="/enquire">Enquire Now</a></li>
-			</ul>
-			<div class="search-bar">
-				<form id="searchForm" action="/products/search" method="get">
-					<input type="text" name="query" placeholder="Search products..."
-						required
-						onkeypress="if (event.key === 'Enter') this.form.submit()">
-				</form>
-			</div>
-		</nav>
-	</header>
-
-
-	<section class="enquire-section">
-		<h2>Request Sample</h2>
-
-		<form id="enquireForm" class="enquire-form" method="POST"
-			action="/submitEnquiry">
-			<input type="hidden" name="formType" value="Sample Request">
-
-			<input type="text" id="companyName" name="companyName"
-				placeholder="Company Name *" required>
-
-			<div class="form-row">
-				<input type="text" id="firstName" name="firstName"
-					placeholder="First Name *" required> <input type="text"
-					id="lastName" name="lastName" placeholder="Last Name *" required>
-			</div>
-
-			<div class="form-row">
-				<input type="email" id="email" name="email"
-					placeholder="Email Address *" required> <input type="tel"
-					id="phone" name="phone"
-					placeholder="Phone Number (+91 XXX-XXX-XXXX) *" required>
-			</div>
-
-			<select name="productName" required>
-				<option value="" disabled selected>Select Product *</option>
-				<%
-				List<Product> products = (List<Product>) request.getAttribute("products");
-				for (Product product : products) {
-					if (!product.getVarieties().isEmpty()) {
-						for (Variety variety : product.getVarieties()) {
-				%>
-				<option value="<%=product.getName()%> <%=variety.getName()%>">
-					<%=product.getName()%> -
-					<%=variety.getName()%>
-				</option>
-				<%
-				}
-				} else {
-				%>
-				<option value="<%=product.getName()%>"><%=product.getName()%></option>
-				<%
-				}
-				}
-				%>
-			</select>
-			
-			<input type="text" id="address" name="address"
-				placeholder="Address *" required>
-
-
-			<button type="submit">Submit Request</button>
-		</form>
-	</section>
-
-	<section class="consumer-section">
-		<h2>Consumer's Query</h2>
-
-		<form id="consumerForm" class="consumer-form" method="POST"
-			action="/submitEnquiry">
-			<input type="hidden" name="formType" value="Consumer Query">
-
-			<input type="text" id="companyName" name="companyName"
-				placeholder="Company Name *" required>
-
-			<div class="form-row">
-				<input type="text" id="firstName" name="firstName"
-					placeholder="First Name *" required> <input type="text"
-					id="lastName" name="lastName" placeholder="Last Name *" required>
-			</div>
-
-			<div class="form-row">
-				<input type="email" id="email" name="email"
-					placeholder="Email Address *" required> <input type="tel"
-					id="phone" name="phone"
-					placeholder="Phone Number (+91 XXX-XXX-XXXX) *" required>
-			</div>
-
-			<textarea name="query" placeholder="Query... *" required></textarea>
-
-			<button type="submit">Submit Inquiry</button>
-		</form>
-	</section>
-
-	<section class="supplier-section">
-		<h2>Supplier's Query</h2>
-
-		<form id="supplierForm" class="supplier-form" method="POST"
-			action="/submitEnquiry">
-			<input type="hidden" name="formType" value="Supplier Query">
-
-			<input type="text" id="companyName" name="companyName"
-				placeholder="Company Name *" required>
-
-			<div class="form-row">
-				<input type="text" id="firstName" name="firstName"
-					placeholder="First Name *" required> <input type="text"
-					id="lastName" name="lastName" placeholder="Last Name *" required>
-			</div>
-
-			<div class="form-row">
-				<input type="email" id="email" name="email"
-					placeholder="Email Address *" required> <input type="tel"
-					id="phone" name="phone"
-					placeholder="Phone Number (+91 XXX-XXX-XXXX) *" required>
-			</div>
-
-			<textarea name="query" placeholder="Query... *" required></textarea>
-
-			<button type="submit">Submit Inquiry</button>
-		</form>
-	</section>
-
-	<footer>
-		<div class="footer-container">
-			<div class="footer-logo">
-				<img src="/path/to/logo.png" alt="BCFoods Logo"
-					class="footer-logo-img">
-				<p>EpicTasteExchange is committed to providing the finest
-					natural ingredients for food and beverage industries globally.</p>
-				<div class="footer-contact">
-					<p>
-						<img src="/path/to/email-icon.png" alt="Email Icon">
-						info@epictasteexchange.com
-					</p>
-					<p>
-						<img src="/path/to/phone-icon.png" alt="Phone Icon"> +123
-						456 7890
-					</p>
-				</div>
-			</div>
-
-			<div class="footer-links">
-				<h3>About EpicTasteExchange</h3>
-				<ul>
-					<li><a href="#">About Us</a></li>
-					<li><a href="#">Our History</a></li>
-					<li><a href="#">Core Values</a></li>
-					<li><a href="#">Expertise</a></li>
-					<li><a href="#">Corporate Information</a></li>
-				</ul>
-			</div>
-
-			<div class="footer-links">
-				<h3>Products</h3>
-				<ul>
-					<li><a href="#">Savory Blends</a></li>
-					<li><a href="#">Natural Colors</a></li>
-					<li><a href="#">Flavors</a></li>
-					<li><a href="#">Culinary Products</a></li>
-					<li><a href="#">Plant-Based Foods</a></li>
-				</ul>
-			</div>
-
-			<div class="footer-links">
-				<h3>Quick Links</h3>
-				<ul>
-					<li><a href="#">Private Labeling</a></li>
-					<li><a href="#">Culinary</a></li>
-					<li><a href="#">Careers</a></li>
-					<li><a href="#">Sitemap</a></li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="footer-social">
-			<a href="#"><img src="/path/to/facebook-icon.png" alt="Facebook"></a>
-			<a href="#"><img src="/path/to/twitter-icon.png" alt="Twitter"></a>
-			<a href="#"><img src="/path/to/linkedin-icon.png" alt="LinkedIn"></a>
-			<a href="#"><img src="/path/to/instagram-icon.png"
-				alt="Instagram"></a> <a href="#"><img
-				src="/path/to/youtube-icon.png" alt="YouTube"></a>
-		</div>
-
-		<div class="footer-bottom">
-			<p>
-				&copy; 2024 EpicTasteExchange. All rights reserved. <a href="#">Privacy
-					Policy</a>
-			</p>
-		</div>
-	</footer>
-
+        	});
+    	}
+	});
+	
+	</script>
+	
+	<!-- Parallax JS code -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="${pageContext.request.contextPath}/parallax.js-1.5.0/parallax.js"></script>
 
 </body>
-
-
 
 </html>
