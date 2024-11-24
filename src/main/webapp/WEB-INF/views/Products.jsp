@@ -119,10 +119,9 @@ document.addEventListener('DOMContentLoaded', function () {
 			</nav>
 
 			<div class="header-social-links">
-				<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> <a
-					href="#" class="facebook"><i class="bi bi-facebook"></i></a> <a
-					href="#" class="instagram"><i class="bi bi-instagram"></i></a> <a
-					href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+				<a href="#" class="facebook"><i class="bi bi-facebook"></i></a> 
+				<a href="#" class="instagram"><i class="bi bi-instagram"></i></a> 
+				<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
 			</div>
 
 		</div>
@@ -137,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				<div class="row justify-content-center" data-aos="zoom-out">
 					<div class="col-lg-8">
 						<h2>Our Products</h2>
-						<p style="font-size: 18px;">Discover the Ultimate Source for High-Quality Ingredients
+						<p>Discover the Ultimate Source for High-Quality Ingredients
 							at EpicTasteExchange! From our carefully preserved Dehydrated
 							Vegetables that lock in freshness and nutrition, to our expertly
 							crafted Dried Vegetables designed to enhance flavor while
@@ -227,7 +226,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		<div class="container footer-top">
 			<div class="row gy-4">
-				<div class="col-lg-3 col-md-6 footer-about">
+				<div class="col-lg-5 col-md-6 footer-about">
 					<a href="index.html" class="d-flex align-items-center"> <span
 						class="sitename">Epic Taste Exchange</span>
 					</a>
@@ -246,28 +245,15 @@ document.addEventListener('DOMContentLoaded', function () {
 				</div>
 
 				<div class="col-lg-2 col-md-3 footer-links">
-					<h4>About EpicTasteExchange</h4>
-					<ul>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">About
-								Us</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Our
-								History</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Core
-								Values</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Expertise</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Corporate
-								Information</a></li>
-					</ul>
-				</div>
-
-				<div class="col-lg-2 col-md-3 footer-links">
 					<h4>Useful Links</h4>
 					<ul>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Private
-								Labeling</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Culinary</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Careers</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Sitemap</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/enquire#request-sample-form">Request Sample</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/enquire#consumer-query-form">Consumer's Query</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/enquire#supplier-query-form">Supplier's Query</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="/career">Careers</a></li>
 						<li><i class="bi bi-chevron-right"></i> <a href="#">Terms
 								of service</a></li>
 					</ul>
@@ -276,23 +262,26 @@ document.addEventListener('DOMContentLoaded', function () {
 				<div class="col-lg-2 col-md-3 footer-links">
 					<h4>Products</h4>
 					<ul>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products">All Products</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=dehydrated-vegetables">Dehydrated Vegetables</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=dried-vegetables">Dried Vagetables</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=pure-spices">Pure Spices</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="/products">All
+								Products</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/products?filter=dehydrated-vegetables">Dehydrated
+								Vegetables</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/products?filter=dried-vegetables">Dried Vagetables</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/products?filter=pure-spices">Pure Spices</a></li>
 					</ul>
 				</div>
 
 				<div class="col-lg-3 col-md-12">
 					<h4>Follow Us</h4>
-					<p>Cras fermentum odio eu feugiat lide par naso tierra videa
-						magna derita valies</p>
+					<p>Stay connected! Follow us on social media for the latest
+						product updates</p>
 					<div class="social-links d-flex">
-						<a href=""><i class="bi bi-twitter-x"></i></a> <a href=""><i
-							class="bi bi-facebook"></i></a> <a href=""><i
-							class="bi bi-instagram"></i></a> <a href=""><i
-							class="bi bi-linkedin"></i></a> <a href=""><i
-							class="bi bi-youtube"></i></a>
+						<a href=""><i class="bi bi-facebook"></i></a>
+						<a href=""><i class="bi bi-instagram"></i></a> 
+						<a href=""><i class="bi bi-linkedin"></i></a> 
 					</div>
 				</div>
 

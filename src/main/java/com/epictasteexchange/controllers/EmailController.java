@@ -36,10 +36,12 @@ public class EmailController {
         String phone = formData.get("phone");
         String formType = formData.get("formType");
         String emailBody;
+        String subject;
 
         if("Sample Request".equals(formType)) {
         	String productName = formData.get("productName");
         	String address = formData.get("address");
+        	subject = formType + " | " + firstName + " | " + productName;
         	emailBody = String.format("Sample Request from %s %s (%s)\n" +
                     "Company Name: %s\n" +
                     "Email: %s\n" +
@@ -50,6 +52,7 @@ public class EmailController {
 
         } else {
         	String query = formData.get("query");
+        	subject = formType + " | " + firstName;
         	emailBody = String.format("Query from %s %s (%s)\n" +
                     "Company Name: %s\n" +
                     "Email: %s\n" +
@@ -59,7 +62,7 @@ public class EmailController {
         }
         String toMail = "ansarinyazul2003@gmail.com";
 
-		emailService.sendSimpleEmail(toMail, formType, emailBody);
+		emailService.sendSimpleEmail(toMail, subject, emailBody);
 
 	    // Create response message
 	    Map<String, String> response = new HashMap<>();

@@ -94,20 +94,15 @@
 			</nav>
 
 			<div class="header-social-links">
-				<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> <a
-					href="#" class="facebook"><i class="bi bi-facebook"></i></a> <a
-					href="#" class="instagram"><i class="bi bi-instagram"></i></a> <a
-					href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+				<a href="#" class="facebook"><i class="bi bi-facebook"></i></a> 
+				<a href="#" class="instagram"><i class="bi bi-instagram"></i></a> 
+				<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
 			</div>
 
 		</div>
 	</header>
 
-	<main style="margin-top: 100px;" class="main parallax-window">
-		
-
-		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 1.jpg" data-natural-width="1400" data-natural-height="900" style="height: 500px;">
-		</div>
+	<main class="main parallax-window">
 
 		<!-- Enquire Section -->
 
@@ -173,11 +168,11 @@
 		<!-- /Enquire Section -->
 		
 		
-		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 3.jpg" data-natural-width="1400" data-natural-height="900" style="height: 500px;">
+		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 1.jpg" data-natural-width="1400" data-natural-height="900" style="height: 500px;">
 		</div>
 		
 		<!-- Consumer Section -->
-		<section class="career-section section">
+		<section id="consumer-query-form" class="career-section section">
 
 			<div class="container section-title">
 				<h2>Consumer's Query</h2>
@@ -214,11 +209,11 @@
 		</section>
 		<!-- /Consumer Section -->
 		
-		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 2.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 500px;">
+		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 4.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 500px;">
 		</div>
 		
 		<!-- Supplier Section -->
-		<section class="career-section section">
+		<section id="supplier-query-form" class="career-section section">
 
 			<div class="container section-title">
 				<h2>Supplier's Query</h2>
@@ -256,7 +251,7 @@
 		<!-- /Supplier Section -->
 		
 		
-		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 4.jpg" data-natural-width="750" data-natural-height="763" style="height: 500px;">
+		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 3.jpg" data-natural-width="1400" data-natural-height="900" style="height: 500px;">
 		</div>
 
 	</main>
@@ -265,7 +260,7 @@
 
 		<div class="container footer-top">
 			<div class="row gy-4">
-				<div class="col-lg-3 col-md-6 footer-about">
+				<div class="col-lg-5 col-md-6 footer-about">
 					<a href="index.html" class="d-flex align-items-center"> <span
 						class="sitename">Epic Taste Exchange</span>
 					</a>
@@ -284,28 +279,15 @@
 				</div>
 
 				<div class="col-lg-2 col-md-3 footer-links">
-					<h4>About EpicTasteExchange</h4>
-					<ul>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">About
-								Us</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Our
-								History</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Core
-								Values</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Expertise</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Corporate
-								Information</a></li>
-					</ul>
-				</div>
-
-				<div class="col-lg-2 col-md-3 footer-links">
 					<h4>Useful Links</h4>
 					<ul>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Private
-								Labeling</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Culinary</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Careers</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Sitemap</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/enquire#request-sample-form">Request Sample</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/enquire#consumer-query-form">Consumer's Query</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/enquire#supplier-query-form">Supplier's Query</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="/career">Careers</a></li>
 						<li><i class="bi bi-chevron-right"></i> <a href="#">Terms
 								of service</a></li>
 					</ul>
@@ -314,23 +296,26 @@
 				<div class="col-lg-2 col-md-3 footer-links">
 					<h4>Products</h4>
 					<ul>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products">All Products</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=dehydrated-vegetables">Dehydrated Vegetables</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=dried-vegetables">Dried Vagetables</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=pure-spices">Pure Spices</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="/products">All
+								Products</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/products?filter=dehydrated-vegetables">Dehydrated
+								Vegetables</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/products?filter=dried-vegetables">Dried Vagetables</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/products?filter=pure-spices">Pure Spices</a></li>
 					</ul>
 				</div>
 
 				<div class="col-lg-3 col-md-12">
 					<h4>Follow Us</h4>
-					<p>Cras fermentum odio eu feugiat lide par naso tierra videa
-						magna derita valies</p>
+					<p>Stay connected! Follow us on social media for the latest
+						product updates</p>
 					<div class="social-links d-flex">
-						<a href=""><i class="bi bi-twitter-x"></i></a> <a href=""><i
-							class="bi bi-facebook"></i></a> <a href=""><i
-							class="bi bi-instagram"></i></a> <a href=""><i
-							class="bi bi-linkedin"></i></a> <a href=""><i
-							class="bi bi-youtube"></i></a>
+						<a href=""><i class="bi bi-facebook"></i></a>
+						<a href=""><i class="bi bi-instagram"></i></a> 
+						<a href=""><i class="bi bi-linkedin"></i></a> 
 					</div>
 				</div>
 

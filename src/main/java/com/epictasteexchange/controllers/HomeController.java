@@ -6,6 +6,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import com.epictasteexchange.services.ProductService;
 
 @Controller
@@ -52,6 +54,19 @@ public class HomeController {
 		System.out.println("Enquire Page");
 		model.addAttribute("products", productService.getAllProducts());
 		return "Enquire";
+	}
+	
+	@GetMapping("/products/search")
+	public String searchProducts(Model model, @RequestParam String query) {
+		model.addAttribute("products", productService.searchProduct(query));
+		System.out.println("Search Products Page");
+		return "SearchProduct";
+	}
+	
+	@GetMapping("/error")
+	public String error() {
+		System.out.println("Error Page");
+		return "Error";
 	}
 
 }

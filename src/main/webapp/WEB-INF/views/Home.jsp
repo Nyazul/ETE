@@ -12,10 +12,14 @@
 
 <!-- Favicons -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="${pageContext.request.contextPath}/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/images/favicon-16x16.png">
-<link rel="manifest" href="${pageContext.request.contextPath}/images/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180"
+	href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="${pageContext.request.contextPath}/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16"
+	href="${pageContext.request.contextPath}/images/favicon-16x16.png">
+<link rel="manifest"
+	href="${pageContext.request.contextPath}/images/site.webmanifest">
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -74,22 +78,21 @@
 					<li><a href="/products">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
 					<li><div class="search-bar">
-				            <form id="searchForm" action="/products/search" method="get" autocomplete="off">
-					            <input type="text" name="query" placeholder="  Search products"
-						            required 
-						            onkeypress="if (event.key === 'Enter') this.form.submit()">
-				            </form>
-			            </div>
-                    </li>
+							<form id="searchForm" action="/products/search" method="get"
+								autocomplete="off">
+								<input type="text" name="query" placeholder="  Search products"
+									required
+									onkeypress="if (event.key === 'Enter') this.form.submit()">
+							</form>
+						</div></li>
 				</ul>
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
 
 			<div class="header-social-links">
-				<a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> <a
-					href="#" class="facebook"><i class="bi bi-facebook"></i></a> <a
-					href="#" class="instagram"><i class="bi bi-instagram"></i></a> <a
-					href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+				<a href="#" class="facebook"><i class="bi bi-facebook"></i></a> 
+				<a href="#" class="instagram"><i class="bi bi-instagram"></i></a> 
+				<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
 			</div>
 
 		</div>
@@ -110,7 +113,8 @@
 						<h2>Welcome to EpicTasteExchange</h2>
 						<p>Your trusted partner for premium food products, providing
 							the finest ingredients from around the world.</p>
-						<a href="/test/products" class="btn-get-started">Explore Products</a>
+						<a href="/test/products" class="btn-get-started">Explore
+							Products</a>
 					</div>
 				</div>
 			</div>
@@ -126,16 +130,15 @@
 				<h2>About</h2>
 				<p>
 					"Epic Taste Exchange" is the historic brand of all the dehydrated
-					and spice products based in Mahuva, Gujarat.<br> <br>
-					Focusing on and specializing in the production and packaging of
-					high quality Spices & Herbs, to guarantee product consistency and
-					emphasis in delivering our customers the highest possible product
-					quality.<br> <br> Epic Taste Exchange will be one of the
-					leading brands in the Spices & Herbs market for its quality and
-					purity across PAN India by increasing brand loyalty. Initially we
-					will be having our network of product distribution widely in
-					Kerala, Karnataka, Tamilnadu, Andhra Pradesh, Gujarat, Pondicherry,
-					Maharashtra, Uttar Pradesh.
+					and spice products based in Mahuva, Gujarat.<br> Focusing on
+					and specializing in the production and packaging of high quality
+					Spices & Herbs, to guarantee product consistency and emphasis in
+					delivering our customers the highest possible product quality.<br>Epic
+					Taste Exchange will be one of the leading brands in the Spices &
+					Herbs market for its quality and purity across PAN India by
+					increasing brand loyalty. Initially we will be having our network
+					of product distribution widely in Kerala, Karnataka, Tamilnadu,
+					Andhra Pradesh, Gujarat, Pondicherry, Maharashtra, Uttar Pradesh.
 				</p>
 			</div>
 			<!-- End Section Title -->
@@ -153,16 +156,19 @@
 						<p>Meet the highest standards of quality, freshness and
 							seasonality with fine-tuned eco-friendly activities and ensuring
 							prompt, professional, friendly, and courteous service throughout
-							and be transparent about all business practices.</p><br>
+							and be transparent about all business practices.</p>
+						<br>
 						<h3>Our Vision</h3>
 						<p>Bring to the world high-Quality food products that
 							anticipate and satisfy people's desire and need. Also making a
-							difference in the community by being responsible citizen.</p><br>
+							difference in the community by being responsible citizen.</p>
+						<br>
 						<h3>Leadership Team</h3>
 						<p>Our team of experts in food science, logistics, and
 							customer service are dedicated to meeting the diverse needs of
 							our customers. From sourcing to delivery, our team ensures a
-							seamless process that exceeds expectations.</p><br>
+							seamless process that exceeds expectations.</p>
+						<br>
 					</div>
 				</div>
 
@@ -191,9 +197,7 @@
 								src="${pageContext.request.contextPath}/assets/img/global-sourcing.jpg"
 								alt="" class="img-fluid">
 							<div class="card-body">
-								<h3>
-									<a href="#" class="stretched-link">Global Sourcing</a>
-								</h3>
+								<h3 class="stretched-link">Global Sourcing</h3>
 								<div class="card-content">
 									<p>We source our products from the best farms and
 										manufacturers across the globe</p>
@@ -210,9 +214,7 @@
 								src="${pageContext.request.contextPath}/assets/img/quality-control.jpg"
 								alt="" class="img-fluid">
 							<div class="card-body">
-								<h3>
-									<a href="#" class="stretched-link">Quality Control</a>
-								</h3>
+								<h3 class="stretched-link">Quality Control</h3>
 								<div class="card-content">
 									<p>Stringent quality control processes ensure that you get
 										only the finest products</p>
@@ -229,9 +231,7 @@
 								src="${pageContext.request.contextPath}/assets/img/customer-focus.jpg"
 								alt="" class="img-fluid">
 							<div class="card-body">
-								<h3>
-									<a href="#" class="stretched-link">Customer Focus</a>
-								</h3>
+								<h3 class="stretched-link">Customer Focus</h3>
 								<div class="card-content">
 									<p>We are committed to delivering superior customer service
 										and satisfaction</p>
@@ -249,163 +249,14 @@
 		<!-- /Featured Services Section -->
 
 
-
-		<!-- Testimonials Section -->
-		<section id="testimonials"
-			class="testimonials section dark-background">
-
-			<img
-				src="${pageContext.request.contextPath}/assets/img/testimonials-bg.jpg"
-				class="testimonials-bg" alt="">
-
-			<div class="container" data-aos="fade-up" data-aos-delay="100">
-
-				<div class="swiper init-swiper">
-					<script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              }
-            }
-          </script>
-					<div class="swiper-wrapper">
-						<h3>What Our Clients Say</h3>
-						<div class="swiper-slide">
-							<div class="testimonial-item">
-								<img
-									src="${pageContext.request.contextPath}/assets/img/testimonials/testimonials-1.jpg"
-									class="testimonial-img" alt="">
-								<h3>Sarah</h3>
-								<h4>Head Chef</h4>
-								<div class="stars">
-									<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-										class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-										class="bi bi-star-fill"></i>
-								</div>
-								<p>
-									<i class="bi bi-quote quote-icon-left"></i> <span>EpicTasteExchange
-										has been our go-to supplier for quality ingredients. Their
-										products are always fresh and of the highest standard!</span> <i
-										class="bi bi-quote quote-icon-right"></i>
-								</p>
-							</div>
-						</div>
-						<!-- End testimonial item -->
-
-						<div class="swiper-slide">
-							<div class="testimonial-item">
-								<img
-									src="${pageContext.request.contextPath}/assets/img/testimonials/testimonials-2.jpg"
-									class="testimonial-img" alt="">
-								<h3>John</h3>
-								<h4>Restaurant Owner</h4>
-								<div class="stars">
-									<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-										class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-										class="bi bi-star-fill"></i>
-								</div>
-								<p>
-									<i class="bi bi-quote quote-icon-left"></i> <span>Exceptional
-										service and unbeatable quality. EpicTasteExchange always
-										delivers on time.</span> <i class="bi bi-quote quote-icon-right"></i>
-								</p>
-							</div>
-						</div>
-						<!-- End testimonial item -->
-
-						<div class="swiper-slide">
-							<div class="testimonial-item">
-								<img
-									src="${pageContext.request.contextPath}/assets/img/testimonials/testimonials-3.jpg"
-									class="testimonial-img" alt="">
-								<h3>Jena Karlis</h3>
-								<h4>Store Owner</h4>
-								<div class="stars">
-									<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-										class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-										class="bi bi-star-fill"></i>
-								</div>
-								<p>
-									<i class="bi bi-quote quote-icon-left"></i> <span>Enim
-										nisi quem export duis labore cillum quae magna enim sint
-										quorum nulla quem veniam duis minim tempor labore quem eram
-										duis noster aute amet eram fore quis sint minim.</span> <i
-										class="bi bi-quote quote-icon-right"></i>
-								</p>
-							</div>
-						</div>
-						<!-- End testimonial item -->
-
-						<div class="swiper-slide">
-							<div class="testimonial-item">
-								<img
-									src="${pageContext.request.contextPath}/assets/img/testimonials/testimonials-4.jpg"
-									class="testimonial-img" alt="">
-								<h3>Matt Brandon</h3>
-								<h4>Freelancer</h4>
-								<div class="stars">
-									<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-										class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-										class="bi bi-star-fill"></i>
-								</div>
-								<p>
-									<i class="bi bi-quote quote-icon-left"></i> <span>Fugiat
-										enim eram quae cillum dolore dolor amet nulla culpa multos
-										export minim fugiat minim velit minim dolor enim duis veniam
-										ipsum anim magna sunt elit fore quem dolore labore illum
-										veniam.</span> <i class="bi bi-quote quote-icon-right"></i>
-								</p>
-							</div>
-						</div>
-						<!-- End testimonial item -->
-
-						<div class="swiper-slide">
-							<div class="testimonial-item">
-								<img
-									src="${pageContext.request.contextPath}/assets/img/testimonials/testimonials-5.jpg"
-									class="testimonial-img" alt="">
-								<h3>John Larson</h3>
-								<h4>Entrepreneur</h4>
-								<div class="stars">
-									<i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-										class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-										class="bi bi-star-fill"></i>
-								</div>
-								<p>
-									<i class="bi bi-quote quote-icon-left"></i> <span>Quis
-										quorum aliqua sint quem legam fore sunt eram irure aliqua
-										veniam tempor noster veniam enim culpa labore duis sunt culpa
-										nulla illum cillum fugiat legam esse veniam culpa fore nisi
-										cillum quid.</span> <i class="bi bi-quote quote-icon-right"></i>
-								</p>
-							</div>
-						</div>
-						<!-- End testimonial item -->
-
-					</div>
-					<div class="swiper-pagination"></div>
-				</div>
-
-			</div>
-
-		</section>
-		<!-- /Testimonials Section -->
-
 		<!-- Contact Section -->
 		<section id="contact" class="contact section">
 
 			<!-- Section Title -->
 			<div class="container section-title" data-aos="fade-up">
 				<h2>Contact</h2>
-				<p>For inquiries or further assistance, please don't hesitate to contact us. We are here to support you</p>
+				<p>For inquiries or further assistance, please don't hesitate to
+					contact us. We are here to support you</p>
 			</div>
 			<!-- End Section Title -->
 
@@ -427,7 +278,8 @@
 							<i class="bi bi-geo-alt flex-shrink-0"></i>
 							<div>
 								<h3>Address</h3>
-								<p>Parshival Para, near Hotel Sunlight, Mahuva, Bhavnagar, Gujarat - 364290</p>
+								<p>Parshival Para, near Hotel Sunlight, Mahuva, Bhavnagar,
+									Gujarat - 364290</p>
 							</div>
 						</div>
 						<!-- End Info Item -->
@@ -468,7 +320,7 @@
 
 		<div class="container footer-top">
 			<div class="row gy-4">
-				<div class="col-lg-3 col-md-6 footer-about">
+				<div class="col-lg-5 col-md-6 footer-about">
 					<a href="index.html" class="d-flex align-items-center"> <span
 						class="sitename">Epic Taste Exchange</span>
 					</a>
@@ -487,28 +339,15 @@
 				</div>
 
 				<div class="col-lg-2 col-md-3 footer-links">
-					<h4>About EpicTasteExchange</h4>
-					<ul>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">About
-								Us</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Our
-								History</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Core
-								Values</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Expertise</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Corporate
-								Information</a></li>
-					</ul>
-				</div>
-
-				<div class="col-lg-2 col-md-3 footer-links">
 					<h4>Useful Links</h4>
 					<ul>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Private
-								Labeling</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Culinary</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Careers</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="#">Sitemap</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/enquire#request-sample-form">Request Sample</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/enquire#consumer-query-form">Consumer's Query</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/enquire#supplier-query-form">Supplier's Query</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="/career">Careers</a></li>
 						<li><i class="bi bi-chevron-right"></i> <a href="#">Terms
 								of service</a></li>
 					</ul>
@@ -517,23 +356,26 @@
 				<div class="col-lg-2 col-md-3 footer-links">
 					<h4>Products</h4>
 					<ul>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products">All Products</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=dehydrated-vegetables">Dehydrated Vegetables</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=dried-vegetables">Dried Vagetables</a></li>
-						<li><i class="bi bi-chevron-right"></i> <a href="/products?filter=pure-spices">Pure Spices</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a href="/products">All
+								Products</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/products?filter=dehydrated-vegetables">Dehydrated
+								Vegetables</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/products?filter=dried-vegetables">Dried Vagetables</a></li>
+						<li><i class="bi bi-chevron-right"></i> <a
+							href="/products?filter=pure-spices">Pure Spices</a></li>
 					</ul>
 				</div>
 
 				<div class="col-lg-3 col-md-12">
 					<h4>Follow Us</h4>
-					<p>Cras fermentum odio eu feugiat lide par naso tierra videa
-						magna derita valies</p>
+					<p>Stay connected! Follow us on social media for the latest
+						product updates</p>
 					<div class="social-links d-flex">
-						<a href=""><i class="bi bi-twitter-x"></i></a> <a href=""><i
-							class="bi bi-facebook"></i></a> <a href=""><i
-							class="bi bi-instagram"></i></a> <a href=""><i
-							class="bi bi-linkedin"></i></a> <a href=""><i
-							class="bi bi-youtube"></i></a>
+						<a href=""><i class="bi bi-facebook"></i></a>
+						<a href=""><i class="bi bi-instagram"></i></a> 
+						<a href=""><i class="bi bi-linkedin"></i></a> 
 					</div>
 				</div>
 

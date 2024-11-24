@@ -2,9 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.List"%>
 <%@ page import="com.epictasteexchange.models.Product"%>
-<%@ page import="com.epictasteexchange.models.Variety"%>
 
-<% Product product = (Product)request.getAttribute("product"); %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,16 +10,20 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Product Details - EpicTasteExchange</title>
+<title>Error - EpicTasteExchange</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 
 <!-- Favicons -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="${pageContext.request.contextPath}/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/images/favicon-16x16.png">
-<link rel="manifest" href="${pageContext.request.contextPath}/images/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180"
+	href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="${pageContext.request.contextPath}/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16"
+	href="${pageContext.request.contextPath}/images/favicon-16x16.png">
+<link rel="manifest"
+	href="${pageContext.request.contextPath}/images/site.webmanifest">
 
 
 <!-- Fonts -->
@@ -52,35 +54,6 @@
 <link href="${pageContext.request.contextPath}/assets/css/main.css"
 	rel="stylesheet">
 
-<script>
-    function updateVarietyDetails(button) {
-        // Get data attributes from the clicked button
-        const name = button.getAttribute("data-name");
-        const description = button.getAttribute("data-description");
-        const image = button.getAttribute("data-image");
-		const varietyDetailsContainer = document.querySelector(".variety-details-container");
-
-        // Update the product image
-        const productImage = document.querySelector(".hero img");
-        productImage.setAttribute("src", image);
-
-        const varietyDetails = "<p style='font-size: 18px;'><b style='font-size: 25px; color: #7cc576;'>Form : </b>"+name+"</p><p style='font-size: 18px;'>"+description+"</p>";
-        varietyDetailsContainer.innerHTML = varietyDetails;
-
-        // Highlight the selected variety button
-        const allButtons = document.querySelectorAll(".variety-button");
-        allButtons.forEach(btn => btn.style.border = "none"); // Reset border for all buttons
-        button.style.border = "5px solid #7cc576"; // Add green border to the clicked button
-
-		// Scroll to the top of the page
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth" // Optional for a smooth scrolling effect
-        });
-    }
-</script>
-
-
 <!-- =======================================================
   * Template Name: Knight
   * Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
@@ -90,7 +63,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="error-page">
 
 	<header id="header" class="header d-flex align-items-center fixed-top">
 		<div
@@ -98,8 +71,7 @@
 
 			<a href="/home"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
-				<%-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> --%>
-
+				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
 				<h1 class="sitename">Epic Taste Exchange</h1>
 			</a>
 
@@ -108,24 +80,24 @@
 					<li><a href="/home#hero">Home</a></li>
 					<li><a href="/home#about">About Us</a></li>
 					<li><a href="/career">Career</a></li>
-					<li><a href="/products" class="active">Products</a></li>
+					<li><a href="/products">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
-                    <li><div class="search-bar">
-				            <form id="searchForm" action="/products/search" method="get">
-					            <input type="text" name="query" placeholder="  Search products"
-						            required 
-						            onkeypress="if (event.key === 'Enter') this.form.submit()">
-				            </form>
-			            </div>
-                    </li>
+					<li><div class="search-bar">
+							<form id="searchForm" action="/products/search" method="get"
+								autocomplete="off">
+								<input type="text" name="query" placeholder="  Search products"
+									required
+									onkeypress="if (event.key === 'Enter') this.form.submit()">
+							</form>
+						</div></li>
 				</ul>
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
 
 			<div class="header-social-links">
-				<a href="#" class="facebook"><i class="bi bi-facebook"></i></a> 
-				<a href="#" class="instagram"><i class="bi bi-instagram"></i></a> 
-				<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+				<a href="#" class="facebook"><i class="bi bi-facebook"></i></a> <a
+					href="#" class="instagram"><i class="bi bi-instagram"></i></a> <a
+					href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
 			</div>
 
 		</div>
@@ -133,61 +105,15 @@
 
 	<main class="main">
 
-		<section id="products" class="hero section dark-background">
+		<!-- Error Section -->
+		<section id="error" class="hero section dark-background">
 
-			<div class="container">
-				<div class="row justify-content-center" data-aos="zoom-out">
-					<div class="col-lg-4">
-						<img
-							src="<%=product.getImageUrl()%>"
-							alt="" class="img-fluid mb-3"
-							style="width: 100%; max-width: 400px; border-radius: 1000vmax; margin-top: 30px;">
-					</div>
-                    <div class="col-lg-8">
-						<h2><%= product.getName() %></h2><br>                            
-                        <p style="font-size: 25px;"><b style="font-size: 25px; color: #7cc576;">Type : </b><%= product.getType() %></p>
-                        <p style="font-size: 18px;"><%= product.getDescription() %></p><br>
-                        <p style="font-size: 18px;"><b style="font-size: 25px; color: #7cc576;">Intended Use : </b><%= product.getIntendedUse() %></p><br><br>
-						<div class="variety-details-container"></div>
-                        <a href="/enquire#request-sample-form" class="btn-get-started">Request Sample</a>
-					</div>
-				</div><br><br>
-
-                <%
-		        if (product.getVarieties() != null) {
-		        %>
-
-                    <p style="text-align: center; margin: 10px">
-                        <b style="color: #7cc576; font-size: 25px;">Forms Available</b>
-                    </p>                
-                    <div class="row justify-content-center data-aos="zoom-out"">
-
-                    <%
-                    List<Variety> varieties = product.getVarieties();
-                    if (varieties != null) {
-                        for (Variety variety : varieties) {
-                    %>
-                    <div class="variety-button"
-                        id="variety-<%=variety.getName()%>"
-                        data-name="<%=variety.getName()%>"
-                        data-description="<%=variety.getDescription()%>"
-                        data-image="<%=variety.getImageUrl()%>"
-                        onclick="updateVarietyDetails(this)"
-                        style="background-image: url('<%=variety.getImageUrl()%>'); cursor: pointer;">
-                        <p style="font-size: 20px; font-weight: bolder;"><%=variety.getName()%></p>
-                    </div>
-
-                    <%
-                        }
-                    }
-                    %>
-                    
-            <%  } %>
-
+			<div class="row justify-content-center text-center mb-5" data-aos="zoom-out">
+				<h2>Oops!<br><br>Something went wrong :(</h2>
 			</div>
 
 		</section>
-		
+		<!-- /Error Section -->
 
 	</main>
 
@@ -248,9 +174,9 @@
 					<p>Stay connected! Follow us on social media for the latest
 						product updates</p>
 					<div class="social-links d-flex">
-						<a href=""><i class="bi bi-facebook"></i></a>
-						<a href=""><i class="bi bi-instagram"></i></a> 
-						<a href=""><i class="bi bi-linkedin"></i></a> 
+						<a href=""><i class="bi bi-facebook"></i></a> <a href=""><i
+							class="bi bi-instagram"></i></a> <a href=""><i
+							class="bi bi-linkedin"></i></a>
 					</div>
 				</div>
 
