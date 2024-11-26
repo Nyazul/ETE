@@ -154,7 +154,7 @@
 				</div><br><br>
 
                 <%
-		        if (product.getVarieties() != null) {
+		        if (!product.getVarieties().isEmpty()) {
 		        %>
 
                     <p style="text-align: center; margin: 10px">

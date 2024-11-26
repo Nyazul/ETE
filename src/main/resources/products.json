@@ -198,7 +198,7 @@
 			{
 				"name": "Powder",
 				"description": " Fenugreek powder, made from ground seeds, is commonly used in spice blends, such as curry powders, and in dishes like lentils and stews, adding a distinctive sweetness and depth. ",
-				"imageUrl": "/images/Product_Images/Fenugreek_Powder.jfif"
+				"imageUrl": "/images/Product_Images/Fenugreek_Powder.jpeg"
 			}
 		],
 		"intendedUse": " It is widely used in various cuisines, especially in Indian cooking, where it adds depth to curries, pickles, and spice blends. Fenugreek leaves, known as 'methi', are also popular in cooking, used fresh or dried to enhance dishes. Beyond its culinary applications, fenugreek is celebrated for its potential health benefits, including aiding digestion and regulating blood sugar levels. ",
@@ -333,7 +333,7 @@
 			{
 				"name": "Flakes",
 				"description": " Dehydrated white onion flakes typically range in size from about 1/8 inch to 1/4 inch. This size allows for even rehydration and easy incorporation into various dishes, ensuring a balanced onion flavor throughout your meals..",
-				"imageUrl": "/images/Product_Images/Dehydrated_White_Onion_Flakes.webp"
+				"imageUrl": "/images/Product_Images/Dehydrated_White_Onion_Flakes.jpg"
 			},
 			{
 				"name": "Chopped",
@@ -357,7 +357,7 @@
 			}
 		],
 		"intendedUse": "Used in various dishes for flavoring.",
-		"imageUrl": "/images/Product_Images/Dehydrated_White_Onion_Flakes.webp"
+		"imageUrl": "/images/Product_Images/Dehydrated_White_Onion_Flakes.jpg"
 	},
 	{
 		"id": "DV2",
@@ -458,7 +458,7 @@
 			{
 				"name": "Powder",
 				"description": " Dehydrated garlic powder is very fine, generally less than 0.5 mm in size. This ultra-fine texture makes it ideal for adding concentrated garlic flavor to marinades, sauces, and dressings, ensuring seamless incorporation without any gritty texture. ",
-				"imageUrl": "/images/Product_Images/Dehydrated_Garlic_Powder.jfif"
+				"imageUrl": "/images/Product_Images/Dehydrated_Garlic_Powder.jpeg"
 			}
 		],
 		"intendedUse": " Flakes are perfect for soups, stews, sauces, and casseroles; adds flavor and texture. Chips are great as a crunchy snack, topping for salads, or in roasted dishes for extra garlic flavor. Minced are ideal for sauces, dressings, and marinades, providing concentrated flavor without bulk. Garnule is useful in seasoning blends, dry rubs, and soups for even flavor distribution. Powder is excellent for marinades, dips, and baked goods, allowing for easy incorporation of garlic flavor without texture. ",
@@ -488,7 +488,7 @@
 			{
 				"name": "Granules",
 				"description": " Dehydrated carrot granules usually range from about 0.5 to 1.5 mm in size. This form is ideal for seasoning blends, soups, and sauces, allowing for even distribution of flavor and nutrients. Carrot granules are easy to use and rehydrate quickly, making them a convenient option for enhancing various dishes. ",
-				"imageUrl": "/images/Product_Images/Dehydrated_Carrot_Granule.jfif"
+				"imageUrl": "/images/Product_Images/Dehydrated_Carrot_Granule.png"
 			},
 			{
 				"name": "Powder",
