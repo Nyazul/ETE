@@ -113,7 +113,7 @@
 						<h2>Welcome to EpicTasteExchange</h2>
 						<p>Your trusted partner for premium food products, providing
 							the finest ingredients from around the world.</p>
-						<a href="/test/products" class="btn-get-started">Explore
+						<a href="/products" class="btn-get-started">Explore
 							Products</a>
 					</div>
 				</div>
