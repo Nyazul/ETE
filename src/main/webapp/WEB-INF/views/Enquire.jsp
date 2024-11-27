@@ -94,9 +94,10 @@
 			</nav>
 
 			<div class="header-social-links">
+				<a href="https://x.com/ETESpices" class="twitter"><i class="bi bi-twitter-x"></i></a> 
 				<a href="#" class="facebook"><i class="bi bi-facebook"></i></a> 
-				<a href="#" class="instagram"><i class="bi bi-instagram"></i></a> 
-				<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+				<a href="https://www.instagram.com/etespices/" class="instagram"><i class="bi bi-instagram"></i></a> 
+				<a href="https://linkedin.com/in/ete-spices-95607a33b" class="linkedin"><i class="bi bi-linkedin"></i></a>
 			</div>
 
 		</div>
@@ -313,11 +314,11 @@
 					<p>Stay connected! Follow us on social media for the latest
 						product updates</p>
 					<div class="social-links d-flex">
+						<a href="https://x.com/ETESpices"><i class="bi bi-twitter-x"></i></a> 
 						<a href=""><i class="bi bi-facebook"></i></a>
-						<a href=""><i class="bi bi-instagram"></i></a> 
-						<a href=""><i class="bi bi-linkedin"></i></a> 
+						<a href="https://www.instagram.com/etespices/"><i class="bi bi-instagram"></i></a> 
+						<a href="https://linkedin.com/in/ete-spices-95607a33b"><i class="bi bi-linkedin"></i></a> 
 					</div>
-				</div>
 
 			</div>
 		</div>
