@@ -2570,6 +2570,10 @@ button:hover {
 	font-size: 18px;
 }
 
+#list {
+	height: fit-content;
+}
+
 @media ( max-width : 1199px) {
 	.parallax-container {
 		display: none;
@@ -2613,10 +2617,12 @@ button:hover {
 		padding: 0px;
 	}
 	#list {
-		padding: 0px 15px;
+		padding: 130px 15px;
 		padding-top: 130px;
+		padding-bottom: 50px;
 		margin: 0px;
 		border-radius: 0px;
+		display: block;
 	}
 	#products {
 		padding-top: 50px;

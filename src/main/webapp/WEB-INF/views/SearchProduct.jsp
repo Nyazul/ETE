@@ -108,7 +108,7 @@
 	<main class="main">
 
 		<!-- Products Section -->
-		<section id="list" class="portfolio section dark-background" style="height: 100vh;">
+		<section id="list" class="portfolio section dark-background">
 
 			<div class="container">
 
@@ -132,7 +132,6 @@
 						List<Product> products = (List<Product>) request.getAttribute("products");
 
 						if (!products.isEmpty()) {
-							System.out.println("Out: " + products);
 							for (Product product : products) {
 								String filterType = "";
 								switch (product.getType()) {
