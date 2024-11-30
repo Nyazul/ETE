@@ -2587,6 +2587,9 @@ button:hover {
 	.career-section h2 {
 		font-size: 25px;
 	}
+	#supplier-query-form, #careerForm {
+		padding-bottom: 50px;
+	}
 	.form-row {
 		display: block;
 		gap: 0px;
