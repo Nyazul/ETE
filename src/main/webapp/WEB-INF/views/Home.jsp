@@ -192,10 +192,10 @@
 				<div class="row gy-4">
 
 					<div class="col-lg-4 col-md-6" data-aos="fade-up"
-						data-aos-delay="100">
+						data-aos-delay="50">
 						<div class="card">
 							<img
-								src="${pageContext.request.contextPath}/assets/img/global-sourcing.jpg"
+								src="${pageContext.request.contextPath}/assets/img/global-sourcing (1).jpg"
 								alt="" class="img-fluid">
 							<div class="card-body">
 								<h3 class="stretched-link">Global Sourcing</h3>
@@ -209,10 +209,10 @@
 					<!-- End Card Item -->
 
 					<div class="col-lg-4 col-md-6" data-aos="fade-up"
-						data-aos-delay="200">
+						data-aos-delay="100">
 						<div class="card">
 							<img
-								src="${pageContext.request.contextPath}/assets/img/quality-control.jpg"
+								src="${pageContext.request.contextPath}/assets/img/quality-control (1).jpg"
 								alt="" class="img-fluid">
 							<div class="card-body">
 								<h3 class="stretched-link">Quality Control</h3>
@@ -226,10 +226,10 @@
 					<!-- End Card Item -->
 
 					<div class="col-lg-4 col-md-6" data-aos="fade-up"
-						data-aos-delay="300">
+						data-aos-delay="150">
 						<div class="card">
 							<img
-								src="${pageContext.request.contextPath}/assets/img/customer-focus.jpg"
+								src="${pageContext.request.contextPath}/assets/img/customer-focus (1).jpg"
 								alt="" class="img-fluid">
 							<div class="card-body">
 								<h3 class="stretched-link">Customer Focus</h3>

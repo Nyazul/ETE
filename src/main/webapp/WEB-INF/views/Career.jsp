@@ -125,8 +125,12 @@
 
 				<input type="text" id="address" name="address" placeholder="Address">
 
-				<input type="text" id="position" name="position"
-					placeholder="Which Position(s) are you applying for? *" required>
+				<select id="position" name="position" required>
+					<option value="" disabled selected>Which Position(s) are you applying for? *</option>
+					<option value="sales executive">Sales Executive</option>
+				</select>
+<!-- 				<input type="text" id="position" name="position" -->
+<!-- 					placeholder="Which Position(s) are you applying for? *" required> -->
 
 				<div class="file-attachment">
 					<label for="resume" class="file-label">Attach your updated
