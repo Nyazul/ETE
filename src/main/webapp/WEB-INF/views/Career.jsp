@@ -127,7 +127,9 @@
 
 				<select id="position" name="position" required>
 					<option value="" disabled selected>Which Position(s) are you applying for? *</option>
-					<option value="sales executive">Sales Executive</option>
+					<option value="Sales Executive">Sales Executive</option>
+					<option value="Sales Manager">Sales Manageer</option>
+					<option value="Business Development Executive">Business Development Executive</option>
 				</select>
 <!-- 				<input type="text" id="position" name="position" -->
 <!-- 					placeholder="Which Position(s) are you applying for? *" required> -->

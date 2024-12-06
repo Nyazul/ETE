@@ -163,26 +163,26 @@
                     </p>                
                     <div class="row justify-content-center data-aos="zoom-out"">
 
-                    <%
-                    List<Variety> varieties = product.getVarieties();
-                    if (varieties != null) {
-                        for (Variety variety : varieties) {
-                    %>
-                    <div class="variety-button"
-                        id="variety-<%=variety.getName()%>"
-                        data-name="<%=variety.getName()%>"
-                        data-description="<%=variety.getDescription()%>"
-                        data-image="<%=variety.getImageUrl()%>"
-                        onclick="updateVarietyDetails(this)"
-                        style="background-image: url('<%=variety.getImageUrl()%>'); cursor: pointer;">
-                        <p style="font-size: 20px; font-weight: bolder;"><%=variety.getName()%></p>
+	                    <%
+	                    List<Variety> varieties = product.getVarieties();
+	                    if (varieties != null) {
+	                        for (Variety variety : varieties) {
+	                    %>
+	                    <div class="variety-button"
+	                        id="variety-<%=variety.getName()%>"
+	                        data-name="<%=variety.getName()%>"
+	                        data-description="<%=variety.getDescription()%>"
+	                        data-image="<%=variety.getImageUrl()%>"
+	                        onclick="updateVarietyDetails(this)"
+	                        style="background-image: url('<%=variety.getImageUrl()%>'); cursor: pointer;">
+	                        <p style="font-size: 20px; font-weight: bolder;"><%=variety.getName()%></p>
+	                    </div>
+	
+	                    <%
+	                        }
+	                    }
+	                    %>
                     </div>
-
-                    <%
-                        }
-                    }
-                    %>
-                    
             <%  } %>
 
 			</div>
