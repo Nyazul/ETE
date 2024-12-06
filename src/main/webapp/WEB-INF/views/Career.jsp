@@ -126,7 +126,7 @@
 				<input type="text" id="address" name="address" placeholder="Address">
 
 				<select id="position" name="position" required>
-					<option value="" disabled selected>Which Position(s) are you applying for? *</option>
+					<option value="" disabled selected>Which Position are you applying for? *</option>
 					<option value="Sales Executive">Sales Executive</option>
 					<option value="Sales Manager">Sales Manageer</option>
 					<option value="Business Development Executive">Business Development Executive</option>

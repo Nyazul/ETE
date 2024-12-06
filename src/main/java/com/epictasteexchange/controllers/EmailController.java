@@ -60,7 +60,7 @@ public class EmailController {
                     "Query: %s\n",
                  firstName, lastName, email, companyName, email, phone, query != null ? query : "N/A");
         }
-        String toMail = "ansarinyazul2003@gmail.com";
+        String toMail = "info.epictasteexchange@gmail.com";
 
 		emailService.sendSimpleEmail(toMail, subject, emailBody);
 
@@ -90,11 +90,11 @@ public class EmailController {
 	                    "Email: %s\n" +
 	                    "Phone: %s\n" +
 	                    "Address: %s\n" +
-	                    "Position(s): %s\n" +
+	                    "Position: %s\n" +
 	                    "Attached Resume: %s",
 	            firstName, lastName, email, phone, address, position, filename);
 
-	    String toMail = "ansarinyazul2003@gmail.com";
+	    String toMail = "info.epictasteexchange@gmail.com";
 
 	    try {
 	        // Attach the resume and send the email
