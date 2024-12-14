@@ -2,6 +2,7 @@ package com.epictasteexchange.services;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -53,9 +54,15 @@ public class ProductService {
         ObjectMapper objectMapper = new ObjectMapper();
 
         try {
+            // Load resource from classpath
+            InputStream inputStream = getClass().getResourceAsStream("/static/products.json");
+            if (inputStream == null) {
+                throw new RuntimeException("products.json not found in classpath");
+            }
+            
             // Reading the products.json file and converting to List<Product>
             products = objectMapper.readValue(
-                new File("src/main/resources/products.json"),
+                inputStream,
                 new TypeReference<List<Product>>() {}
             );
         } catch (IOException e) {

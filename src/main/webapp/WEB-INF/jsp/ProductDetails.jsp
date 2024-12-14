@@ -2,7 +2,9 @@
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.List"%>
 <%@ page import="com.epictasteexchange.models.Product"%>
+<%@ page import="com.epictasteexchange.models.Variety"%>
 
+<% Product product = (Product)request.getAttribute("product"); %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,20 +12,16 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Search Results - EpicTasteExchange</title>
+<title>Product Details - EpicTasteExchange</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 
 <!-- Favicons -->
 
-<link rel="apple-touch-icon" sizes="180x180"
-	href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32"
-	href="${pageContext.request.contextPath}/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16"
-	href="${pageContext.request.contextPath}/images/favicon-16x16.png">
-<link rel="manifest"
-	href="${pageContext.request.contextPath}/images/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="${pageContext.request.contextPath}/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="${pageContext.request.contextPath}/static/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/static/images/favicon-16x16.png">
+<link rel="manifest" href="${pageContext.request.contextPath}/static/images/site.webmanifest">
 
 
 <!-- Fonts -->
@@ -35,24 +33,52 @@
 
 <!-- Vendor CSS Files -->
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap/css/bootstrap.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/aos/aos.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/glightbox/css/glightbox.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/glightbox/css/glightbox.min.css"
 	rel="stylesheet">
 
 <!-- Main CSS File -->
-<link href="${pageContext.request.contextPath}/assets/css/main.css"
+<link href="${pageContext.request.contextPath}/static/assets/css/main.css"
 	rel="stylesheet">
+
+<script>
+    function updateVarietyDetails(button) {
+        // Get data attributes from the clicked button
+        const name = button.getAttribute("data-name");
+        const description = button.getAttribute("data-description");
+        const image = button.getAttribute("data-image");
+		const varietyDetailsContainer = document.querySelector(".variety-details-container");
+
+        // Update the product image
+        const productImage = document.querySelector(".hero img");
+        productImage.setAttribute("src", image);
+
+        const varietyDetails = "<p style='font-size: 18px;'><b style='font-size: 25px; color: #7cc576;'>Form : </b>"+name+"</p><p style='font-size: 18px;'>"+description+"</p>";
+        varietyDetailsContainer.innerHTML = varietyDetails;
+
+        // Highlight the selected variety button
+        const allButtons = document.querySelectorAll(".variety-button");
+        allButtons.forEach(btn => btn.style.border = "none"); // Reset border for all buttons
+        button.style.border = "5px solid #7cc576"; // Add green border to the clicked button
+
+		// Scroll to the top of the page
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // Optional for a smooth scrolling effect
+        });
+    }
+</script>
 
 
 <!-- =======================================================
@@ -64,7 +90,7 @@
   ======================================================== -->
 </head>
 
-<body class="search-products-page">
+<body class="index-page">
 
 	<header id="header" class="header d-flex align-items-center fixed-top">
 		<div
@@ -72,7 +98,8 @@
 
 			<a href="/home"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
-				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
+				<%-- <img src="${pageContext.request.contextPath}/static/assets/img/ETE.png" alt=""> --%>
+
 				<h1 class="sitename">Epic Taste Exchange</h1>
 			</a>
 
@@ -83,14 +110,14 @@
 					<li><a href="/career">Career</a></li>
 					<li><a href="/products" class="active">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
-					<li><div class="search-bar">
-							<form id="searchForm" action="/products/search" method="get"
-								autocomplete="off">
-								<input type="text" name="query" placeholder="  Search products"
-									required
-									onkeypress="if (event.key === 'Enter') this.form.submit()">
-							</form>
-						</div></li>
+                    <li><div class="search-bar">
+				            <form id="searchForm" action="/products/search" method="get">
+					            <input type="text" name="query" placeholder="  Search products"
+						            required 
+						            onkeypress="if (event.key === 'Enter') this.form.submit()">
+				            </form>
+			            </div>
+                    </li>
 				</ul>
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
@@ -107,74 +134,61 @@
 
 	<main class="main">
 
-		<!-- Products Section -->
-		<section id="list" class="portfolio section dark-background">
+		<section id="products" class="hero section dark-background">
 
 			<div class="container">
-
-				<%
-				String query = request.getParameter("query");
-				%>
-				<div class="row justify-content-center text-center mb-5"
-					data-aos="zoom-out">
-					<h2>
-						Search Results for
-						<%=query%></h2>
-				</div>
-
-				<div class="isotope-layout" data-default-filter="*"
-					data-layout="masonry" data-sort="original-order">
-
-					<div class="row gy-4 isotope-container" data-aos="fade-up"
-						data-aos-delay="150">
-
-						<%
-						List<Product> products = (List<Product>) request.getAttribute("products");
-
-						if (!products.isEmpty()) {
-							for (Product product : products) {
-								String filterType = "";
-								switch (product.getType()) {
-								case "Dehydrated Vegetables":
-							filterType = "dehydrated-vegetables";
-							break;
-								case "Dried Vegetables":
-							filterType = "dried-vegetables";
-							break;
-								case "Pure Spices":
-							filterType = "pure-spices";
-							break;
-								}
-						%>
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-<%=filterType%>"
-							onclick="window.location.href='/product/details/<%=product.getId()%>'">
-							<img src="<%=product.getImageUrl()%>" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4><%=product.getName()%></h4>
-							</div>
-						</div>
-						<%
-						}
-						} else {
-						%>
-						<div class="row justify-content-center text-center mb-5"
-							data-aos="zoom-out">
-							<h2>
-								No products available</h2>
-						</div>
-						<%
-						}
-						%>
-
+				<div class="row justify-content-center" data-aos="zoom-out">
+					<div class="col-lg-4">
+						<img
+							src="${pageContext.request.contextPath}/static/<%=product.getImageUrl()%>"
+							alt="" class="img-fluid mb-3"
+							style="width: 100%; max-width: 400px; border-radius: 1000vmax; margin-top: 30px;">
 					</div>
+                    <div class="col-lg-8">
+						<h2><%= product.getName() %></h2><br>                            
+                        <p style="font-size: 25px;"><b style="font-size: 25px; color: #7cc576;">Type : </b><%= product.getType() %></p>
+                        <p style="font-size: 18px;"><%= product.getDescription() %></p><br>
+                        <p style="font-size: 18px;"><b style="font-size: 25px; color: #7cc576;">Intended Use : </b><%= product.getIntendedUse() %></p><br><br>
+						<div class="variety-details-container"></div>
+                        <a href="/enquire#request-sample-form" class="btn-get-started">Request Sample</a>
+					</div>
+				</div><br><br>
 
-				</div>
+                <%
+		        if (!product.getVarieties().isEmpty()) {
+		        %>
+
+                    <p style="text-align: center; margin: 10px">
+                        <b style="color: #7cc576; font-size: 25px;">Forms Available</b>
+                    </p>                
+                    <div class="row justify-content-center data-aos="zoom-out"">
+
+	                    <%
+	                    List<Variety> varieties = product.getVarieties();
+	                    if (varieties != null) {
+	                        for (Variety variety : varieties) {
+	                    %>
+	                    <div class="variety-button"
+	                        id="variety-<%=variety.getName()%>"
+	                        data-name="<%=variety.getName()%>"
+	                        data-description="<%=variety.getDescription()%>"
+	                        data-image="${pageContext.request.contextPath}/static/<%=variety.getImageUrl()%>"
+	                        onclick="updateVarietyDetails(this)"
+	                        style="background-image: url('${pageContext.request.contextPath}/static/<%=variety.getImageUrl()%>'); cursor: pointer;">
+	                        <p style="font-size: 20px; font-weight: bolder;"><%=variety.getName()%></p>
+	                    </div>
+	
+	                    <%
+	                        }
+	                    }
+	                    %>
+                    </div>
+            <%  } %>
 
 			</div>
 
 		</section>
-		<!-- /Product Section -->
+		
 
 	</main>
 
@@ -272,22 +286,22 @@
 
 	<!-- Vendor JS Files -->
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/php-email-form/validate.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/php-email-form/validate.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/aos/aos.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
 	<!-- Main JS File -->
-	<script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
+	<script src="${pageContext.request.contextPath}/static/assets/js/main.js"></script>
 
 </body>
 

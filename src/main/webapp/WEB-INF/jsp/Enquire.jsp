@@ -16,13 +16,13 @@
 <!-- Favicons -->
 
 <link rel="apple-touch-icon" sizes="180x180"
-	href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
+	href="${pageContext.request.contextPath}/static/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32"
-	href="${pageContext.request.contextPath}/images/favicon-32x32.png">
+	href="${pageContext.request.contextPath}/static/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16"
-	href="${pageContext.request.contextPath}/images/favicon-16x16.png">
+	href="${pageContext.request.contextPath}/static/images/favicon-16x16.png">
 <link rel="manifest"
-	href="${pageContext.request.contextPath}/images/site.webmanifest">
+	href="${pageContext.request.contextPath}/static/images/site.webmanifest">
 
 
 <!-- Fonts -->
@@ -34,23 +34,23 @@
 
 <!-- Vendor CSS Files -->
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap/css/bootstrap.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/aos/aos.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/glightbox/css/glightbox.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/glightbox/css/glightbox.min.css"
 	rel="stylesheet">
 
 <!-- Main CSS File -->
-<link href="${pageContext.request.contextPath}/assets/css/main.css"
+<link href="${pageContext.request.contextPath}/static/assets/css/main.css"
 	rel="stylesheet">
 
 <!-- =======================================================
@@ -70,7 +70,7 @@
 
 			<a href="/home"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
-				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
+				<!-- <img src="${pageContext.request.contextPath}/static/assets/img/ETE.png" alt=""> -->
 				<h1 class="sitename">Epic Taste Exchange</h1>
 			</a>
 
@@ -169,7 +169,7 @@
 		<!-- /Enquire Section -->
 		
 		
-		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 1.jpg" data-natural-width="1400" data-natural-height="900" style="height: 500px;">
+		<div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" data-image-src="${pageContext.request.contextPath}/static/assets/img/Parallax 1.jpg" data-natural-width="1400" data-natural-height="900" style="height: 500px;">
 		</div>
 		
 		<!-- Consumer Section -->
@@ -210,7 +210,7 @@
 		</section>
 		<!-- /Consumer Section -->
 		
-		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 4.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 500px;">
+		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="${pageContext.request.contextPath}/static/assets/img/Parallax 4.jpg" data-natural-width="1400" data-natural-height="1400" style="height: 500px;">
 		</div>
 		
 		<!-- Supplier Section -->
@@ -252,7 +252,7 @@
 		<!-- /Supplier Section -->
 		
 		
-		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="${pageContext.request.contextPath}/assets/img/Parallax 3.jpg" data-natural-width="1400" data-natural-height="900" style="height: 500px;">
+		<div class="parallax-container" data-parallax="scroll" data-bleed="10" data-image-src="${pageContext.request.contextPath}/static/assets/img/Parallax 3.jpg" data-natural-width="1400" data-natural-height="900" style="height: 500px;">
 		</div>
 
 	</main>
@@ -350,22 +350,22 @@
 
 	<!-- Vendor JS Files -->
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/php-email-form/validate.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/php-email-form/validate.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/aos/aos.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
 	<!-- Main JS File -->
-	<script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
+	<script src="${pageContext.request.contextPath}/static/assets/js/main.js"></script>
 
 	<!-- Form JS code -->
 	<script type="text/javascript">
@@ -427,7 +427,7 @@
 	
 	<!-- Parallax JS code -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="${pageContext.request.contextPath}/parallax.js-1.5.0/parallax.js"></script>
+	<script src="${pageContext.request.contextPath}/static/parallax.js-1.5.0/parallax.js"></script>
 
 </body>
 

@@ -10,16 +10,20 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Products - EpicTasteExchange</title>
+<title>Error - EpicTasteExchange</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 
 <!-- Favicons -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="${pageContext.request.contextPath}/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/images/favicon-16x16.png">
-<link rel="manifest" href="${pageContext.request.contextPath}/images/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180"
+	href="${pageContext.request.contextPath}/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32"
+	href="${pageContext.request.contextPath}/static/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16"
+	href="${pageContext.request.contextPath}/static/images/favicon-16x16.png">
+<link rel="manifest"
+	href="${pageContext.request.contextPath}/static/images/site.webmanifest">
 
 
 <!-- Fonts -->
@@ -31,52 +35,24 @@
 
 <!-- Vendor CSS Files -->
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap/css/bootstrap.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/aos/aos.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/glightbox/css/glightbox.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/glightbox/css/glightbox.min.css"
 	rel="stylesheet">
 
 <!-- Main CSS File -->
-<link href="${pageContext.request.contextPath}/assets/css/main.css"
+<link href="${pageContext.request.contextPath}/static/assets/css/main.css"
 	rel="stylesheet">
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    // Get the 'filter' parameter from the URL
-    const urlParams = new URLSearchParams(window.location.search);
-    const filter = urlParams.get('filter');
-
-    if (filter) {
-        // Scroll to the 'list' section
-        const section = document.getElementById('list');
-        if (section) {
-            // Wait for the page to fully render
-            setTimeout(function () {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }, 500); // Delay of 500ms
-        }
-
-        // Automatically click the filter button after scrolling
-        setTimeout(function () {
-            const filterButton = document.querySelector(".portfolio-filters li[data-filter='.filter-" + filter + "']");
-            if (filterButton) {
-                filterButton.click();
-            }
-        }, 1000); // Additional delay for clicking the button
-    }
-});
-</script>
-
 
 <!-- =======================================================
   * Template Name: Knight
@@ -87,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
   ======================================================== -->
 </head>
 
-<body class="products-page">
+<body class="error-page">
 
 	<header id="header" class="header d-flex align-items-center fixed-top">
 		<div
@@ -95,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 			<a href="/home"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
-				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
+				<!-- <img src="${pageContext.request.contextPath}/static/assets/img/ETE.png" alt=""> -->
 				<h1 class="sitename">Epic Taste Exchange</h1>
 			</a>
 
@@ -104,16 +80,16 @@ document.addEventListener('DOMContentLoaded', function () {
 					<li><a href="/home#hero">Home</a></li>
 					<li><a href="/home#about">About Us</a></li>
 					<li><a href="/career">Career</a></li>
-					<li><a href="/products" class="active">Products</a></li>
+					<li><a href="/products">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
 					<li><div class="search-bar">
-				            <form id="searchForm" action="/products/search" method="get" autocomplete="off">
-					            <input type="text" name="query" placeholder="  Search products"
-						            required 
-						            onkeypress="if (event.key === 'Enter') this.form.submit()">
-				            </form>
-			            </div>
-                    </li>
+							<form id="searchForm" action="/products/search" method="get"
+								autocomplete="off">
+								<input type="text" name="query" placeholder="  Search products"
+									required
+									onkeypress="if (event.key === 'Enter') this.form.submit()">
+							</form>
+						</div></li>
 				</ul>
 				<i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
 			</nav>
@@ -130,96 +106,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	<main class="main">
 
-		<!-- Hero Section -->
-		<section id="product" class="hero section dark-background">
+		<!-- Error Section -->
+		<section id="error" class="hero section dark-background">
 
-			<div class="container text-center">
-				<div class="row justify-content-center" data-aos="zoom-out">
-					<div class="col-lg-8">
-						<h2>Our Products</h2>
-						<p>Discover the Ultimate Source for High-Quality Ingredients
-							at EpicTasteExchange! From our carefully preserved Dehydrated
-							Vegetables that lock in freshness and nutrition, to our expertly
-							crafted Dried Vegetables designed to enhance flavor while
-							providing convenience and long shelf life, we offer the best
-							nature has to give. Our range of Pure Spices adds bold,
-							uncompromised taste and aroma to elevate your culinary creations
-							to the next level. Whether you’re a home chef or a food industry
-							professional, our premium products are designed to inspire
-							creativity in every dish. At EpicTasteExchange, we bring you the
-							best of nature — packed, preserved, and delivered to your kitchen
-							with care</p>
-					</div>
-				</div>
+			<div class="row justify-content-center text-center mb-5" data-aos="zoom-out">
+				<h2>Oops!<br><br>Something went wrong :(</h2>
 			</div>
 
 		</section>
-		<!-- /Hero Section -->
-
-		<!-- Products Section -->
-		<section id="list" class="portfolio section">
-
-			<div class="container">
-
-				<div class="isotope-layout" data-default-filter="*"
-					data-layout="masonry" data-sort="original-order">
-
-					<ul class="portfolio-filters isotope-filters" data-aos="fade-up"
-						data-aos-delay="100">
-						<li data-filter="*" class="filter-active">All Products</li>
-						<li data-filter=".filter-dehydrated-vegetables">Dehydrated
-							Vegetables</li>
-						<li data-filter=".filter-dried-vegetables">Dried Vegetables</li>
-						<li data-filter=".filter-pure-spices">Pure Spices</li>
-					</ul>
-					<!-- End Products Filters -->
-
-					<div class="row gy-4 isotope-container" data-aos="fade-up"
-						data-aos-delay="150">
-
-						<%
-						List<Product> products = (List<Product>) request.getAttribute("products");
-
-						if (products != null) {
-							for (Product product : products) {
-								String filterType = "";
-								switch (product.getType()) {
-								case "Dehydrated Vegetables":
-									filterType = "dehydrated-vegetables";
-									break;
-								case "Dried Vegetables":
-									filterType = "dried-vegetables";
-									break;
-								case "Pure Spices":
-									filterType = "pure-spices";
-									break;
-								}
-						%>
-						<div
-							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-<%=filterType%>"
-							onclick="window.location.href='/product/details/<%=product.getId()%>'">
-							<img src="<%=product.getImageUrl()%>" class="img-fluid" alt="">
-							<div class="portfolio-info">
-								<h4><%=product.getName()%></h4>
-							</div>
-						</div>
-						<%
-						}
-						} else {
-						%>
-						<p class="text-align-center">No products available.</p>
-						<%
-						}
-						%>
-
-					</div>
-
-				</div>
-
-			</div>
-
-		</section>
-		<!-- /Product Section -->
+		<!-- /Error Section -->
 
 	</main>
 
@@ -317,22 +212,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
 	<!-- Vendor JS Files -->
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/php-email-form/validate.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/php-email-form/validate.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/aos/aos.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
 	<!-- Main JS File -->
-	<script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
+	<script src="${pageContext.request.contextPath}/static/assets/js/main.js"></script>
 
 </body>
 

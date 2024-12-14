@@ -1,21 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="java.util.List"%>
+<%@ page import="com.epictasteexchange.models.Product"%>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Career - EpicTasteExchange</title>
+<title>Products - EpicTasteExchange</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 
 <!-- Favicons -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="${pageContext.request.contextPath}/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/images/favicon-16x16.png">
-<link rel="manifest" href="${pageContext.request.contextPath}/images/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="${pageContext.request.contextPath}/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="${pageContext.request.contextPath}/static/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/static/images/favicon-16x16.png">
+<link rel="manifest" href="${pageContext.request.contextPath}/static/images/site.webmanifest">
 
 
 <!-- Fonts -->
@@ -27,24 +31,52 @@
 
 <!-- Vendor CSS Files -->
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap/css/bootstrap.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/aos/aos.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/glightbox/css/glightbox.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/glightbox/css/glightbox.min.css"
 	rel="stylesheet">
 
 <!-- Main CSS File -->
-<link href="${pageContext.request.contextPath}/assets/css/main.css"
+<link href="${pageContext.request.contextPath}/static/assets/css/main.css"
 	rel="stylesheet">
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    // Get the 'filter' parameter from the URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const filter = urlParams.get('filter');
+
+    if (filter) {
+        // Scroll to the 'list' section
+        const section = document.getElementById('list');
+        if (section) {
+            // Wait for the page to fully render
+            setTimeout(function () {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }, 500); // Delay of 500ms
+        }
+
+        // Automatically click the filter button after scrolling
+        setTimeout(function () {
+            const filterButton = document.querySelector(".portfolio-filters li[data-filter='.filter-" + filter + "']");
+            if (filterButton) {
+                filterButton.click();
+            }
+        }, 1000); // Additional delay for clicking the button
+    }
+});
+</script>
+
 
 <!-- =======================================================
   * Template Name: Knight
@@ -55,7 +87,7 @@
   ======================================================== -->
 </head>
 
-<body class="career-page">
+<body class="products-page">
 
 	<header id="header" class="header d-flex align-items-center fixed-top">
 		<div
@@ -63,16 +95,16 @@
 
 			<a href="/home"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
-				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
+				<!-- <img src="${pageContext.request.contextPath}/static/assets/img/ETE.png" alt=""> -->
 				<h1 class="sitename">Epic Taste Exchange</h1>
 			</a>
 
 			<nav id="navmenu" class="navmenu">
 				<ul>
-					<li><a href="/home">Home</a></li>
+					<li><a href="/home#hero">Home</a></li>
 					<li><a href="/home#about">About Us</a></li>
-					<li><a href="/career" class="active">Career</a></li>
-					<li><a href="/products">Products</a></li>
+					<li><a href="/career">Career</a></li>
+					<li><a href="/products" class="active">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
 					<li><div class="search-bar">
 				            <form id="searchForm" action="/products/search" method="get" autocomplete="off">
@@ -97,61 +129,97 @@
 	</header>
 
 	<main class="main">
-		<!-- Career Section -->
-		<section class="career-section section">
 
-			<div class="container section-title" data-aos="fade-up"
-				data-aos-delay="200">
-				<h2>Interested in working for us?</h2>
-				<p>Submit your details and we will reach out to you if we need
-					you</p>
+		<!-- Hero Section -->
+		<section id="product" class="hero section dark-background">
+
+			<div class="container text-center">
+				<div class="row justify-content-center" data-aos="zoom-out">
+					<div class="col-lg-8">
+						<h2>Our Products</h2>
+						<p>Discover the Ultimate Source for High-Quality Ingredients
+							at EpicTasteExchange! From our carefully preserved Dehydrated
+							Vegetables that lock in freshness and nutrition, to our expertly
+							crafted Dried Vegetables designed to enhance flavor while
+							providing convenience and long shelf life, we offer the best
+							nature has to give. Our range of Pure Spices adds bold,
+							uncompromised taste and aroma to elevate your culinary creations
+							to the next level. Whether you’re a home chef or a food industry
+							professional, our premium products are designed to inspire
+							creativity in every dish. At EpicTasteExchange, we bring you the
+							best of nature — packed, preserved, and delivered to your kitchen
+							with care</p>
+					</div>
+				</div>
 			</div>
 
-			<form id="careerForm" class="career-form" data-aos="fade-up"
-				data-aos-delay="200" method="POST" action="/submitJobApplication"
-				enctype="multipart/form-data">
-				<div class="form-row">
-					<input type="text" id="firstName" name="firstName"
-						placeholder="First Name *" required> <input type="text"
-						id="lastName" name="lastName" placeholder="Last Name *" required>
-				</div>
-
-				<div class="form-row">
-					<input type="email" id="email" name="email"
-						placeholder="Email Address *" required> <input type="tel"
-						id="phone" name="phone"
-						placeholder="Phone Number (+91 XXX-XXX-XXXX) *" required>
-				</div>
-
-				<input type="text" id="address" name="address" placeholder="Address">
-
-				<select id="position" name="position" required>
-					<option value="" disabled selected>Which Position are you applying for? *</option>
-					<option value="Sales Executive">Sales Executive</option>
-					<option value="Sales Manager">Sales Manageer</option>
-					<option value="Business Development Executive">Business Development Executive</option>
-				</select>
-<!-- 				<input type="text" id="position" name="position" -->
-<!-- 					placeholder="Which Position(s) are you applying for? *" required> -->
-
-				<div class="file-attachment">
-					<label for="resume" class="file-label">Attach your updated
-						Resume/CV *</label>
-					<!-- Custom button -->
-					<label for="resume" class="file-input-label">Choose File</label> <input
-						type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"
-						required class="file-input">
-					<!-- Display chosen file name -->
-					<span class="file-name">No file chosen</span>
-				</div>
-
-				<p style="color: red;">(File type: .pdf/.doc/.docx; Max file
-					size: 2MB)</p>
-
-				<button type="submit">Apply</button>
-			</form>
 		</section>
-		<!-- /Career Section -->
+		<!-- /Hero Section -->
+
+		<!-- Products Section -->
+		<section id="list" class="portfolio section">
+
+			<div class="container">
+
+				<div class="isotope-layout" data-default-filter="*"
+					data-layout="masonry" data-sort="original-order">
+
+					<ul class="portfolio-filters isotope-filters" data-aos="fade-up"
+						data-aos-delay="100">
+						<li data-filter="*" class="filter-active">All Products</li>
+						<li data-filter=".filter-dehydrated-vegetables">Dehydrated
+							Vegetables</li>
+						<li data-filter=".filter-dried-vegetables">Dried Vegetables</li>
+						<li data-filter=".filter-pure-spices">Pure Spices</li>
+					</ul>
+					<!-- End Products Filters -->
+
+					<div class="row gy-4 isotope-container" data-aos="fade-up"
+						data-aos-delay="150">
+
+						<%
+						List<Product> products = (List<Product>) request.getAttribute("products");
+
+						if (products != null) {
+							for (Product product : products) {
+								String filterType = "";
+								switch (product.getType()) {
+								case "Dehydrated Vegetables":
+									filterType = "dehydrated-vegetables";
+									break;
+								case "Dried Vegetables":
+									filterType = "dried-vegetables";
+									break;
+								case "Pure Spices":
+									filterType = "pure-spices";
+									break;
+								}
+						%>
+						<div
+							class="col-lg-4 col-md-6 portfolio-item isotope-item filter-<%=filterType%>"
+							onclick="window.location.href='/product/details/<%=product.getId()%>'">
+							<img src="${pageContext.request.contextPath}/static/<%=product.getImageUrl()%>" class="img-fluid" alt="">
+							<div class="portfolio-info">
+								<h4><%=product.getName()%></h4>
+							</div>
+						</div>
+						<%
+						}
+						} else {
+						%>
+						<p class="text-align-center">No products available.</p>
+						<%
+						}
+						%>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+		<!-- /Product Section -->
 
 	</main>
 
@@ -249,78 +317,22 @@
 
 	<!-- Vendor JS Files -->
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/php-email-form/validate.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/php-email-form/validate.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/aos/aos.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
 	<!-- Main JS File -->
-	<script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
-
-	<!-- Form JS code -->
-	<script type="text/javascript">
-
-document.addEventListener("DOMContentLoaded", function () {
-    const careerForm = document.getElementById("careerForm");
-
-    careerForm.addEventListener("submit", function (event) {
-        event.preventDefault(); // Prevent form from refreshing the page
-
-        const submitButton = careerForm.querySelector("button[type='submit']");
-        const prevText = submitButton.textContent;
-        const formData = new FormData(careerForm);
-
-        submitButton.textContent = "Submitting...";
-        submitButton.disabled = true;
-
-        fetch("/submitJobApplication", {
-            method: "POST",
-            body: formData
-        })
-        .then(response => {
-            console.log("Response status:", response.status); // Log response status
-            if (!response.ok) throw new Error("Failed to submit the application");
-            return response.json(); // Parse the response as JSON
-        })
-        .then(data => {
-            
-            alert(`Success: Application submitted successfully`);
-            careerForm.reset(); // Clear the form fields
-        })
-        .catch(error => {
-            console.error("Error:", error);
-            alert("Error submitting the application. Please try again.");
-        })
-        .finally(() => {
-            submitButton.textContent = prevText; // Restore button text
-            submitButton.disabled = false; // Re-enable the button
-        });
-    });
-});
-</script>
-
-<!-- JS to update selected attachment file name -->
-<script>
-    document.getElementById('resume').addEventListener('change', function() {
-        var fileName = this.files[0] ? this.files[0].name : 'No file chosen';
-        var fileNameDisplay = document.querySelector('.file-name');
-        
-        // Update the file name display
-        fileNameDisplay.textContent = fileName;
-
-        // Show the file name display (if hidden)
-        fileNameDisplay.classList.add('show');
-    });
-</script>
+	<script src="${pageContext.request.contextPath}/static/assets/js/main.js"></script>
 
 </body>
 

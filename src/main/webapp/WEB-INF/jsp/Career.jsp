@@ -1,27 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import="java.util.List"%>
-<%@ page import="com.epictasteexchange.models.Product"%>
-<%@ page import="com.epictasteexchange.models.Variety"%>
-
-<% Product product = (Product)request.getAttribute("product"); %>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Product Details - EpicTasteExchange</title>
+<title>Career - EpicTasteExchange</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 
 <!-- Favicons -->
 
-<link rel="apple-touch-icon" sizes="180x180" href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="${pageContext.request.contextPath}/images/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/images/favicon-16x16.png">
-<link rel="manifest" href="${pageContext.request.contextPath}/images/site.webmanifest">
+<link rel="apple-touch-icon" sizes="180x180" href="${pageContext.request.contextPath}/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="${pageContext.request.contextPath}/static/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="${pageContext.request.contextPath}/static/images/favicon-16x16.png">
+<link rel="manifest" href="${pageContext.request.contextPath}/static/images/site.webmanifest">
 
 
 <!-- Fonts -->
@@ -33,53 +27,24 @@
 
 <!-- Vendor CSS Files -->
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap/css/bootstrap.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/aos/aos.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/glightbox/css/glightbox.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/glightbox/css/glightbox.min.css"
 	rel="stylesheet">
 
 <!-- Main CSS File -->
-<link href="${pageContext.request.contextPath}/assets/css/main.css"
+<link href="${pageContext.request.contextPath}/static/assets/css/main.css"
 	rel="stylesheet">
-
-<script>
-    function updateVarietyDetails(button) {
-        // Get data attributes from the clicked button
-        const name = button.getAttribute("data-name");
-        const description = button.getAttribute("data-description");
-        const image = button.getAttribute("data-image");
-		const varietyDetailsContainer = document.querySelector(".variety-details-container");
-
-        // Update the product image
-        const productImage = document.querySelector(".hero img");
-        productImage.setAttribute("src", image);
-
-        const varietyDetails = "<p style='font-size: 18px;'><b style='font-size: 25px; color: #7cc576;'>Form : </b>"+name+"</p><p style='font-size: 18px;'>"+description+"</p>";
-        varietyDetailsContainer.innerHTML = varietyDetails;
-
-        // Highlight the selected variety button
-        const allButtons = document.querySelectorAll(".variety-button");
-        allButtons.forEach(btn => btn.style.border = "none"); // Reset border for all buttons
-        button.style.border = "5px solid #7cc576"; // Add green border to the clicked button
-
-		// Scroll to the top of the page
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth" // Optional for a smooth scrolling effect
-        });
-    }
-</script>
-
 
 <!-- =======================================================
   * Template Name: Knight
@@ -90,7 +55,7 @@
   ======================================================== -->
 </head>
 
-<body class="index-page">
+<body class="career-page">
 
 	<header id="header" class="header d-flex align-items-center fixed-top">
 		<div
@@ -98,20 +63,19 @@
 
 			<a href="/home"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
-				<%-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> --%>
-
+				<!-- <img src="${pageContext.request.contextPath}/static/assets/img/ETE.png" alt=""> -->
 				<h1 class="sitename">Epic Taste Exchange</h1>
 			</a>
 
 			<nav id="navmenu" class="navmenu">
 				<ul>
-					<li><a href="/home#hero">Home</a></li>
+					<li><a href="/home">Home</a></li>
 					<li><a href="/home#about">About Us</a></li>
-					<li><a href="/career">Career</a></li>
-					<li><a href="/products" class="active">Products</a></li>
+					<li><a href="/career" class="active">Career</a></li>
+					<li><a href="/products">Products</a></li>
 					<li><a href="/enquire">Enquire Now</a></li>
-                    <li><div class="search-bar">
-				            <form id="searchForm" action="/products/search" method="get">
+					<li><div class="search-bar">
+				            <form id="searchForm" action="/products/search" method="get" autocomplete="off">
 					            <input type="text" name="query" placeholder="  Search products"
 						            required 
 						            onkeypress="if (event.key === 'Enter') this.form.submit()">
@@ -133,62 +97,61 @@
 	</header>
 
 	<main class="main">
+		<!-- Career Section -->
+		<section class="career-section section">
 
-		<section id="products" class="hero section dark-background">
-
-			<div class="container">
-				<div class="row justify-content-center" data-aos="zoom-out">
-					<div class="col-lg-4">
-						<img
-							src="<%=product.getImageUrl()%>"
-							alt="" class="img-fluid mb-3"
-							style="width: 100%; max-width: 400px; border-radius: 1000vmax; margin-top: 30px;">
-					</div>
-                    <div class="col-lg-8">
-						<h2><%= product.getName() %></h2><br>                            
-                        <p style="font-size: 25px;"><b style="font-size: 25px; color: #7cc576;">Type : </b><%= product.getType() %></p>
-                        <p style="font-size: 18px;"><%= product.getDescription() %></p><br>
-                        <p style="font-size: 18px;"><b style="font-size: 25px; color: #7cc576;">Intended Use : </b><%= product.getIntendedUse() %></p><br><br>
-						<div class="variety-details-container"></div>
-                        <a href="/enquire#request-sample-form" class="btn-get-started">Request Sample</a>
-					</div>
-				</div><br><br>
-
-                <%
-		        if (!product.getVarieties().isEmpty()) {
-		        %>
-
-                    <p style="text-align: center; margin: 10px">
-                        <b style="color: #7cc576; font-size: 25px;">Forms Available</b>
-                    </p>                
-                    <div class="row justify-content-center data-aos="zoom-out"">
-
-	                    <%
-	                    List<Variety> varieties = product.getVarieties();
-	                    if (varieties != null) {
-	                        for (Variety variety : varieties) {
-	                    %>
-	                    <div class="variety-button"
-	                        id="variety-<%=variety.getName()%>"
-	                        data-name="<%=variety.getName()%>"
-	                        data-description="<%=variety.getDescription()%>"
-	                        data-image="<%=variety.getImageUrl()%>"
-	                        onclick="updateVarietyDetails(this)"
-	                        style="background-image: url('<%=variety.getImageUrl()%>'); cursor: pointer;">
-	                        <p style="font-size: 20px; font-weight: bolder;"><%=variety.getName()%></p>
-	                    </div>
-	
-	                    <%
-	                        }
-	                    }
-	                    %>
-                    </div>
-            <%  } %>
-
+			<div class="container section-title" data-aos="fade-up"
+				data-aos-delay="200">
+				<h2>Interested in working for us?</h2>
+				<p>Submit your details and we will reach out to you if we need
+					you</p>
 			</div>
 
+			<form id="careerForm" class="career-form" data-aos="fade-up"
+				data-aos-delay="200" method="POST" action="/submitJobApplication"
+				enctype="multipart/form-data">
+				<div class="form-row">
+					<input type="text" id="firstName" name="firstName"
+						placeholder="First Name *" required> <input type="text"
+						id="lastName" name="lastName" placeholder="Last Name *" required>
+				</div>
+
+				<div class="form-row">
+					<input type="email" id="email" name="email"
+						placeholder="Email Address *" required> <input type="tel"
+						id="phone" name="phone"
+						placeholder="Phone Number (+91 XXX-XXX-XXXX) *" required>
+				</div>
+
+				<input type="text" id="address" name="address" placeholder="Address">
+
+				<select id="position" name="position" required>
+					<option value="" disabled selected>Which Position are you applying for? *</option>
+					<option value="Sales Executive">Sales Executive</option>
+					<option value="Sales Manager">Sales Manageer</option>
+					<option value="Business Development Executive">Business Development Executive</option>
+				</select>
+<!-- 				<input type="text" id="position" name="position" -->
+<!-- 					placeholder="Which Position(s) are you applying for? *" required> -->
+
+				<div class="file-attachment">
+					<label for="resume" class="file-label">Attach your updated
+						Resume/CV *</label>
+					<!-- Custom button -->
+					<label for="resume" class="file-input-label">Choose File</label> <input
+						type="file" id="resume" name="resume" accept=".pdf,.doc,.docx"
+						required class="file-input">
+					<!-- Display chosen file name -->
+					<span class="file-name">No file chosen</span>
+				</div>
+
+				<p style="color: red;">(File type: .pdf/.doc/.docx; Max file
+					size: 2MB)</p>
+
+				<button type="submit">Apply</button>
+			</form>
 		</section>
-		
+		<!-- /Career Section -->
 
 	</main>
 
@@ -286,22 +249,78 @@
 
 	<!-- Vendor JS Files -->
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/php-email-form/validate.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/php-email-form/validate.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/aos/aos.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
 	<!-- Main JS File -->
-	<script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
+	<script src="${pageContext.request.contextPath}/static/assets/js/main.js"></script>
+
+	<!-- Form JS code -->
+	<script type="text/javascript">
+
+document.addEventListener("DOMContentLoaded", function () {
+    const careerForm = document.getElementById("careerForm");
+
+    careerForm.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form from refreshing the page
+
+        const submitButton = careerForm.querySelector("button[type='submit']");
+        const prevText = submitButton.textContent;
+        const formData = new FormData(careerForm);
+
+        submitButton.textContent = "Submitting...";
+        submitButton.disabled = true;
+
+        fetch("/submitJobApplication", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => {
+            console.log("Response status:", response.status); // Log response status
+            if (!response.ok) throw new Error("Failed to submit the application");
+            return response.json(); // Parse the response as JSON
+        })
+        .then(data => {
+            
+            alert(`Success: Application submitted successfully`);
+            careerForm.reset(); // Clear the form fields
+        })
+        .catch(error => {
+            console.error("Error:", error);
+            alert("Error submitting the application. Please try again.");
+        })
+        .finally(() => {
+            submitButton.textContent = prevText; // Restore button text
+            submitButton.disabled = false; // Re-enable the button
+        });
+    });
+});
+</script>
+
+<!-- JS to update selected attachment file name -->
+<script>
+    document.getElementById('resume').addEventListener('change', function() {
+        var fileName = this.files[0] ? this.files[0].name : 'No file chosen';
+        var fileNameDisplay = document.querySelector('.file-name');
+        
+        // Update the file name display
+        fileNameDisplay.textContent = fileName;
+
+        // Show the file name display (if hidden)
+        fileNameDisplay.classList.add('show');
+    });
+</script>
 
 </body>
 

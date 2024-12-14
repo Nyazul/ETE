@@ -13,13 +13,13 @@
 <!-- Favicons -->
 
 <link rel="apple-touch-icon" sizes="180x180"
-	href="${pageContext.request.contextPath}/images/apple-touch-icon.png">
+	href="${pageContext.request.contextPath}/static/images/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32"
-	href="${pageContext.request.contextPath}/images/favicon-32x32.png">
+	href="${pageContext.request.contextPath}/static/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16"
-	href="${pageContext.request.contextPath}/images/favicon-16x16.png">
+	href="${pageContext.request.contextPath}/static/images/favicon-16x16.png">
 <link rel="manifest"
-	href="${pageContext.request.contextPath}/images/site.webmanifest">
+	href="${pageContext.request.contextPath}/static/images/site.webmanifest">
 
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -30,23 +30,23 @@
 
 <!-- Vendor CSS Files -->
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap/css/bootstrap.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/bootstrap-icons/bootstrap-icons.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/bootstrap-icons/bootstrap-icons.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/aos/aos.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.css"
 	rel="stylesheet">
 <link
-	href="${pageContext.request.contextPath}/assets/vendor/glightbox/css/glightbox.min.css"
+	href="${pageContext.request.contextPath}/static/assets/vendor/glightbox/css/glightbox.min.css"
 	rel="stylesheet">
 
 <!-- Main CSS File -->
-<link href="${pageContext.request.contextPath}/assets/css/main.css"
+<link href="${pageContext.request.contextPath}/static/assets/css/main.css"
 	rel="stylesheet">
 
 <!-- =======================================================
@@ -66,7 +66,7 @@
 
 			<a href="/home"
 				class="logo d-flex align-items-center me-auto me-xl-0"> <!-- Uncomment the line below if you also wish to use an image logo -->
-				<!-- <img src="${pageContext.request.contextPath}/assets/img/ETE.png" alt=""> -->
+				<!-- <img src="${pageContext.request.contextPath}/static/assets/img/ETE.png" alt=""> -->
 				<h1 class="sitename">Epic Taste Exchange</h1>
 			</a>
 
@@ -108,7 +108,7 @@
 				<div class="row justify-content-center" data-aos="zoom-out">
 					<div class="col-lg-8">
 						<img
-							src="${pageContext.request.contextPath}/assets/img/ETE-logo.png"
+							src="${pageContext.request.contextPath}/static/assets/img/ETE-logo.png"
 							alt="" class="img-fluid mb-3"
 							style="width: 50%; max-width: 300px;">
 						<h2>Welcome to EpicTasteExchange</h2>
@@ -148,7 +148,7 @@
 
 				<div class="row gy-4">
 					<div class="col-lg-6">
-						<img src="${pageContext.request.contextPath}/assets/img/about.jpg"
+						<img src="${pageContext.request.contextPath}/static/assets/img/about.jpg"
 							class="img-fluid" alt="">
 					</div>
 					<div class="col-lg-6 content">
@@ -195,7 +195,7 @@
 						data-aos-delay="50">
 						<div class="card">
 							<img
-								src="${pageContext.request.contextPath}/assets/img/global-sourcing (1).jpg"
+								src="${pageContext.request.contextPath}/static/assets/img/global-sourcing (1).jpg"
 								alt="" class="img-fluid">
 							<div class="card-body">
 								<h3 class="stretched-link">Global Sourcing</h3>
@@ -212,7 +212,7 @@
 						data-aos-delay="100">
 						<div class="card">
 							<img
-								src="${pageContext.request.contextPath}/assets/img/quality-control (1).jpg"
+								src="${pageContext.request.contextPath}/static/assets/img/quality-control (1).jpg"
 								alt="" class="img-fluid">
 							<div class="card-body">
 								<h3 class="stretched-link">Quality Control</h3>
@@ -229,7 +229,7 @@
 						data-aos-delay="150">
 						<div class="card">
 							<img
-								src="${pageContext.request.contextPath}/assets/img/customer-focus (1).jpg"
+								src="${pageContext.request.contextPath}/static/assets/img/customer-focus (1).jpg"
 								alt="" class="img-fluid">
 							<div class="card-body">
 								<h3 class="stretched-link">Customer Focus</h3>
@@ -411,22 +411,22 @@
 
 	<!-- Vendor JS Files -->
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/php-email-form/validate.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/php-email-form/validate.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/aos/aos.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/aos/aos.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/swiper/swiper-bundle.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/glightbox/js/glightbox.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
 	<script
-		src="${pageContext.request.contextPath}/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+		src="${pageContext.request.contextPath}/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
 	<!-- Main JS File -->
-	<script src="${pageContext.request.contextPath}/assets/js/main.js"></script>
+	<script src="${pageContext.request.contextPath}/static/assets/js/main.js"></script>
 
 </body>
 
