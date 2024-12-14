@@ -5,29 +5,15 @@ COPY pom.xml .
 COPY src ./src
 RUN mvn clean package
 
-# Use an official OpenJDK 21 image
+# Runtime stage
 FROM openjdk:21-jdk
+WORKDIR /app
 
-# Set a volume to /tmp
-VOLUME /tmp
-
-# Accept JAVA_OPTS as an argument and set it as an environment variable
-ARG JAVA_OPTS
-ENV JAVA_OPTS=$JAVA_OPTS
-
-# Copy the built JAR file from the target folder
-COPY --from=build /app/target/EpicTasteExchange-0.0.1-SNAPSHOT.jar ete.jar
+# Copy the built JAR file (repackaged by Spring Boot Maven plugin)
+COPY --from=build /app/target/EpicTasteExchange-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose port 8080
 EXPOSE 8080
 
-# Use a custom entrypoint for optimal Spring Boot startup with Java 21
-ENTRYPOINT exec java $JAVA_OPTS -Djava.security.egd=file:/dev/./urandom -jar ete.jar
-
-
-# Runtime stage
-#FROM amazoncorretto:21-alpine
-#WORKDIR /app
-#COPY --from=build /app/target/**.jar /app/app.jar
-#EXPOSE 8080
-#ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+# Use ENTRYPOINT to allow customization with environment variables
+ENTRYPOINT ["java", "-jar", "app.jar"]
