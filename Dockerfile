@@ -10,4 +10,5 @@ FROM amazoncorretto:21-alpine
 WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 EXPOSE 8080
-CMD ["java", "-jar", "app.jar"]
+# Change this line to use the correct path
+CMD ["java", "-jar", "app.jar"]    # Not target/EpicTasteExchange-0.0.1-SNAPSHOT.jar
