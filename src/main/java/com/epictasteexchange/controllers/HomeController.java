@@ -63,10 +63,5 @@ public class HomeController {
 		return "SearchProduct";
 	}
 	
-	@GetMapping("/error")
-	public String error() {
-		System.out.println("Error Page");
-		return "Error";
-	}
 
 }
