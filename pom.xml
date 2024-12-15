@@ -101,27 +101,45 @@
 				</configuration>
 			</plugin>
 
-			<!-- Copy JSP files to both locations -->
-            <plugin>
-            <artifactId>maven-resources-plugin</artifactId>
-            <executions>
-                <execution>
-                    <id>copy-jsp-resources</id>
-                    <phase>process-resources</phase>
-                    <goals>
-                        <goal>copy-resources</goal>
-                    </goals>
-                    <configuration>
-                        <outputDirectory>${project.build.directory}/classes/WEB-INF/jsp</outputDirectory>
-                        <resources>
-                            <resource>
-                                <directory>src/main/webapp/WEB-INF/jsp</directory>
-                            </resource>
-                        </resources>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
+			<plugin>
+				<artifactId>maven-resources-plugin</artifactId>
+				<executions>
+					<!-- Copy JSP files to classes directory -->
+					<execution>
+						<id>copy-jsp-to-classes</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/classes/META-INF/resources/WEB-INF/jsp</outputDirectory>
+							<resources>
+								<resource>
+									<directory>src/main/webapp/WEB-INF/jsp</directory>
+									<filtering>false</filtering>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					<!-- Copy JSP files to target webapp directory -->
+					<execution>
+						<id>copy-jsp-to-target</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/${project.build.finalName}/WEB-INF/jsp</outputDirectory>
+							<resources>
+								<resource>
+									<directory>src/main/webapp/WEB-INF/jsp</directory>
+									<filtering>false</filtering>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 
